@@ -62,6 +62,8 @@
 
 ### Pass 4: Release/Legal Review
 
+- [x] Pass4 Kickoff（着手）
+- [ ] Status: In Progress
 - [ ] npm/registry配布手順の監査
 - [ ] MIT表記 / NOTICE運用の監査
 - [ ] 公開前チェックリスト確定版の作成
