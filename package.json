@@ -17,7 +17,8 @@
     "test:runtime": "node ./scripts/run-m1-gate.mjs runtime",
     "test:a11y": "node ./scripts/run-m1-gate.mjs a11y",
     "test:visual": "pnpm test:visual:parity",
-    "test:visual:parity": "node ./scripts/run-m1-gate.mjs visual-parity",
+    "test:visual:parity": "node ./scripts/run-visual-parity.mjs",
+    "test:visual:update": "node ./scripts/run-visual-parity.mjs --update-snapshots",
     "test:visual:policy": "node ./scripts/run-m1-gate.mjs visual-policy",
     "test:command-scope:policy": "node ./scripts/run-m1-gate.mjs command-scope-policy",
     "test:coexist": "node ./scripts/run-m1-gate.mjs coexist",
@@ -33,6 +34,7 @@
     "clean": "rm -rf dist"
   },
   "devDependencies": {
+    "@playwright/test": "1.51.0",
     "@types/node": "^24.0.0",
     "@typescript-eslint/eslint-plugin": "^8.0.0",
     "@typescript-eslint/parser": "^8.0.0",
