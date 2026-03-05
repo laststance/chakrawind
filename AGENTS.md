@@ -44,5 +44,7 @@ Audit specifications:
 - `docs/specs/realworld-transition-catalog.md`
 - `docs/specs/realworld-flow-manifest-spec.md`
 - `docs/specs/test-command-scope.md`
+- `docs/specs/license-attribution-policy.md`
+- `docs/specs/release-preflight-checklist.md`
 
 Do not claim requirement completion unless corresponding phase Quality Gates are satisfied.

@@ -20,3 +20,5 @@
 - `docs/specs/realworld-flow-manifest-spec.md`
 - `docs/specs/test-command-scope.md`
 - `docs/specs/chakra-baseline-runtime-contract.md`
+- `docs/specs/license-attribution-policy.md`
+- `docs/specs/release-preflight-checklist.md`

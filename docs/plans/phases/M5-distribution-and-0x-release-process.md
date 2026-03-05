@@ -61,6 +61,8 @@
   - `docs/specs/realworld-transition-catalog.md`
   - `docs/specs/realworld-flow-manifest-spec.md`
   - `docs/specs/test-command-scope.md`
+  - `docs/specs/license-attribution-policy.md`
+  - `docs/specs/release-preflight-checklist.md`
 
 ## 5. 成果物
 
@@ -94,7 +96,10 @@
 - `pnpm test:install:npm`
 - `pnpm test:install:registry`
 - `pnpm test:e2e:realworld`
+- `pnpm realworld:flow-manifest:verify`
 - `pnpm test:realworld:catalog`
+- `pnpm legal:notice:verify`
+- `pnpm legal:attribution:verify`
 
 ### Gate M5-3: 透明性
 
@@ -123,7 +128,10 @@ pnpm test:coexist
 pnpm test:install:npm
 pnpm test:install:registry
 pnpm test:e2e:realworld
+pnpm realworld:flow-manifest:verify
 pnpm test:realworld:catalog
+pnpm legal:notice:verify
+pnpm legal:attribution:verify
 ```
 
 ### 証跡（Artifacts）
@@ -139,6 +147,7 @@ pnpm test:realworld:catalog
 - install smoke matrix 結果
 - flow manifest verify レポート
 - ライセンス監査ログ
+- release preflight checklist 実行記録
 
 ## 7. 失敗条件
 

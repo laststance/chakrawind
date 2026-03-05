@@ -49,3 +49,5 @@ Requirement completion is determined by each phase Quality Gate, not by subjecti
 - [Realworld Transition Catalog](docs/specs/realworld-transition-catalog.md)
 - [Realworld Flow Manifest Spec](docs/specs/realworld-flow-manifest-spec.md)
 - [Test Command Scope Spec](docs/specs/test-command-scope.md)
+- [License Attribution Policy](docs/specs/license-attribution-policy.md)
+- [Release Preflight Checklist](docs/specs/release-preflight-checklist.md)
