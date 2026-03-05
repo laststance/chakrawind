@@ -57,6 +57,8 @@
 - [x] CI再現性レビュー（Fail Fastと証跡の一致）
 - [x] レビュー文書保存（`docs/reviews/*pass3*.md`）
   - `docs/reviews/2026-03-05-pass3-quality-gate-review-r1.md`
+- [x] Re-Review完了（`S1/S2/S3` open=0）
+- [x] Pass3 Close判定記録
 
 ### Pass 4: Release/Legal Review
 
