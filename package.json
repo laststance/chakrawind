@@ -10,6 +10,8 @@
   },
   "scripts": {
     "baseline:lock:verify": "node ./scripts/verify-baseline-lock.mjs",
+    "parity:baseline:freeze": "node ./scripts/parity-baseline-freeze.mjs",
+    "parity:baseline:verify": "node ./scripts/parity-baseline-verify.mjs",
     "verify:m0": "pnpm install --frozen-lockfile && pnpm baseline:lock:verify && pnpm build && pnpm typecheck && pnpm lint",
     "build": "tsc -p tsconfig.json",
     "typecheck": "tsc -p tsconfig.json --noEmit",

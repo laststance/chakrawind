@@ -1,0 +1,10 @@
+{
+  "baselinePackage": "@chakra-ui/react",
+  "baselineVersion": "3.34.0",
+  "sourceRepository": "https://github.com/chakra-ui/chakra-ui",
+  "sourceDirectory": "packages/react",
+  "captureDate": "2026-03-05",
+  "lockVerificationCommand": "pnpm baseline:lock:verify",
+  "manifestFreezeCommand": "pnpm parity:baseline:freeze",
+  "manifestVerifyCommand": "pnpm parity:baseline:verify"
+}

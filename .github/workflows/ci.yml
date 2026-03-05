@@ -32,6 +32,9 @@ jobs:
       - name: Verify baseline dependency lock
         run: pnpm baseline:lock:verify
 
+      - name: Verify parity baseline manifests
+        run: pnpm parity:baseline:verify
+
       - name: Build
         run: pnpm build
 
