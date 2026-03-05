@@ -35,6 +35,8 @@
 - [x] 重大度付き findings を作成
 - [x] レビュー文書保存
   - `docs/reviews/2026-03-05-pass1-spec-completeness-review-r3.md`
+- [x] Re-Review完了（`S1/S2/S3` open=0）
+- [x] Pass1 Close判定記録
 
 ### Pass 2: Tech Validity Review
 
@@ -64,8 +66,8 @@
 
 ### P1-1 (S2): Visual command canonicalization
 
-- [ ] `test:visual:parity` を正準コマンドとして明記
-- [ ] `test:visual` を残す場合は「非Gate alias」と明示
+- [x] `test:visual:parity` を正準コマンドとして明記
+- [x] `test:visual` を残す場合は「非Gate alias」と明示
 - [ ] 対象:
   - `docs/specs/visual-diff-policy.md`
   - `docs/specs/test-command-scope.md`
@@ -73,9 +75,9 @@
 
 ### P1-2 (S2): Command-scope policy gate binding
 
-- [ ] `pnpm test:command-scope:policy` をM1 Gate必須コマンドに追加
-- [ ] `pnpm test:command-scope:policy` をM5 Gate必須コマンドに追加
-- [ ] 非scoped Playwright呼び出しをFail Fast条件に追加
+- [x] `pnpm test:command-scope:policy` をM1 Gate必須コマンドに追加
+- [x] `pnpm test:command-scope:policy` をM5 Gate必須コマンドに追加
+- [x] 非scoped Playwright呼び出しをFail Fast条件に追加
 - [ ] 対象:
   - `docs/specs/test-command-scope.md`
   - `docs/plans/phases/M1-compatibility-harness-and-parity-gates.md`
@@ -83,15 +85,15 @@
 
 ### P1-3 (S2): M4 deliverable completeness
 
-- [ ] M4成果物に `test:e2e:realworld` script を追記
+- [x] M4成果物に `test:e2e:realworld` script を追記
 - [ ] 対象:
   - `docs/plans/phases/M4-realworld-parity-test-realworld.md`
 
 ### P1-4 (S2): Realworld denominator lock
 
-- [ ] `implemented flows` の分母ソースを固定仕様化
-- [ ] `artifacts/realworld/flow-manifest.json` の追加検討
-- [ ] update手順・versioning・checksum方針を仕様へ追加
+- [x] `implemented flows` の分母ソースを固定仕様化
+- [x] `artifacts/realworld/flow-manifest.json` の追加検討
+- [x] update手順・versioning・checksum方針を仕様へ追加
 - [ ] 対象:
   - `docs/specs/realworld-transition-catalog.md`
   - `docs/plans/phases/M4-realworld-parity-test-realworld.md`
