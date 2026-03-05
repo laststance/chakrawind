@@ -104,14 +104,19 @@ Exit criteria:
 
 ```bash
 pnpm build
+pnpm parity:baseline:freeze
+pnpm parity:baseline:verify
 pnpm test:api
 pnpm test:types
 pnpm test:runtime
 pnpm test:a11y
 pnpm exec playwright test --project=chromium --reporter=list
+pnpm test:visual:policy
+pnpm test:coexist
 pnpm test:install:npm
 pnpm test:install:registry
 pnpm test:realworld
+pnpm test:realworld:catalog
 ```
 
 ## 4. Branch and Release Policy

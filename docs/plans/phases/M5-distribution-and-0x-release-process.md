@@ -42,7 +42,7 @@
 3. publish前検証
 - install smoke（npm）
 - install smoke（registry）
-- parity / realworld 全ゲート実行
+- parity / coexist / realworld 全ゲート実行
 
 4. 0.x公開
 - 変更点と既知制限を明記
@@ -53,6 +53,12 @@
 - 0.xでは「進捗公開」を優先し、互換未達領域を隠さない
 - 完全再現主張はDoD全条件達成時のみ許可
 - registry itemは schema準拠を必須とする
+- 参照仕様:
+  - `docs/specs/parity-baseline-manifest-spec.md`
+  - `docs/specs/coexistence-test-matrix.md`
+  - `docs/specs/install-smoke-matrix.md`
+  - `docs/specs/visual-diff-policy.md`
+  - `docs/specs/realworld-transition-catalog.md`
 
 ## 5. 成果物
 
@@ -72,14 +78,19 @@
 
 - 以下がすべて成功
 - `pnpm build`
+- `pnpm parity:baseline:freeze`
+- `pnpm parity:baseline:verify`
 - `pnpm test:api`
 - `pnpm test:types`
 - `pnpm test:runtime`
 - `pnpm test:a11y`
 - `pnpm exec playwright test --project=chromium --reporter=list`
+- `pnpm test:visual:policy`
+- `pnpm test:coexist`
 - `pnpm test:install:npm`
 - `pnpm test:install:registry`
 - `pnpm test:realworld`
+- `pnpm test:realworld:catalog`
 
 ### Gate M5-3: 透明性
 
@@ -95,14 +106,19 @@
 
 ```bash
 pnpm build
+pnpm parity:baseline:freeze
+pnpm parity:baseline:verify
 pnpm test:api
 pnpm test:types
 pnpm test:runtime
 pnpm test:a11y
 pnpm exec playwright test --project=chromium --reporter=list
+pnpm test:visual:policy
+pnpm test:coexist
 pnpm test:install:npm
 pnpm test:install:registry
 pnpm test:realworld
+pnpm test:realworld:catalog
 ```
 
 ### 証跡（Artifacts）
@@ -110,6 +126,11 @@ pnpm test:realworld
 - npm pack成果物
 - registry build成果物（`registry.json`, `registry-item.json`）
 - リリースノート（互換率付き）
+- coexist matrix 結果
+- baseline manifest（export/type/component）
+- baseline checksum検証結果
+- visual policy監査レポート
+- install smoke matrix 結果
 - ライセンス監査ログ
 
 ## 7. 失敗条件

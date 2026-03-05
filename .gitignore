@@ -7,3 +7,6 @@ playwright-report/
 # local runtime / secrets
 logs/
 .serena/
+
+# keep project-level instructions tracked even if globally ignored
+!AGENTS.md

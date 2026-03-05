@@ -116,10 +116,25 @@ Chakra Wind is considered "fully reproduced" only when all are true:
 - `runtime_contract_pass = 100%`
 - `a11y_contract_pass = 100%`
 - `visual_contract_pass = 100%` (Chromium Linux)
+- `coexist_contract_pass = 100%` (Chakra Wind + shadcn/ui coexistence matrix)
 - `install_smoke_pass = 100%` (npm + registry)
 - `realworld_parity_pass = 100%`
 
 No waiver-based release for full-reproduction claim.
+
+## 7.1 Denominator Lock for 100% Claims
+
+`100%` claims are valid only when denominators are generated from fixed baseline manifests.
+
+- Baseline package: `@chakra-ui/react@3.34.0`
+- Required manifests (versioned artifacts):
+  - `artifacts/parity/baseline-export-manifest.json`
+  - `artifacts/parity/baseline-type-manifest.json`
+  - `artifacts/parity/baseline-component-manifest.json`
+- Manifest generation command contract:
+  - `pnpm parity:baseline:freeze`
+  - `pnpm parity:baseline:verify`
+- Coverage metrics (`export_coverage`, `type_contract_pass`) must use these manifests as denominator source.
 
 ## 8. Test Architecture
 
@@ -130,8 +145,9 @@ No waiver-based release for full-reproduction claim.
 3. Runtime DOM/behavior parity
 4. Accessibility parity
 5. Visual parity
-6. Installation parity (npm + shadcn registry)
-7. Realworld parity (`test:realworld`)
+6. Coexistence parity (Chakra Wind + shadcn/ui)
+7. Installation parity (npm + shadcn registry)
+8. Realworld parity (`test:realworld`)
 
 ## 8.2 Visual parity rules
 
@@ -142,8 +158,26 @@ No waiver-based release for full-reproduction claim.
   - stable viewport/font/container settings
 - Dynamic regions must be masked or normalized
 - Default policy: zero-diff target (`maxDiffPixels = 0`), exceptions require explicit allowlist with reason
+- Policy reference:
+  - `docs/specs/visual-diff-policy.md`
 
-## 8.3 Realworld parity (`test:realworld`)
+## 8.3 Coexistence Parity (Chakra Wind + shadcn/ui)
+
+### Coexistence matrix
+
+All combinations below must pass:
+
+- preflight: `on`, `off`
+- color mode: `light`, `dark`
+- token override: `off`, `on`
+
+Command contract:
+
+- `pnpm test:coexist`
+- Reference:
+  - `docs/specs/coexistence-test-matrix.md`
+
+## 8.4 Realworld parity (`test:realworld`)
 
 ### Source policy
 
@@ -170,6 +204,11 @@ No waiver-based release for full-reproduction claim.
 - Initial render screenshot is required
 - Every UI state transition step requires `toHaveScreenshot()`
   - examples: open/close, hover/focus-visible, like toggle, retweet toggle, modal states, form validation states
+- Transition coverage must be defined by catalog:
+  - `docs/specs/realworld-transition-catalog.md`
+- Every realworld test case must reference a catalog ID (no uncataloged transition assertion).
+- Catalog completeness command:
+  - `pnpm test:realworld:catalog`
 
 ### Command contract
 
@@ -178,6 +217,7 @@ No waiver-based release for full-reproduction claim.
 - `webServer.command` uses `pnpm start`
 - Add script:
   - `pnpm test:realworld`
+  - `pnpm test:realworld:catalog`
 
 ## 9. Distribution Design
 
@@ -194,12 +234,14 @@ No waiver-based release for full-reproduction claim.
 - Host generated registry under `/r/*.json`
 - Install path:
   - `npx shadcn@latest add <registry-item-url>`
+- Install smoke matrix reference:
+  - `docs/specs/install-smoke-matrix.md`
 
 ## 10. Quality Gates for Release
 
 Release is blocked if any fail:
 
-- parity layers (API/type/runtime/a11y/visual/install)
+- parity layers (API/type/runtime/a11y/visual/coexist/install)
 - `test:realworld` parity
 - license attribution checks
 
@@ -209,6 +251,7 @@ Each 0.x release includes compatibility progress metrics:
 - props covered
 - visual pass rate
 - a11y pass rate
+- coexist pass rate
 - realworld parity pass rate
 
 ## 11. Risks and Mitigations

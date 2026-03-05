@@ -11,3 +11,9 @@
 
 - 各フェーズは「目的 / 手順 / 仕様 / 成果物 / Quality Gate / 失敗条件 / 完了チェックリスト」を含みます。
 - 完了判定は必ず Quality Gate を満たすことを条件とします。
+- 監査可能性を担保する補助仕様:
+- `docs/specs/parity-baseline-manifest-spec.md`
+- `docs/specs/coexistence-test-matrix.md`
+- `docs/specs/install-smoke-matrix.md`
+- `docs/specs/visual-diff-policy.md`
+- `docs/specs/realworld-transition-catalog.md`

@@ -20,6 +20,7 @@
 - ベースアプリ取り込み（固定コピー）
 - Chakra版とWind版の2アプリ構築
 - 共通Playwright E2Eスイート作成
+- 遷移カタログ（screen x transition x assertion）定義
 - UI変化単位のVisualチェック導入
 
 ### Out of Scope
@@ -45,22 +46,30 @@
 - Playwright projects:
 - `realworld-chakra`
 - `realworld-wind`
+- 遷移カタログ:
+- `docs/specs/realworld-transition-catalog.md`
+- 各テストは catalog ID を必須参照
 
 4. Visual checkpoint強制
 - 初期表示直後で screenshot
 - UI状態変化（例: open/close, like/unlike, validation error）ごとに screenshot
 - 差分ログに step名を必須記録
+- catalog 未登録の遷移はテスト追加不可
 
 5. 実行コマンド統合
 - `pnpm build && pnpm exec playwright test --reporter=list`
 - `webServer.command = pnpm start`
 - 追加script: `pnpm test:realworld`
+- 追加script: `pnpm test:realworld:catalog`
 
 ## 4. 仕様（Definition）
 
 - 2プロジェクトは同一E2Eシナリオを使う
 - Chakra版 snapshot を基準とし、Wind版は同名snapshotで比較する
 - screenshot未取得のUI変化ステップはテスト不備としてFail扱い
+- 遷移網羅性はカタログ準拠で判定する（例示ベースでは判定しない）
+- 参照仕様:
+  - `docs/specs/realworld-transition-catalog.md`
 
 ## 5. 成果物
 
@@ -68,7 +77,9 @@
 - `apps/realworld-twitter-chakra`
 - `apps/realworld-twitter-wind`
 - `tests/realworld-e2e`
+- `docs/specs/realworld-transition-catalog.md`
 - `test:realworld` script
+- `test:realworld:catalog` script
 
 ## 6. Quality Gate（完了条件）
 
@@ -83,12 +94,18 @@
 - UI変化イベントの後に screenshot が必ず存在
 - checkpoint漏れ検知ルールを導入済み
 
-### Gate M4-3: 実行成功
+### Gate M4-3: 遷移カタログ完全性
+
+- `docs/specs/realworld-transition-catalog.md` が存在する
+- すべての realworld spec が catalog ID を参照する
+- catalog 未登録のUI遷移が0件
+
+### Gate M4-4: 実行成功
 
 - `pnpm test:realworld` が安定して成功
 - Fail時に「どのステップの見た目差分か」を特定できる
 
-### Gate M4-4: 完全再現判定接続
+### Gate M4-5: 完全再現判定接続
 
 - `realworld_parity_pass` 指標がメインDoDに連結される
 
@@ -97,6 +114,7 @@
 ```bash
 pnpm build && pnpm exec playwright test --reporter=list
 pnpm test:realworld
+pnpm test:realworld:catalog
 ```
 
 ### 証跡（Artifacts）
@@ -104,6 +122,7 @@ pnpm test:realworld
 - Chakra/Wind 両projectの実行ログ
 - 各UI変化ステップのsnapshot
 - fail時の差分画像とstep名
+- catalog準拠率レポート
 
 ## 7. 失敗条件
 
@@ -118,3 +137,4 @@ pnpm test:realworld
 - [ ] shared E2E整備
 - [ ] UI変化ごとの screenshot 強制化
 - [ ] `pnpm test:realworld` 緑化
+- [ ] `pnpm test:realworld:catalog` 緑化
