@@ -43,9 +43,11 @@
 - [x] Pass2 Kickoff（着手）
 - [x] Status: In Progress
 - [x] Chakra UI / shadcn / Playwright 仕様との整合レビュー
-- [ ] 公式情報に基づく前提更新（古い前提の修正）
+- [x] 公式情報に基づく前提更新（古い前提の修正）
 - [x] レビュー文書保存（`docs/reviews/*pass2*.md`）
   - `docs/reviews/2026-03-05-pass2-tech-validity-review-r1.md`
+- [x] Re-Review完了（`S1/S2/S3` open=0）
+- [x] Pass2 Close判定記録
 
 ### Pass 3: Quality Gate Review
 
