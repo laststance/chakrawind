@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.package.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "baseUrl": "../..",
+    "paths": {
+      "@laststance/chakrawind-system": ["packages/chakrawind-system/src/index.ts"],
+      "@laststance/chakrawind-tailwind": ["packages/chakrawind-tailwind/src/index.ts"],
+      "@laststance/chakrawind-react": ["packages/chakrawind-react/src/index.ts"]
+    }
+  },
+  "include": ["./index.ts"],
+  "exclude": ["../../node_modules", "../../dist"]
+}
