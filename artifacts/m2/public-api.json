@@ -1,0 +1,44 @@
+{
+  "generatedAt": "2026-03-05T14:45:43.767Z",
+  "packages": [
+    {
+      "id": "system",
+      "name": "@laststance/chakrawind-system",
+      "valueExports": [
+        "CHAKRAWIND_DEFAULT_TOKENS",
+        "getChakraWindTokenContract"
+      ],
+      "typeExports": [
+        "ChakraWindTokenContract"
+      ]
+    },
+    {
+      "id": "tailwind",
+      "name": "@laststance/chakrawind-tailwind",
+      "valueExports": [
+        "createChakraWindTailwindPreset"
+      ],
+      "typeExports": [
+        "ChakraWindTailwindPreset"
+      ]
+    },
+    {
+      "id": "react",
+      "name": "@laststance/chakrawind-react",
+      "valueExports": [
+        "Box",
+        "Button",
+        "ChakraWindProvider",
+        "createChakraWindProviderContract",
+        "Text"
+      ],
+      "typeExports": [
+        "BoxProps",
+        "ButtonProps",
+        "ChakraWindProviderContract",
+        "ChakraWindProviderProps",
+        "TextProps"
+      ]
+    }
+  ]
+}
