@@ -77,9 +77,11 @@
 - [x] Pass5 Kickoff（着手）
 - [x] Status: In Progress
 - [x] Design ↔ Implementation Plan ↔ M0-M5 の整合チェック
-- [ ] 矛盾修正パッチの適用
+- [x] 矛盾修正パッチの適用
 - [x] 最終整合レポート作成
   - `docs/reviews/2026-03-05-pass5-cross-doc-review-r1.md`
+- [x] Re-Review完了（`S1/S2/S3` open=0）
+- [x] Pass5 Close判定記録
 
 ## 2. Immediate Patch Queue (from Pass 1 R2)
 
@@ -119,7 +121,7 @@
 
 ## 3. Exit Checklist (このTODO完了条件)
 
-- [ ] Pass 1〜5 のレビュー文書が出揃っている
-- [ ] P1-1〜P1-4 が仕様に反映されている
-- [ ] 参照リンク切れなし
-- [ ] `AGENTS.md` / `README.md` と phase/spec 記述が整合している
+- [x] Pass 1〜5 のレビュー文書が出揃っている
+- [x] P1-1〜P1-4 が仕様に反映されている
+- [x] 参照リンク切れなし
+- [x] `AGENTS.md` / `README.md` と phase/spec 記述が整合している
