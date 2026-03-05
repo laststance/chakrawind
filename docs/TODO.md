@@ -40,6 +40,8 @@
 
 ### Pass 2: Tech Validity Review
 
+- [x] Pass2 Kickoff（着手）
+- [ ] Status: In Progress
 - [ ] Chakra UI / shadcn / Playwright 仕様との整合レビュー
 - [ ] 公式情報に基づく前提更新（古い前提の修正）
 - [ ] レビュー文書保存（`docs/reviews/*pass2*.md`）
