@@ -22,8 +22,20 @@ const PACKAGE_API_CONTRACTS = Object.freeze([
     packageName: "@laststance/chakrawind-react",
     packageJsonPath: resolve(process.cwd(), "packages/chakrawind-react/package.json"),
     sourcePath: resolve(process.cwd(), "packages/chakrawind-react/src/index.ts"),
-    expectedValueExports: ["createChakraWindProviderContract"],
-    expectedTypeExports: ["ChakraWindProviderContract", "ChakraWindProviderProps"]
+    expectedValueExports: [
+      "Box",
+      "Button",
+      "ChakraWindProvider",
+      "Text",
+      "createChakraWindProviderContract"
+    ],
+    expectedTypeExports: [
+      "BoxProps",
+      "ButtonProps",
+      "ChakraWindProviderContract",
+      "ChakraWindProviderProps",
+      "TextProps"
+    ]
   }
 ])
 

@@ -7,8 +7,14 @@ import {
   type ChakraWindTailwindPreset
 } from "@laststance/chakrawind-tailwind"
 import {
+  Box,
+  Button,
+  Text,
+  type BoxProps,
+  type ButtonProps,
   createChakraWindProviderContract,
-  type ChakraWindProviderContract
+  type ChakraWindProviderContract,
+  type TextProps
 } from "@laststance/chakrawind-react"
 
 const tokenContract: ChakraWindTokenContract = getChakraWindTokenContract()
@@ -20,10 +26,20 @@ const providerContract: ChakraWindProviderContract = createChakraWindProviderCon
 const presetNameLiteral: "chakrawind" = tailwindPreset.name
 const providerPresetNameLiteral: "chakrawind" = providerContract.preset.name
 const accentColor: string = tokenContract.colors.accent
+const boxProps: BoxProps = { id: "box-1" }
+const textProps: TextProps = { children: "text" }
+const buttonProps: ButtonProps = { children: "button", type: "button" }
 
 void presetNameLiteral
 void providerPresetNameLiteral
 void accentColor
+void boxProps
+void textProps
+void buttonProps
+
+Box(boxProps)
+Text(textProps)
+Button(buttonProps)
 
 // @ts-expect-error createChakraWindProviderContract requires children.
 createChakraWindProviderContract({})
@@ -36,3 +52,7 @@ tokenContract.colors.accent = "#000000"
 
 // @ts-expect-error provider contract has no unknown property.
 providerContract.unknownProperty
+
+// @ts-expect-error button type must match intrinsic button type union.
+const invalidButtonProps: ButtonProps = { type: "link" }
+void invalidButtonProps
