@@ -24,6 +24,13 @@ const COMMAND_SCOPE_FORBIDDEN_PATTERNS = Object.freeze([
   }
 ])
 
+const VISUAL_ALLOWLIST_PATH = resolve(
+  process.cwd(),
+  "artifacts",
+  "parity",
+  "visual-allowlist.json"
+)
+
 /**
  * Returns gate argument from CLI.
  * @returns {string} Gate identifier.
@@ -47,6 +54,17 @@ const getGateName = () => {
 const readRootPackageJson = () => {
   const packageJsonPath = resolve(process.cwd(), "package.json")
   const text = readFileSync(packageJsonPath, "utf8")
+  return JSON.parse(text)
+}
+
+/**
+ * Reads visual allowlist payload.
+ * @returns {{ entries?: Array<Record<string, unknown>> } | Array<Record<string, unknown>>} Parsed allowlist payload.
+ * @example
+ * readVisualAllowlist()
+ */
+const readVisualAllowlist = () => {
+  const text = readFileSync(VISUAL_ALLOWLIST_PATH, "utf8")
   return JSON.parse(text)
 }
 
@@ -110,6 +128,58 @@ const runCommandScopePolicyCheck = () => {
 }
 
 /**
+ * Validates visual allowlist schema and expiration policy.
+ * @returns {{ status: string; mode: string; findings: string[] }} Validation result.
+ * @example
+ * runVisualPolicyCheck()
+ */
+const runVisualPolicyCheck = () => {
+  const today = new Date().toISOString().slice(0, 10)
+  const allowlistPayload = readVisualAllowlist()
+  const entries = Array.isArray(allowlistPayload)
+    ? allowlistPayload
+    : Array.isArray(allowlistPayload.entries)
+      ? allowlistPayload.entries
+      : null
+
+  if (!entries) {
+    return {
+      status: "fail",
+      mode: "policy",
+      findings: ["visual allowlist schema invalid: expected array or { entries: [] }"]
+    }
+  }
+
+  const findings = []
+
+  for (let index = 0; index < entries.length; index += 1) {
+    const entry = entries[index]
+    const requiredFields = ["snapshotName", "reason", "owner", "ticket", "expiresAt"]
+
+    for (const requiredField of requiredFields) {
+      if (typeof entry?.[requiredField] !== "string" || entry[requiredField].trim().length === 0) {
+        findings.push(`allowlist entry ${index} missing required field ${requiredField}`)
+      }
+    }
+
+    if (typeof entry?.expiresAt === "string") {
+      const isDateFormatValid = /^\\d{4}-\\d{2}-\\d{2}$/.test(entry.expiresAt)
+      if (!isDateFormatValid) {
+        findings.push(`allowlist entry ${index} has invalid expiresAt format: ${entry.expiresAt}`)
+      } else if (entry.expiresAt < today) {
+        findings.push(`allowlist entry ${index} expired: ${entry.expiresAt}`)
+      }
+    }
+  }
+
+  return {
+    status: findings.length === 0 ? "pass" : "fail",
+    mode: "policy",
+    findings
+  }
+}
+
+/**
  * Runs gate logic for the specified gate.
  * @param {string} gateName - Gate identifier.
  * @returns {{ status: string; mode: string; findings: string[] }} Gate result.
@@ -119,6 +189,10 @@ const runCommandScopePolicyCheck = () => {
 const runGate = (gateName) => {
   if (gateName === "command-scope-policy") {
     return runCommandScopePolicyCheck()
+  }
+
+  if (gateName === "visual-policy") {
+    return runVisualPolicyCheck()
   }
 
   return {

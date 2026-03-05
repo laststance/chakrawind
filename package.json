@@ -16,6 +16,7 @@
     "test:types": "node ./scripts/run-m1-gate.mjs types",
     "test:runtime": "node ./scripts/run-m1-gate.mjs runtime",
     "test:a11y": "node ./scripts/run-m1-gate.mjs a11y",
+    "test:visual": "pnpm test:visual:parity",
     "test:visual:parity": "node ./scripts/run-m1-gate.mjs visual-parity",
     "test:visual:policy": "node ./scripts/run-m1-gate.mjs visual-policy",
     "test:command-scope:policy": "node ./scripts/run-m1-gate.mjs command-scope-policy",
