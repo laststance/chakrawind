@@ -52,10 +52,11 @@
 ### Pass 3: Quality Gate Review
 
 - [x] Pass3 Kickoff（着手）
-- [ ] Status: In Progress
-- [ ] Gate測定可能性レビュー（コマンド・証跡・再現性）
-- [ ] CI再現性レビュー（Fail Fastと証跡の一致）
-- [ ] レビュー文書保存（`docs/reviews/*pass3*.md`）
+- [x] Status: In Progress
+- [x] Gate測定可能性レビュー（コマンド・証跡・再現性）
+- [x] CI再現性レビュー（Fail Fastと証跡の一致）
+- [x] レビュー文書保存（`docs/reviews/*pass3*.md`）
+  - `docs/reviews/2026-03-05-pass3-quality-gate-review-r1.md`
 
 ### Pass 4: Release/Legal Review
 
