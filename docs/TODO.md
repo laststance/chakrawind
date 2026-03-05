@@ -66,9 +66,11 @@
 - [x] Status: In Progress
 - [x] npm/registry配布手順の監査
 - [x] MIT表記 / NOTICE運用の監査
-- [ ] 公開前チェックリスト確定版の作成
+- [x] 公開前チェックリスト確定版の作成
 - [x] レビュー文書保存（`docs/reviews/*pass4*.md`）
   - `docs/reviews/2026-03-05-pass4-release-legal-review-r1.md`
+- [x] Re-Review完了（`S1/S2/S3` open=0）
+- [x] Pass4 Close判定記録
 
 ### Pass 5: Cross-Doc Consistency Review
 
