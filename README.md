@@ -51,3 +51,12 @@ Requirement completion is determined by each phase Quality Gate, not by subjecti
 - [Test Command Scope Spec](docs/specs/test-command-scope.md)
 - [License Attribution Policy](docs/specs/license-attribution-policy.md)
 - [Release Preflight Checklist](docs/specs/release-preflight-checklist.md)
+- [Developer Required Commands (M0)](docs/specs/developer-required-commands.md)
+
+## Quick Verification (Post-Clone)
+
+Run the M0 bootstrap validation contract with:
+
+```bash
+pnpm verify:m0
+```

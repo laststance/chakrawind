@@ -73,6 +73,8 @@
   - `docs/specs/chakra-baseline-runtime-contract.md`
 - ライセンス運用は以下仕様に従う
   - `docs/specs/license-attribution-policy.md`
+- 開発者向け必須コマンドは以下仕様に従う
+  - `docs/specs/developer-required-commands.md`
 
 - ツールチェイン仕様
 - `pnpm` を標準パッケージマネージャとして採用
@@ -137,8 +139,8 @@ pnpm lint
 
 ## 9. 完了チェックリスト
 
-- [ ] ワークスペース雛形作成完了
-- [ ] baseline version lock 完了
-- [ ] 共通script定義完了
-- [ ] 最小CI通過
-- [ ] ライセンス規約整備完了
+- [x] ワークスペース雛形作成完了
+- [x] baseline version lock 完了
+- [x] 共通script定義完了
+- [x] 最小CI通過
+- [x] ライセンス規約整備完了

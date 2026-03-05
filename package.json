@@ -10,9 +10,12 @@
   },
   "scripts": {
     "baseline:lock:verify": "node ./scripts/verify-baseline-lock.mjs",
+    "verify:m0": "pnpm install --frozen-lockfile && pnpm baseline:lock:verify && pnpm build && pnpm typecheck && pnpm lint",
     "build": "tsc -p tsconfig.json",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "lint": "eslint \"src/**/*.ts\"",
+    "test": "node -e \"console.log('M0: no tests defined yet')\"",
+    "format": "node -e \"console.log('M0: formatter will be configured in later milestones')\"",
     "clean": "rm -rf dist"
   },
   "devDependencies": {
