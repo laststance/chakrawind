@@ -97,7 +97,7 @@ Exit criteria:
 
 Exit criteria:
 
-- `pnpm test:realworld` and all parity gates pass in release CI
+- `pnpm test:e2e:realworld` and all parity gates pass in release CI
 - npm + registry install smoke passes
 
 ## 3. CI Command Contract
@@ -110,14 +110,21 @@ pnpm test:api
 pnpm test:types
 pnpm test:runtime
 pnpm test:a11y
-pnpm exec playwright test --project=chromium --reporter=list
+pnpm test:visual:parity
 pnpm test:visual:policy
+pnpm test:command-scope:policy
 pnpm test:coexist
 pnpm test:install:npm
 pnpm test:install:registry
-pnpm test:realworld
+pnpm test:e2e:realworld
+pnpm realworld:flow-manifest:verify
 pnpm test:realworld:catalog
+pnpm legal:notice:verify
+pnpm legal:attribution:verify
 ```
+
+- Scope policy reference:
+  - `docs/specs/test-command-scope.md`
 
 ## 4. Branch and Release Policy
 

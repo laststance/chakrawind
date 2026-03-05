@@ -248,7 +248,7 @@ Command contract:
 Release is blocked if any fail:
 
 - parity layers (API/type/runtime/a11y/visual/coexist/install)
-- `test:realworld` parity
+- `test:e2e:realworld` parity (`test:realworld` is backward-compatible alias)
 - license attribution checks
 
 Each 0.x release includes compatibility progress metrics:

@@ -87,7 +87,7 @@
 
 - [x] `test:visual:parity` を正準コマンドとして明記
 - [x] `test:visual` を残す場合は「非Gate alias」と明示
-- [ ] 対象:
+- [x] 対象:
   - `docs/specs/visual-diff-policy.md`
   - `docs/specs/test-command-scope.md`
   - `docs/plans/phases/M1-compatibility-harness-and-parity-gates.md`
@@ -97,7 +97,7 @@
 - [x] `pnpm test:command-scope:policy` をM1 Gate必須コマンドに追加
 - [x] `pnpm test:command-scope:policy` をM5 Gate必須コマンドに追加
 - [x] 非scoped Playwright呼び出しをFail Fast条件に追加
-- [ ] 対象:
+- [x] 対象:
   - `docs/specs/test-command-scope.md`
   - `docs/plans/phases/M1-compatibility-harness-and-parity-gates.md`
   - `docs/plans/phases/M5-distribution-and-0x-release-process.md`
@@ -105,7 +105,7 @@
 ### P1-3 (S2): M4 deliverable completeness
 
 - [x] M4成果物に `test:e2e:realworld` script を追記
-- [ ] 対象:
+- [x] 対象:
   - `docs/plans/phases/M4-realworld-parity-test-realworld.md`
 
 ### P1-4 (S2): Realworld denominator lock
@@ -113,7 +113,7 @@
 - [x] `implemented flows` の分母ソースを固定仕様化
 - [x] `artifacts/realworld/flow-manifest.json` の追加検討
 - [x] update手順・versioning・checksum方針を仕様へ追加
-- [ ] 対象:
+- [x] 対象:
   - `docs/specs/realworld-transition-catalog.md`
   - `docs/plans/phases/M4-realworld-parity-test-realworld.md`
 
