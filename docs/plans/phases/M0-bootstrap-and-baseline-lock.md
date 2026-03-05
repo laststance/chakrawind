@@ -69,6 +69,8 @@
 - ベースライン固定仕様
 - `@chakra-ui/react@3.34.0` 以外を互換比較対象として扱わない
 - バージョン更新は別フェーズの明示的アップグレード手順でのみ許可
+- baseline fixture runtime assumptions は以下仕様に従う
+  - `docs/specs/chakra-baseline-runtime-contract.md`
 
 - ツールチェイン仕様
 - `pnpm` を標準パッケージマネージャとして採用

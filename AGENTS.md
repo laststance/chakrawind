@@ -21,7 +21,7 @@ Chakra Wind is a Chakra UI compatible implementation that uses Tailwind CSS as i
 
 3. Two supported installation paths
 - npm package installation (`node_modules` path).
-- shadcn registry installation (`npx shadcn add <registry-item-url>` path).
+- shadcn registry installation (`npx shadcn@latest add <registry-item-url>` path).
 
 ## Source of Truth for Delivery
 
@@ -36,6 +36,7 @@ The phase documents define how to satisfy the three requirements:
 
 Audit specifications:
 
+- `docs/specs/chakra-baseline-runtime-contract.md`
 - `docs/specs/parity-baseline-manifest-spec.md`
 - `docs/specs/coexistence-test-matrix.md`
 - `docs/specs/install-smoke-matrix.md`

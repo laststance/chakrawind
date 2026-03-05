@@ -10,7 +10,7 @@
 Build **Chakra Wind**, a Tailwind CSS style-engine replacement for Chakra UI, with strict compatibility and two install paths:
 
 - npm package install (`node_modules`)
-- shadcn registry install (`npx shadcn add <url>`)
+- shadcn registry install (`npx shadcn@latest add <url>`)
 
 Success condition is defined by objective compatibility tests, including visual parity.
 
@@ -106,6 +106,8 @@ chakrawind/
 - Keep Chakra upstream reference in `fixtures/chakra-upstream-3.34.0`
 - Use it as **comparison target only**, not as product package
 - Track imported/referenced files with attribution headers and NOTICE aggregation
+- Baseline fixture runtime/provider assumptions are fixed by:
+  - `docs/specs/chakra-baseline-runtime-contract.md`
 
 ## 7. Compatibility Definition (DoD)
 
@@ -213,11 +215,15 @@ Command contract:
 ### Command contract
 
 - Build first, then Playwright:
-  - `pnpm build && pnpm exec playwright test --reporter=list`
+  - `pnpm build && pnpm test:e2e:realworld`
 - `webServer.command` uses `pnpm start`
 - Add script:
+  - `pnpm test:e2e:realworld`
   - `pnpm test:realworld`
   - `pnpm test:realworld:catalog`
+  - `pnpm test:realworld` is a backward-compatible alias for `pnpm test:e2e:realworld`
+- Command scope policy reference:
+  - `docs/specs/test-command-scope.md`
 
 ## 9. Distribution Design
 

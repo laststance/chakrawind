@@ -20,7 +20,7 @@ Chakra Wind is an OSS project to reproduce Chakra UI on top of Tailwind CSS.
 
 3. Support two installation methods
 - npm install (`node_modules`).
-- shadcn registry install (`npx shadcn add <registry-item-url>`).
+- shadcn registry install (`npx shadcn@latest add <registry-item-url>`).
 
 ## How These Requirements Are Achieved
 
@@ -41,6 +41,7 @@ Requirement completion is determined by each phase Quality Gate, not by subjecti
 - [Implementation Plan](docs/plans/2026-03-05-chakrawind-implementation-plan.md)
 - [Project TODO](docs/TODO.md)
 - [Phase Index](docs/plans/phases/README.md)
+- [Chakra Baseline Runtime Contract](docs/specs/chakra-baseline-runtime-contract.md)
 - [Parity Baseline Manifest Spec](docs/specs/parity-baseline-manifest-spec.md)
 - [Coexistence Test Matrix](docs/specs/coexistence-test-matrix.md)
 - [Install Smoke Matrix](docs/specs/install-smoke-matrix.md)

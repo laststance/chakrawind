@@ -16,6 +16,17 @@ Define auditable visual comparison policy for parity decisions.
 - fixed viewport and font setup
 - dynamic areas must be masked or normalized
 
+## Configuration Ownership
+
+- Canonical defaults must be defined in `playwright.config.*` under:
+  - `expect.toHaveScreenshot`
+- Required global defaults:
+  - `animations: "disabled"`
+  - `caret: "hide"`
+  - `maxDiffPixels: 0` (unless allowlist exception applies)
+- Per-test overrides are allowed only with inline reason comment.
+- Snapshot location strategy must be configured centrally (`snapshotPathTemplate` or equivalent project-level rule), not ad-hoc per test file.
+
 ## Exception Policy (Allowlist)
 
 Exceptions are allowed only through:

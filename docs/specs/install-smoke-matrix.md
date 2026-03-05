@@ -5,7 +5,7 @@
 Define mandatory environments to validate both supported installation paths:
 
 - npm install (`node_modules`)
-- shadcn registry install (`npx shadcn add <registry-item-url>`)
+- shadcn registry install (`npx shadcn@latest add <registry-item-url>`)
 
 ## Required Commands
 
@@ -38,4 +38,3 @@ All rows are mandatory.
 
 - One failed matrix row => install support is not complete.
 - Release gate must fail.
-

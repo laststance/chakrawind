@@ -19,3 +19,4 @@
 - `docs/specs/realworld-transition-catalog.md`
 - `docs/specs/realworld-flow-manifest-spec.md`
 - `docs/specs/test-command-scope.md`
+- `docs/specs/chakra-baseline-runtime-contract.md`

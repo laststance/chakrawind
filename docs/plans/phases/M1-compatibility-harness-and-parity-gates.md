@@ -79,6 +79,7 @@
   - default `maxDiffPixels=0`
   - 例外は allowlist に理由・期限付きで登録
 - 参照仕様:
+  - `docs/specs/chakra-baseline-runtime-contract.md`
   - `docs/specs/parity-baseline-manifest-spec.md`
   - `docs/specs/coexistence-test-matrix.md`
   - `docs/specs/install-smoke-matrix.md`
