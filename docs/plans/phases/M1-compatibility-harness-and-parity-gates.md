@@ -159,6 +159,7 @@ pnpm test:install:registry
 - Runtime/A11yレポート
 - Visual差分画像（fail時）
 - visual policy監査レポート
+- command-scope policy監査レポート
 - coexist matrix レポート
 - npm/registry導入ログ
 - install smoke matrix レポート

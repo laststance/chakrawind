@@ -109,7 +109,6 @@
 
 ### Gate M4-4: 実行成功
 
-- `pnpm test:realworld` が安定して成功
 - `pnpm test:e2e:realworld` が安定して成功
 - Fail時に「どのステップの見た目差分か」を特定できる
 
@@ -131,6 +130,7 @@ pnpm test:realworld:catalog
 - 各UI変化ステップのsnapshot
 - fail時の差分画像とstep名
 - catalog準拠率レポート
+- flow manifest verify レポート
 
 ## 7. 失敗条件
 

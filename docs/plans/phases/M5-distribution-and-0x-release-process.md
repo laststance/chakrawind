@@ -75,6 +75,7 @@
 
 - npm package が `pnpm pack` で生成可能
 - `npx shadcn@latest add <url>` で導入成功
+- `<url>` は同一パイプラインで生成された `public/r/*.json` を参照する
 
 ### Gate M5-2: 事前検証の完全実行
 
@@ -134,7 +135,9 @@ pnpm test:realworld:catalog
 - baseline manifest（export/type/component）
 - baseline checksum検証結果
 - visual policy監査レポート
+- command-scope policy監査レポート
 - install smoke matrix 結果
+- flow manifest verify レポート
 - ライセンス監査ログ
 
 ## 7. 失敗条件

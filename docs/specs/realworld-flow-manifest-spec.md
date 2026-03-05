@@ -45,6 +45,13 @@ Each `flows[]` item must include:
 - `pnpm realworld:flow-manifest:freeze`
 - `pnpm realworld:flow-manifest:verify`
 
+## Required Evidence
+
+- `realworld:flow-manifest:verify` must output:
+  - manifest path
+  - checksum validation result
+  - denominator flow count (`required=true && status=implemented`)
+
 ## Failure Policy
 
 - Missing manifest/checksum => fail

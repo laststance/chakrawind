@@ -36,3 +36,11 @@ Prevent cross-phase contamination by enforcing phase-scoped test commands.
 - Required policy check command:
   - `pnpm test:command-scope:policy`
 - `pnpm test:command-scope:policy` must be included in required gate commands for `M1` and `M5`.
+
+## Required Evidence
+
+- Policy check must emit an auditable report artifact in CI logs or file output.
+- Minimum evidence key:
+  - count of inspected gate definitions
+  - count/list of violations
+  - pass/fail summary
