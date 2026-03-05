@@ -35,6 +35,9 @@ jobs:
       - name: Verify parity baseline manifests
         run: pnpm parity:baseline:verify
 
+      - name: Run M1 gate command shells
+        run: pnpm test:m1:gates
+
       - name: Build
         run: pnpm build
 
