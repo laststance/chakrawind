@@ -91,7 +91,7 @@ pnpm test:api
 pnpm test:types
 pnpm test:runtime
 pnpm test:a11y
-pnpm exec playwright test --project=chromium --reporter=list
+pnpm test:visual:parity
 ```
 
 ### 証跡（Artifacts）
