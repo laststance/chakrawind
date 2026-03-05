@@ -75,10 +75,11 @@
 ### Pass 5: Cross-Doc Consistency Review
 
 - [x] Pass5 Kickoff（着手）
-- [ ] Status: In Progress
-- [ ] Design ↔ Implementation Plan ↔ M0-M5 の整合チェック
+- [x] Status: In Progress
+- [x] Design ↔ Implementation Plan ↔ M0-M5 の整合チェック
 - [ ] 矛盾修正パッチの適用
-- [ ] 最終整合レポート作成
+- [x] 最終整合レポート作成
+  - `docs/reviews/2026-03-05-pass5-cross-doc-review-r1.md`
 
 ## 2. Immediate Patch Queue (from Pass 1 R2)
 
