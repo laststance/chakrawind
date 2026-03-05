@@ -74,6 +74,8 @@
 
 ### Pass 5: Cross-Doc Consistency Review
 
+- [x] Pass5 Kickoff（着手）
+- [ ] Status: In Progress
 - [ ] Design ↔ Implementation Plan ↔ M0-M5 の整合チェック
 - [ ] 矛盾修正パッチの適用
 - [ ] 最終整合レポート作成
