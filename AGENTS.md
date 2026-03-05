@@ -10,6 +10,7 @@ Chakra Wind is a Chakra UI compatible implementation that uses Tailwind CSS as i
 - Target baseline is fixed to `@chakra-ui/react@3.34.0`.
 - "Fully reproduced" means all parity gates are green (API, types, runtime, a11y, visual, coexist, install, realworld).
 - `100%` metrics must use baseline manifests generated from `@chakra-ui/react@3.34.0`.
+- Quality Gates must use phase-scoped test wrapper commands (do not call broad playwright command directly).
 
 2. Coexistence with shadcn/ui without regressions
 - Chakra Wind and shadcn/ui must be usable in the same application.
@@ -40,5 +41,7 @@ Audit specifications:
 - `docs/specs/install-smoke-matrix.md`
 - `docs/specs/visual-diff-policy.md`
 - `docs/specs/realworld-transition-catalog.md`
+- `docs/specs/realworld-flow-manifest-spec.md`
+- `docs/specs/test-command-scope.md`
 
 Do not claim requirement completion unless corresponding phase Quality Gates are satisfied.

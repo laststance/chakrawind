@@ -8,6 +8,7 @@ Chakra Wind is an OSS project to reproduce Chakra UI on top of Tailwind CSS.
 - Baseline target: `@chakra-ui/react@3.34.0`.
 - Completion condition: all parity gates are green.
 - `100%` metrics must use baseline manifests generated from fixed baseline.
+- Phase gates must use scoped test wrappers (see test command scope spec).
 
 2. Work together with shadcn/ui without issues
 - Chakra Wind and shadcn/ui can be used simultaneously in one app.
@@ -38,9 +39,12 @@ Requirement completion is determined by each phase Quality Gate, not by subjecti
 
 - [Design](docs/plans/2026-03-05-chakrawind-design.md)
 - [Implementation Plan](docs/plans/2026-03-05-chakrawind-implementation-plan.md)
+- [Project TODO](docs/TODO.md)
 - [Phase Index](docs/plans/phases/README.md)
 - [Parity Baseline Manifest Spec](docs/specs/parity-baseline-manifest-spec.md)
 - [Coexistence Test Matrix](docs/specs/coexistence-test-matrix.md)
 - [Install Smoke Matrix](docs/specs/install-smoke-matrix.md)
 - [Visual Diff Policy](docs/specs/visual-diff-policy.md)
 - [Realworld Transition Catalog](docs/specs/realworld-transition-catalog.md)
+- [Realworld Flow Manifest Spec](docs/specs/realworld-flow-manifest-spec.md)
+- [Test Command Scope Spec](docs/specs/test-command-scope.md)

@@ -57,9 +57,11 @@
 - catalog 未登録の遷移はテスト追加不可
 
 5. 実行コマンド統合
-- `pnpm build && pnpm exec playwright test --reporter=list`
+- `pnpm build && pnpm test:e2e:realworld`
 - `webServer.command = pnpm start`
+- `pnpm test:realworld` は `pnpm test:e2e:realworld` の後方互換エイリアスとして定義
 - 追加script: `pnpm test:realworld`
+- 追加script: `pnpm test:e2e:realworld`
 - 追加script: `pnpm test:realworld:catalog`
 
 ## 4. 仕様（Definition）
@@ -70,6 +72,8 @@
 - 遷移網羅性はカタログ準拠で判定する（例示ベースでは判定しない）
 - 参照仕様:
   - `docs/specs/realworld-transition-catalog.md`
+  - `docs/specs/realworld-flow-manifest-spec.md`
+  - `docs/specs/test-command-scope.md`
 
 ## 5. 成果物
 
@@ -79,6 +83,7 @@
 - `tests/realworld-e2e`
 - `docs/specs/realworld-transition-catalog.md`
 - `test:realworld` script
+- `test:e2e:realworld` script
 - `test:realworld:catalog` script
 
 ## 6. Quality Gate（完了条件）
@@ -97,12 +102,15 @@
 ### Gate M4-3: 遷移カタログ完全性
 
 - `docs/specs/realworld-transition-catalog.md` が存在する
+- `artifacts/realworld/flow-manifest.json` が存在する
+- `pnpm realworld:flow-manifest:verify` が成功する
 - すべての realworld spec が catalog ID を参照する
 - catalog 未登録のUI遷移が0件
 
 ### Gate M4-4: 実行成功
 
 - `pnpm test:realworld` が安定して成功
+- `pnpm test:e2e:realworld` が安定して成功
 - Fail時に「どのステップの見た目差分か」を特定できる
 
 ### Gate M4-5: 完全再現判定接続
@@ -112,8 +120,8 @@
 ### 検証コマンド（必須）
 
 ```bash
-pnpm build && pnpm exec playwright test --reporter=list
-pnpm test:realworld
+pnpm build && pnpm test:e2e:realworld
+pnpm realworld:flow-manifest:verify
 pnpm test:realworld:catalog
 ```
 
@@ -137,4 +145,5 @@ pnpm test:realworld:catalog
 - [ ] shared E2E整備
 - [ ] UI変化ごとの screenshot 強制化
 - [ ] `pnpm test:realworld` 緑化
+- [ ] `pnpm test:e2e:realworld` 緑化
 - [ ] `pnpm test:realworld:catalog` 緑化

@@ -53,7 +53,7 @@
 - `test:types`: 型受理/拒否一致
 - `test:runtime`: DOM/イベント挙動一致
 - `test:a11y`: role/aria/keyboard/focus一致
-- `test:visual`: screenshot一致
+- `test:visual:parity`: screenshot一致
 - `test:visual:policy`: visual allowlist監査
 - `test:coexist`: Chakra Wind + shadcn/ui 共存検証
 - `test:install:*`: npm / registry 導入成功
@@ -83,6 +83,7 @@
   - `docs/specs/coexistence-test-matrix.md`
   - `docs/specs/install-smoke-matrix.md`
   - `docs/specs/visual-diff-policy.md`
+  - `docs/specs/test-command-scope.md`
 
 ## 5. 成果物
 
@@ -109,8 +110,9 @@
 - `pnpm test:types`
 - `pnpm test:runtime`
 - `pnpm test:a11y`
-- `pnpm exec playwright test --project=chromium --reporter=list`
+- `pnpm test:visual:parity`
 - `pnpm test:visual:policy`
+- `pnpm test:command-scope:policy`
 - `pnpm test:coexist`
 - `pnpm test:install:npm`
 - `pnpm test:install:registry`
@@ -139,8 +141,9 @@ pnpm test:api
 pnpm test:types
 pnpm test:runtime
 pnpm test:a11y
-pnpm exec playwright test --project=chromium --reporter=list
+pnpm test:visual:parity
 pnpm test:visual:policy
+pnpm test:command-scope:policy
 pnpm test:coexist
 pnpm test:install:npm
 pnpm test:install:registry
@@ -164,6 +167,7 @@ pnpm test:install:registry
 - ハーネスが片系（ChakraまたはWind）しか描画できない
 - テストが層別に分離されていない
 - CIで再現不能なローカル依存挙動がある
+- 非scopedな `pnpm exec playwright test` 呼び出しがGate定義へ混入している
 
 ## 8. 完了チェックリスト
 

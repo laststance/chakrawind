@@ -32,7 +32,8 @@ Each exception entry must include:
 
 ## Required Commands
 
-- `pnpm test:visual`
+- `pnpm test:visual:parity` (canonical gate command)
+- `pnpm test:visual` (legacy alias; must delegate to `test:visual:parity`)
 - `pnpm test:visual:policy`
 
 `test:visual:policy` validates:
@@ -41,7 +42,15 @@ Each exception entry must include:
 - no expired exception
 - no exception without owner/reason/ticket
 
+## Coexistence Snapshot Keying
+
+- Coexist snapshots must use:
+  - `tests/__screenshots__/coexist/{matrix-id}/{step-name}.png`
+- For allowlist entry `snapshotName`, use:
+  - `coexist/{matrix-id}/{step-name}.png`
+- `matrix-id` must follow:
+  - `preflight-{on|off}__mode-{light|dark}__token-{on|off}`
+
 ## Failure Policy
 
 - Any violation of this policy => visual parity gate fails.
-

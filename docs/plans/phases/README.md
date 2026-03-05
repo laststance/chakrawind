@@ -17,3 +17,5 @@
 - `docs/specs/install-smoke-matrix.md`
 - `docs/specs/visual-diff-policy.md`
 - `docs/specs/realworld-transition-catalog.md`
+- `docs/specs/realworld-flow-manifest-spec.md`
+- `docs/specs/test-command-scope.md`

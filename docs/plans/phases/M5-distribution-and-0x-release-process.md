@@ -59,6 +59,8 @@
   - `docs/specs/install-smoke-matrix.md`
   - `docs/specs/visual-diff-policy.md`
   - `docs/specs/realworld-transition-catalog.md`
+  - `docs/specs/realworld-flow-manifest-spec.md`
+  - `docs/specs/test-command-scope.md`
 
 ## 5. 成果物
 
@@ -84,12 +86,13 @@
 - `pnpm test:types`
 - `pnpm test:runtime`
 - `pnpm test:a11y`
-- `pnpm exec playwright test --project=chromium --reporter=list`
+- `pnpm test:visual:parity`
 - `pnpm test:visual:policy`
+- `pnpm test:command-scope:policy`
 - `pnpm test:coexist`
 - `pnpm test:install:npm`
 - `pnpm test:install:registry`
-- `pnpm test:realworld`
+- `pnpm test:e2e:realworld`
 - `pnpm test:realworld:catalog`
 
 ### Gate M5-3: 透明性
@@ -112,12 +115,13 @@ pnpm test:api
 pnpm test:types
 pnpm test:runtime
 pnpm test:a11y
-pnpm exec playwright test --project=chromium --reporter=list
+pnpm test:visual:parity
 pnpm test:visual:policy
+pnpm test:command-scope:policy
 pnpm test:coexist
 pnpm test:install:npm
 pnpm test:install:registry
-pnpm test:realworld
+pnpm test:e2e:realworld
 pnpm test:realworld:catalog
 ```
 
@@ -138,6 +142,7 @@ pnpm test:realworld:catalog
 - 配布成果物と実際導入手順が一致しない
 - ゲート未達のまま公開される
 - 互換率がリリース情報に含まれない
+- 非scopedな `pnpm exec playwright test` 呼び出しがGate定義へ混入している
 
 ## 8. 完了チェックリスト
 

@@ -36,8 +36,16 @@ Define complete transition coverage for `test:realworld`.
 ## Completeness Gate
 
 - Command: `pnpm test:realworld:catalog`
+- Flow manifest verify command: `pnpm realworld:flow-manifest:verify`
 - Pass condition:
-- Catalog IDs referenced in tests == catalog entries for implemented flows
+- Catalog IDs referenced in tests == flow IDs in `artifacts/realworld/flow-manifest.json` where `required=true` and `status=implemented`
 - No duplicate catalog IDs
 - No dead catalog IDs (defined but never used)
 
+## Denominator Lock
+
+- Denominator source is fixed to:
+  - `artifacts/realworld/flow-manifest.json`
+  - `artifacts/realworld/flow-manifest-checksums.json`
+- Detailed schema/rules:
+  - `docs/specs/realworld-flow-manifest-spec.md`
