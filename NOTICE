@@ -1,0 +1,11 @@
+Chakra Wind NOTICE
+=================
+
+This file will track third-party attribution notices required by the project.
+
+As of bootstrap (M0-1), no third-party source files have been vendored into this repository.
+
+When adding upstream-derived source code:
+1. Keep the original license header when required.
+2. Record source repository, path, commit/tag, and license in this NOTICE file.
+3. Ensure compliance with docs/specs/license-attribution-policy.md.
