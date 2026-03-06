@@ -76,7 +76,7 @@ const writeVisualParityReport = (exitCode) => {
   writeFileSync(VISUAL_PARITY_REPORT_PATH, `${JSON.stringify(reportPayload, null, 2)}\n`, "utf8")
 }
 
-const extraArguments = process.argv.slice(2)
+const extraArguments = process.argv.slice(2).filter((argument) => argument !== "--")
 const exitCode = runVisualParity(extraArguments)
 writeVisualParityReport(exitCode)
 process.exit(exitCode)

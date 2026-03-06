@@ -34,6 +34,7 @@ The phase specs are the execution contract for requirement delivery:
 - [M5 Distribution and 0.x release process](docs/plans/phases/M5-distribution-and-0x-release-process.md)
 
 Requirement completion is determined by each phase Quality Gate, not by subjective review.
+The M4 `realworld_parity_pass` indicator is generated at `artifacts/reports/m4/realworld-parity.json`.
 
 ## Design and Planning Documents
 

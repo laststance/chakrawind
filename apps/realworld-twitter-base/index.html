@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en" data-realworld-variant="base">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Chakra Wind Realworld Twitter Base</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+        --cw-surface: #ffffff;
+        --cw-surface-alt: #f8fafc;
+        --cw-border: #cbd5e1;
+        --cw-foreground: #0f172a;
+        --cw-muted: #475569;
+        --cw-accent: #2563eb;
+        --cw-danger: #b91c1c;
+        --cw-spacing-4: 16px;
+        --cw-spacing-5: 20px;
+        --cw-spacing-6: 24px;
+        --cw-radius-2: 8px;
+        --cw-radius-3: 12px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--cw-surface-alt);
+        color: var(--cw-foreground);
+      }
+
+      main {
+        max-width: 840px;
+        margin: 0 auto;
+        padding: var(--cw-spacing-6);
+        display: grid;
+        gap: var(--cw-spacing-5);
+      }
+
+      section {
+        border: 1px solid var(--cw-border);
+        border-radius: var(--cw-radius-3);
+        background: var(--cw-surface);
+        padding: var(--cw-spacing-5);
+      }
+
+      h1,
+      h2 {
+        margin: 0 0 var(--cw-spacing-4);
+        line-height: 1.3;
+      }
+
+      p {
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      ul {
+        margin: 0;
+        padding-left: var(--cw-spacing-5);
+      }
+
+      li + li {
+        margin-top: var(--cw-spacing-4);
+      }
+
+      .stack {
+        display: grid;
+        gap: var(--cw-spacing-4);
+      }
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: var(--cw-spacing-4);
+      }
+
+      .muted {
+        color: var(--cw-muted);
+      }
+
+      input,
+      button {
+        font: inherit;
+      }
+
+      input {
+        border: 1px solid var(--cw-border);
+        border-radius: var(--cw-radius-2);
+        padding: 10px 12px;
+        min-width: 180px;
+        background: #fff;
+      }
+
+      button {
+        border: 0;
+        border-radius: var(--cw-radius-2);
+        padding: 10px 14px;
+        cursor: pointer;
+        background: var(--cw-accent);
+        color: #fff;
+      }
+
+      button[disabled] {
+        cursor: not-allowed;
+        opacity: 0.55;
+      }
+
+      .outline-button {
+        border: 1px solid var(--cw-border);
+        background: transparent;
+        color: var(--cw-foreground);
+      }
+
+      .error {
+        color: var(--cw-danger);
+      }
+    </style>
+  </head>
+  <body>
+    <main data-testid="realworld-root">
+      <section data-testid="home-timeline">
+        <h1>Chakra Wind Realworld Timeline</h1>
+        <p class="muted">Deterministic test page for Chakra/Wind parity checks.</p>
+        <ul id="timeline-list" aria-label="timeline">
+          <li id="timeline-primary">
+            <p><strong>First post</strong> from baseline fixture.</p>
+            <div class="row">
+              <button
+                id="like-button"
+                class="outline-button"
+                type="button"
+                data-state="off"
+                data-testid="like-button"
+                disabled
+              >
+                Like (off)
+              </button>
+              <button
+                id="retweet-button"
+                class="outline-button"
+                type="button"
+                data-state="off"
+                data-testid="retweet-button"
+                disabled
+              >
+                Retweet (off)
+              </button>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section data-testid="login-section">
+        <h2>Login</h2>
+        <form id="login-form" class="stack" data-testid="login-form">
+          <div class="row">
+            <label>
+              Username
+              <input id="username-input" data-testid="username-input" name="username" type="text" required />
+            </label>
+            <label>
+              Password
+              <input id="password-input" data-testid="password-input" name="password" type="password" required />
+            </label>
+          </div>
+          <div class="row">
+            <button id="login-submit" data-testid="login-submit" type="submit">Sign in</button>
+            <p id="auth-state" data-testid="auth-state" class="muted">State: Guest</p>
+          </div>
+          <p id="login-error" data-testid="login-error" class="error" role="alert" hidden>
+            Invalid credentials
+          </p>
+        </form>
+      </section>
+
+      <section data-testid="composer-section">
+        <h2>Composer</h2>
+        <div class="stack">
+          <label>
+            New post
+            <input id="composer-input" data-testid="composer-input" type="text" />
+          </label>
+          <button id="composer-submit" data-testid="composer-submit" type="button" disabled>
+            Create post
+          </button>
+        </div>
+      </section>
+
+      <section data-testid="thread-section">
+        <h2>Thread reply</h2>
+        <div class="stack">
+          <label>
+            Reply
+            <input id="reply-input" data-testid="reply-input" type="text" />
+          </label>
+          <button id="reply-submit" data-testid="reply-submit" type="button" disabled>
+            Submit reply
+          </button>
+          <ul id="reply-list" data-testid="reply-list" aria-label="reply list"></ul>
+        </div>
+      </section>
+
+      <section data-testid="notification-section">
+        <h2>Notifications</h2>
+        <div class="stack">
+          <button id="notification-trigger" data-testid="notification-trigger" type="button" disabled>
+            Simulate notification
+          </button>
+          <ul id="notification-list" data-testid="notification-list" aria-label="notification list"></ul>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      /**
+       * Returns all controls that require authentication.
+       * @returns {HTMLElement[]} Authentication-required controls.
+       * @example
+       * getAuthRequiredControls()
+       */
+      const getAuthRequiredControls = () => {
+        return [
+          document.getElementById("like-button"),
+          document.getElementById("retweet-button"),
+          document.getElementById("composer-submit"),
+          document.getElementById("reply-submit"),
+          document.getElementById("notification-trigger")
+        ]
+      }
+
+      /**
+       * Applies authenticated/guest state to page controls.
+       * @param {boolean} isAuthenticated - Current auth state.
+       * @returns {void}
+       * @example
+       * applyAuthState(true)
+       */
+      const applyAuthState = (isAuthenticated) => {
+        const authStateElement = document.getElementById("auth-state")
+        const controls = getAuthRequiredControls()
+        controls.forEach((element) => {
+          element.disabled = !isAuthenticated
+        })
+        authStateElement.textContent = isAuthenticated ? "State: Authenticated" : "State: Guest"
+      }
+
+      /**
+       * Reads and trims input value by input id.
+       * @param {string} inputId - Input element ID.
+       * @returns {string} Trimmed input text.
+       * @example
+       * readInputValue("composer-input")
+       */
+      const readInputValue = (inputId) => {
+        const inputElement = document.getElementById(inputId)
+        return inputElement.value.trim()
+      }
+
+      /**
+       * Clears input value by id.
+       * @param {string} inputId - Input element ID.
+       * @returns {void}
+       * @example
+       * clearInputValue("reply-input")
+       */
+      const clearInputValue = (inputId) => {
+        const inputElement = document.getElementById(inputId)
+        inputElement.value = ""
+      }
+
+      /**
+       * Appends list item text to a target list.
+       * @param {string} listId - Target list ID.
+       * @param {string} text - Text content for the item.
+       * @returns {void}
+       * @example
+       * appendListItem("reply-list", "New reply")
+       */
+      const appendListItem = (listId, text) => {
+        const listElement = document.getElementById(listId)
+        const listItemElement = document.createElement("li")
+        listItemElement.textContent = text
+        listElement.append(listItemElement)
+      }
+
+      /**
+       * Toggles button state text and data-state.
+       * @param {HTMLButtonElement} buttonElement - Target button element.
+       * @param {string} activeLabel - Label for active state.
+       * @param {string} inactiveLabel - Label for inactive state.
+       * @returns {void}
+       * @example
+       * toggleButtonState(button, "Like (on)", "Like (off)")
+       */
+      const toggleButtonState = (buttonElement, activeLabel, inactiveLabel) => {
+        const isActive = buttonElement.dataset.state === "on"
+        const nextActiveState = !isActive
+        buttonElement.dataset.state = nextActiveState ? "on" : "off"
+        buttonElement.textContent = nextActiveState ? activeLabel : inactiveLabel
+      }
+
+      /**
+       * Wires all deterministic realworld interactions.
+       * @returns {void}
+       * @example
+       * mountInteractions()
+       */
+      const mountInteractions = () => {
+        const VALID_USERNAME = "demo"
+        const VALID_PASSWORD = "demo"
+        const loginFormElement = document.getElementById("login-form")
+        const loginErrorElement = document.getElementById("login-error")
+        const likeButtonElement = document.getElementById("like-button")
+        const retweetButtonElement = document.getElementById("retweet-button")
+        const composerSubmitElement = document.getElementById("composer-submit")
+        const replySubmitElement = document.getElementById("reply-submit")
+        const notificationTriggerElement = document.getElementById("notification-trigger")
+
+        loginFormElement.addEventListener("submit", (event) => {
+          event.preventDefault()
+          const username = readInputValue("username-input")
+          const password = readInputValue("password-input")
+          const isAuthenticated = username === VALID_USERNAME && password === VALID_PASSWORD
+
+          loginErrorElement.hidden = isAuthenticated
+          applyAuthState(isAuthenticated)
+        })
+
+        likeButtonElement.addEventListener("click", () => {
+          toggleButtonState(likeButtonElement, "Like (on)", "Like (off)")
+        })
+
+        retweetButtonElement.addEventListener("click", () => {
+          toggleButtonState(retweetButtonElement, "Retweet (on)", "Retweet (off)")
+        })
+
+        composerSubmitElement.addEventListener("click", () => {
+          const composerText = readInputValue("composer-input")
+          if (!composerText) {
+            return
+          }
+
+          appendListItem("timeline-list", composerText)
+          clearInputValue("composer-input")
+        })
+
+        replySubmitElement.addEventListener("click", () => {
+          const replyText = readInputValue("reply-input")
+          if (!replyText) {
+            return
+          }
+
+          appendListItem("reply-list", replyText)
+          clearInputValue("reply-input")
+        })
+
+        notificationTriggerElement.addEventListener("click", () => {
+          appendListItem("notification-list", "New interaction received")
+        })
+
+        applyAuthState(false)
+      }
+
+      mountInteractions()
+    </script>
+  </body>
+</html>
