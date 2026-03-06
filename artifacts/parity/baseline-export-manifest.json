@@ -1,7 +1,7 @@
 {
   "baselinePackage": "@chakra-ui/react",
   "baselineVersion": "3.34.0",
-  "generatedAt": "2026-03-05T14:21:12.971Z",
+  "generatedAt": "2026-03-06T10:58:52.095Z",
   "entries": [
     "dts:./collection",
     "dts:./components",

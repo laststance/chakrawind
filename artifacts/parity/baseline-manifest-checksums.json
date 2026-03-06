@@ -1,19 +1,19 @@
 {
   "baselinePackage": "@chakra-ui/react",
   "baselineVersion": "3.34.0",
-  "generatedAt": "2026-03-05T14:21:13.017Z",
+  "generatedAt": "2026-03-06T10:58:52.158Z",
   "entries": [
     {
       "file": "baseline-export-manifest.json",
-      "sha256": "ceb434813eaa9778e05bda613abaf34a1c09bb6b8b0696113c9bb4bf5cd159cb"
+      "sha256": "f709ba24665382394f8c3e120447ac0945657c99ac23d160c960919a755b6cef"
     },
     {
       "file": "baseline-type-manifest.json",
-      "sha256": "ef8c935e610ed978161ebd5ee055dcfbafa848aa93b47c5c2c6d144acddaead0"
+      "sha256": "a209d21da378a15b2c2a6769473d755ca98f0b5faf29317f06150817e4f4db66"
     },
     {
       "file": "baseline-component-manifest.json",
-      "sha256": "d6ab4f9b9873f697928f8eec5ec6f54707722a53f1a4a879034c856aaf5db968"
+      "sha256": "a20bd27bfcc914c5b7c423685c69553ddb7fbd80d5abe1e6567ea1efdcce268b"
     }
   ]
 }

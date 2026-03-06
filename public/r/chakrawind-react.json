@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "chakrawind-react",
+  "type": "registry:item",
+  "title": "Chakra Wind React Entry",
+  "description": "Chakra Wind React compatibility entrypoint for Box/Text/Button/provider.",
+  "dependencies": [
+    "@laststance/chakrawind-react"
+  ],
+  "files": [
+    {
+      "path": "registry/chakrawind/chakrawind-react.ts",
+      "type": "registry:file",
+      "target": "~/lib/chakrawind/chakrawind-react.ts",
+      "content": "import { createElement } from \"react\"\nimport type { ComponentPropsWithoutRef, ReactElement, ReactNode } from \"react\"\nimport {\n  createChakraWindTailwindPreset,\n  type ChakraWindTailwindPreset\n} from \"@laststance/chakrawind-tailwind\"\n\nexport interface ChakraWindProviderProps {\n  children: ReactNode\n}\n\nexport interface ChakraWindProviderContract {\n  preset: ChakraWindTailwindPreset\n  children: ReactNode\n}\n\nexport type BoxProps = ComponentPropsWithoutRef<\"div\">\n\nexport type TextProps = ComponentPropsWithoutRef<\"p\">\n\nexport type ButtonProps = ComponentPropsWithoutRef<\"button\">\n\n/**\n * Creates provider contract object for Chakra Wind React layer.\n * @param {ChakraWindProviderProps} props - Provider input props.\n * @returns {ChakraWindProviderContract} Provider contract used by runtime integrations.\n * @example\n * createChakraWindProviderContract({ children: \"content\" })\n */\nexport const createChakraWindProviderContract = (\n  props: ChakraWindProviderProps\n): ChakraWindProviderContract => {\n  return {\n    preset: createChakraWindTailwindPreset(),\n    children: props.children\n  }\n}\n\n/**\n * Renders Chakra Wind provider shell.\n * @param {ChakraWindProviderProps} props - Provider props.\n * @returns {ReactElement} Provider element.\n * @example\n * ChakraWindProvider({ children: \"content\" })\n */\nexport const ChakraWindProvider = (props: ChakraWindProviderProps): ReactElement => {\n  return createElement(\n    \"div\",\n    {\n      \"data-chakrawind-provider\": \"root\"\n    },\n    props.children\n  )\n}\n\n/**\n * Renders minimal Box compatibility component.\n * @param {BoxProps} props - Div-compatible props.\n * @returns {ReactElement} Box element.\n * @example\n * Box({ id: \"box\" })\n */\nexport const Box = (props: BoxProps): ReactElement => {\n  return createElement(\"div\", {\n    ...props,\n    \"data-chakrawind-component\": \"box\"\n  })\n}\n\n/**\n * Renders minimal Text compatibility component.\n * @param {TextProps} props - Paragraph-compatible props.\n * @returns {ReactElement} Text element.\n * @example\n * Text({ children: \"hello\" })\n */\nexport const Text = (props: TextProps): ReactElement => {\n  return createElement(\"p\", {\n    ...props,\n    \"data-chakrawind-component\": \"text\"\n  })\n}\n\n/**\n * Renders minimal Button compatibility component.\n * @param {ButtonProps} props - Button-compatible props.\n * @returns {ReactElement} Button element.\n * @example\n * Button({ type: \"button\", children: \"Click\" })\n */\nexport const Button = (props: ButtonProps): ReactElement => {\n  return createElement(\"button\", {\n    ...props,\n    type: props.type ?? \"button\",\n    \"data-chakrawind-component\": \"button\"\n  })\n}\n"
+    }
+  ]
+}

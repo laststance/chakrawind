@@ -1,6 +1,7 @@
 node_modules/
 dist/
 artifacts/reports/
+artifacts/release/
 test-results/
 playwright-report/
 .DS_Store
