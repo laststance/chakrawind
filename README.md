@@ -46,6 +46,7 @@ Requirement completion is determined by each phase Quality Gate, not by subjecti
 - [Coexistence Test Matrix](docs/specs/coexistence-test-matrix.md)
 - [Install Smoke Matrix](docs/specs/install-smoke-matrix.md)
 - [Visual Diff Policy](docs/specs/visual-diff-policy.md)
+- [Component Parity Matrix (M3)](docs/specs/component-parity-matrix.md)
 - [Realworld Transition Catalog](docs/specs/realworld-transition-catalog.md)
 - [Realworld Flow Manifest Spec](docs/specs/realworld-flow-manifest-spec.md)
 - [Test Command Scope Spec](docs/specs/test-command-scope.md)
