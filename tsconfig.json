@@ -1,16 +1,9 @@
 {
+  "extends": ["./tsconfig.build.json"],
+  "include": ["vitest.setup.ts", "packages", "apps/compositions", "**/*.mjs"],
   "compilerOptions": {
-    "target": "ES2022",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "strict": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "declaration": true,
-    "rootDir": "src",
-    "outDir": "dist"
-  },
-  "include": ["src/**/*.ts"],
-  "exclude": ["dist", "node_modules"]
+    "paths": {
+      "compositions/*": ["./apps/compositions/src/*"]
+    }
+  }
 }
