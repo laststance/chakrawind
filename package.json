@@ -10,12 +10,9 @@
   "license": "MIT",
   "scripts": {
     "prepare": "husky",
-    "build:tokens": "chakra typegen packages/react/src/preset.ts",
-    "build:tokens-dev": "cross-env LOCAL=1 chakra typegen packages/react/src/preset.ts",
     "build": "pnpm --filter=./packages/* build",
     "build:fast": "pnpm --filter=./packages/* build:fast",
     "dev": "pnpm --recursive --parallel --filter=./packages/* dev",
-    "postbuild": "pnpm build:tokens",
     "typedocs": "pnpm react typedocs",
     "typecheck": "tsc --noEmit",
     "test": "vitest --project=unit",
