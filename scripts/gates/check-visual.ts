@@ -16,9 +16,13 @@ function main() {
   console.log("🔍 Running visual parity tests...")
 
   if (!process.env.CHROMATIC_PROJECT_TOKEN) {
-    console.warn("⚠️  CHROMATIC_PROJECT_TOKEN not set. Skipping visual gate.")
+    console.warn("⚠️  CHROMATIC_PROJECT_TOKEN not set — visual gate SKIPPED.")
     console.warn("   Set the token to enable visual regression testing.")
-    process.exit(0)
+    console.warn(
+      "   In CI, set CHROMATIC_PROJECT_TOKEN as a GitHub Actions secret.",
+    )
+    // Exit code 2 = skipped (not 0=pass, not 1=fail)
+    process.exit(2)
   }
 
   try {

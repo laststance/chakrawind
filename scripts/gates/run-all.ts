@@ -16,7 +16,7 @@ const GATES = [
   { name: "types", script: "gate:types", required: true },
   { name: "runtime", script: "gate:runtime", required: true },
   { name: "a11y", script: "gate:a11y", required: true },
-  { name: "visual", script: "gate:visual", required: false },
+  { name: "visual", script: "gate:visual", required: true },
   { name: "coexist", script: "gate:coexist", required: true },
   { name: "install", script: "gate:install", required: true },
   { name: "realworld", script: "gate:realworld", required: true },
@@ -43,8 +43,24 @@ function main() {
         stdio: "inherit",
       })
       results.push({ name: gate.name, status: "pass", required: gate.required })
-    } catch {
-      results.push({ name: gate.name, status: "fail", required: gate.required })
+    } catch (err: unknown) {
+      const exitCode =
+        err && typeof err === "object" && "status" in err
+          ? (err as { status: number }).status
+          : 1
+      if (exitCode === 2) {
+        results.push({
+          name: gate.name,
+          status: "skip",
+          required: gate.required,
+        })
+      } else {
+        results.push({
+          name: gate.name,
+          status: "fail",
+          required: gate.required,
+        })
+      }
     }
   }
 
@@ -62,15 +78,39 @@ function main() {
   const requiredFailed = results.filter(
     (r) => r.required && r.status === "fail",
   )
+  const requiredSkipped = results.filter(
+    (r) => r.required && r.status === "skip",
+  )
   const totalPassed = results.filter((r) => r.status === "pass").length
+  const totalSkipped = results.filter((r) => r.status === "skip").length
 
-  console.log(`\n  Total: ${totalPassed}/${results.length} passed`)
+  console.log(
+    `\n  Total: ${totalPassed}/${results.length} passed` +
+      (totalSkipped > 0 ? `, ${totalSkipped} skipped` : ""),
+  )
 
   if (requiredFailed.length > 0) {
     console.error(
       `\n❌ ${requiredFailed.length} required gate(s) failed: ${requiredFailed.map((r) => r.name).join(", ")}`,
     )
     process.exit(1)
+  }
+
+  if (requiredSkipped.length > 0 && process.env.CI) {
+    console.error(
+      `\n❌ ${requiredSkipped.length} required gate(s) skipped in CI: ${requiredSkipped.map((r) => r.name).join(", ")}`,
+    )
+    console.error(
+      "   All required gates must pass in CI. Configure missing tokens/secrets.",
+    )
+    process.exit(1)
+  }
+
+  if (requiredSkipped.length > 0) {
+    console.warn(
+      `\n⚠️  ${requiredSkipped.length} required gate(s) skipped locally: ${requiredSkipped.map((r) => r.name).join(", ")}`,
+    )
+    console.warn("   These must pass in CI before release.")
   }
 
   console.log("\n✅ All required parity gates passed!")
