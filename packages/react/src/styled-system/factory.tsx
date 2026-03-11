@@ -1,83 +1,29 @@
 "use client"
 
 /**
- * Forked from https://github.com/emotion-js/emotion/blob/main/packages/styled/src/base.js
- * but optimized for Chakra UI. All credits to the original authors.
+ * Tailwind CSS-based factory for Chakra Wind.
+ * Replaces Emotion's runtime CSS-in-JS with Tailwind utility class generation.
  *
- * This also serves a bridge to React 19's style tag hoisting features.
+ * Preserves the identical public API:
+ * - `chakra.div`, `chakra.button`, etc.
+ * - `chakra(Component, recipe, options)`
+ * - Style props: `bg`, `p`, `m`, `color`, etc.
+ * - Polymorphic `as` prop
+ * - `asChild` for render delegation
+ * - `ref` forwarding
+ * - Recipe/variant system via CVA
  */
-import emotionIsPropValid from "@emotion/is-prop-valid"
-import { ThemeContext, withEmotionCache } from "@emotion/react"
-import { serializeStyles } from "@emotion/serialize"
-//@ts-ignore
-import { useInsertionEffectAlwaysWithSyncFallback } from "@emotion/use-insertion-effect-with-fallbacks"
-import {
-  getRegisteredStyles,
-  insertStyles,
-  registerStyles,
-} from "@emotion/utils"
 import * as React from "react"
 import { mergeProps } from "../merge-props"
 import { mergeRefs } from "../merge-refs"
-import { compact, cx, getElementRef, interopDefault, uniq } from "../utils"
+import { cn } from "../tailwind/cn"
+import { STYLE_PROP_NAMES, extractStyleProps } from "../tailwind/style-props"
+import { compact, getElementRef, uniq } from "../utils"
 import type { JsxFactory, StyledFactoryFn } from "./factory.types"
-import { useChakraContext } from "./provider"
-import { isHtmlProp, useResolvedProps } from "./use-resolved-props"
 
-const isPropValid = interopDefault(emotionIsPropValid)
+const isHtmlProp = (prop: string) => prop.startsWith("html")
 
-const testOmitPropsOnStringTag = isPropValid
-const testOmitPropsOnComponent = (key: string) => key !== "theme"
-
-const composeShouldForwardProps = (tag: any, options: any, isReal: boolean) => {
-  let shouldForwardProp
-  if (options) {
-    const optionsShouldForwardProp = options.shouldForwardProp
-    shouldForwardProp =
-      tag.__emotion_forwardProp && optionsShouldForwardProp
-        ? (propName: string) =>
-            tag.__emotion_forwardProp(propName) &&
-            optionsShouldForwardProp(propName)
-        : optionsShouldForwardProp
-  }
-
-  if (typeof shouldForwardProp !== "function" && isReal) {
-    shouldForwardProp = tag.__emotion_forwardProp
-  }
-
-  return shouldForwardProp
-}
-
-let isBrowser = typeof document !== "undefined"
-
-const Insertion = ({ cache, serialized, isStringTag }: any) => {
-  registerStyles(cache, serialized, isStringTag)
-
-  const rules = useInsertionEffectAlwaysWithSyncFallback(() =>
-    insertStyles(cache, serialized, isStringTag),
-  )
-
-  if (!isBrowser && rules !== undefined) {
-    let serializedNames = serialized.name
-    let next = serialized.next
-    while (next !== undefined) {
-      serializedNames = cx(serializedNames, next.name)
-      next = next.next
-    }
-    return (
-      <style
-        {...{
-          [`data-emotion`]: cx(cache.key, serializedNames),
-          dangerouslySetInnerHTML: { __html: rules },
-          nonce: cache.sheet.nonce,
-        }}
-      />
-    )
-  }
-  return null
-}
-
-const exceptionPropMap = {
+const SVG_EXCEPTION_PROPS: Record<string, string[]> = {
   path: ["d"],
   text: ["x", "y"],
   circle: ["cx", "cy", "r"],
@@ -85,10 +31,6 @@ const exceptionPropMap = {
   ellipse: ["cx", "cy", "rx", "ry"],
   g: ["transform"],
   stop: ["offset", "stopOpacity"],
-}
-
-const hasProp = (obj: any, prop: string) => {
-  return Object.prototype.hasOwnProperty.call(obj, prop)
 }
 
 const createStyled = (tag: any, configOrCva: any = {}, options: any = {}) => {
@@ -100,179 +42,195 @@ const createStyled = (tag: any, configOrCva: any = {}, options: any = {}) => {
     }
   }
 
-  if (hasProp(exceptionPropMap, tag)) {
+  // Handle SVG exception props
+  if (SVG_EXCEPTION_PROPS[tag]) {
     options.forwardProps ||= []
-    const props = exceptionPropMap[tag as keyof typeof exceptionPropMap]
-    options.forwardProps = uniq([...options.forwardProps, ...props])
+    options.forwardProps = uniq([
+      ...options.forwardProps,
+      ...SVG_EXCEPTION_PROPS[tag],
+    ])
   }
 
-  const isReal = tag.__emotion_real === tag
-  const baseTag = (isReal && tag.__emotion_base) || tag
+  const baseTag = tag.__chakra_base || tag
+  const baseClassName = tag.__chakra_className || ""
 
-  let identifierName: string | undefined
-  let targetClassName: string | undefined
+  const identifierName = options?.label
+  const targetClassName = options?.target
 
-  if (options !== undefined) {
-    identifierName = options.label
-    targetClassName = options.target
-  }
-
-  let styles: any[] = []
-
-  const Styled: any = withEmotionCache((inProps: any, cache, ref) => {
-    const { cva, isValidProperty } = useChakraContext()
-
-    const cvaFn = configOrCva.__cva__ ? configOrCva : cva(configOrCva)
-    const cvaRecipe = mergeCva(tag.__emotion_cva, cvaFn)
-
-    const createShouldForwardProps = (props: string[]) => {
-      return (prop: string, variantKeys: string[]) => {
-        if (props.includes(prop)) return true
-        return !variantKeys?.includes(prop) && !isValidProperty(prop)
-      }
-    }
-
-    if (!options.shouldForwardProp && options.forwardProps) {
-      options.shouldForwardProp = createShouldForwardProps(options.forwardProps)
-    }
-
-    const fallbackShouldForwardProp = (prop: string, variantKeys: string[]) => {
-      const emotionSfp =
-        typeof tag === "string" && tag.charCodeAt(0) > 96
-          ? testOmitPropsOnStringTag
-          : testOmitPropsOnComponent
-      const chakraSfp = !variantKeys?.includes(prop) && !isValidProperty(prop)
-      return emotionSfp(prop) && chakraSfp
-    }
-
-    const shouldForwardProp =
-      composeShouldForwardProps(tag, options, isReal) ||
-      fallbackShouldForwardProp
-
+  const Styled = React.forwardRef<any, any>((inProps, ref) => {
     const propsWithDefault = React.useMemo(
       () => Object.assign({}, options.defaultProps, compact(inProps)),
       [inProps],
     )
 
-    const { props, styles: styleProps } = useResolvedProps(
-      propsWithDefault,
-      cvaRecipe,
-      shouldForwardProp,
-    )
+    // Split style props from regular props
+    const [styleClasses, nonStyleProps] = extractStyleProps(propsWithDefault)
 
-    let className = ""
-    let classInterpolations: any[] = [styleProps]
-    let mergedProps: any = props
-    if (props.theme == null) {
-      mergedProps = {}
-      for (let key in props) {
-        mergedProps[key] = props[key]
+    // Handle variant props from recipe config
+    let variantClasses = ""
+    let remainingProps = nonStyleProps
+
+    if (
+      configOrCva &&
+      typeof configOrCva === "object" &&
+      configOrCva.variants
+    ) {
+      const variantKeys = Object.keys(configOrCva.variants)
+      const variantProps: Record<string, any> = {}
+      const otherProps: Record<string, any> = {}
+
+      for (const [key, value] of Object.entries(nonStyleProps)) {
+        if (variantKeys.includes(key)) {
+          variantProps[key] = value
+        } else {
+          otherProps[key] = value
+        }
       }
-      mergedProps.theme = React.useContext(ThemeContext)
+
+      // Apply defaults
+      if (configOrCva.defaultVariants) {
+        for (const [key, defaultVal] of Object.entries(
+          configOrCva.defaultVariants,
+        )) {
+          if (variantProps[key] === undefined) {
+            variantProps[key] = defaultVal
+          }
+        }
+      }
+
+      // Resolve variant classes
+      const variantClassList: string[] = []
+      for (const [key, value] of Object.entries(variantProps)) {
+        const variantMap = configOrCva.variants[key]
+        if (variantMap && value != null && variantMap[value as string]) {
+          variantClassList.push(variantMap[value as string])
+        }
+      }
+
+      // Apply compound variants
+      if (configOrCva.compoundVariants) {
+        for (const cv of configOrCva.compoundVariants) {
+          const { class: cvClass, className: cvClassName, ...conditions } = cv
+          const matches = Object.entries(conditions).every(
+            ([key, value]) => variantProps[key] === value,
+          )
+          if (matches) {
+            variantClassList.push(cvClass || cvClassName || "")
+          }
+        }
+      }
+
+      variantClasses = variantClassList.filter(Boolean).join(" ")
+      remainingProps = otherProps
     }
 
-    if (typeof props.className === "string") {
-      className = getRegisteredStyles(
-        cache.registered,
-        classInterpolations,
-        props.className,
-      )
-    } else if (props.className != null) {
-      className = cx(className, props.className)
+    // Base classes from config
+    const baseClasses = configOrCva?.base || configOrCva?.className || ""
+
+    // CSS prop handling — can be string (Tailwind classes) or object
+    const cssProp = (remainingProps as any).css
+    let cssClasses = ""
+    if (typeof cssProp === "string") {
+      cssClasses = cssProp
+    } else if (Array.isArray(cssProp)) {
+      cssClasses = cssProp.filter((s: any) => typeof s === "string").join(" ")
     }
 
-    const serialized = serializeStyles(
-      styles.concat(classInterpolations),
-      cache.registered,
-      mergedProps,
-    )
+    // Determine which props to forward
+    const {
+      as: asProp,
+      asChild,
+      children,
+      className: userClassName,
+      css: _css,
+      unstyled,
+      colorPalette: _cp,
+      ...forwardableProps
+    } = remainingProps as any
 
-    if (serialized.styles) {
-      className = cx(className, `${cache.key}-${serialized.name}`)
-    }
+    // Build final className
+    const finalClassName = unstyled
+      ? cn(userClassName || "")
+      : cn(
+          baseClassName,
+          baseClasses,
+          variantClasses,
+          styleClasses,
+          cssClasses,
+          targetClassName,
+          userClassName,
+        )
 
-    if (targetClassName !== undefined) {
-      className = cx(className, targetClassName)
-    }
+    // Handle `as` polymorphism
+    let FinalTag = asProp || baseTag
 
-    const shouldUseAs = !shouldForwardProp("as")
+    // Build final props
+    const finalProps: any = {}
 
-    let FinalTag = (shouldUseAs && props.as) || baseTag
-    let finalProps: any = {}
+    for (const [prop, value] of Object.entries(forwardableProps)) {
+      if (value === undefined) continue
 
-    for (let prop in props) {
-      if (shouldUseAs && prop === "as") continue
-
+      // Handle htmlSize, htmlWidth etc.
       if (isHtmlProp(prop)) {
         const nativeProp = prop.replace("html", "").toLowerCase()
-        finalProps[nativeProp] = props[prop]
+        finalProps[nativeProp] = value
         continue
       }
 
-      if (shouldForwardProp(prop)) {
-        finalProps[prop] = props[prop]
+      // Forward props based on shouldForwardProp or default behavior
+      if (options.shouldForwardProp) {
+        if (
+          options.shouldForwardProp(
+            prop,
+            Object.keys(configOrCva?.variants || {}),
+          )
+        ) {
+          finalProps[prop] = value
+        }
+      } else if (options.forwardProps?.includes(prop)) {
+        finalProps[prop] = value
+      } else if (!STYLE_PROP_NAMES.has(prop)) {
+        finalProps[prop] = value
       }
     }
 
-    let classNameToUse = className.trim()
-    if (classNameToUse) {
-      finalProps.className = classNameToUse
-    } else {
-      Reflect.deleteProperty(finalProps, "className")
+    if (finalClassName) {
+      finalProps.className = finalClassName
     }
-
     finalProps.ref = ref
 
+    // Handle asChild — render delegation
     const forwardAsChild =
       options.forwardAsChild || options.forwardProps?.includes("asChild")
 
-    if (props.asChild && !forwardAsChild) {
+    if (asChild && !forwardAsChild) {
       const child = (
-        React.isValidElement(props.children)
-          ? React.Children.only(props.children)
-          : React.Children.toArray(props.children).find(React.isValidElement)
+        React.isValidElement(children)
+          ? React.Children.only(children)
+          : React.Children.toArray(children).find(React.isValidElement)
       ) as React.ReactElement<any> | undefined
 
       if (!child) {
-        throw new Error("[chakra-ui > factory] No valid child found")
+        throw new Error("[chakra-wind > factory] No valid child found")
       }
 
       FinalTag = child.type
-
-      // clean props
       finalProps.children = null
       Reflect.deleteProperty(finalProps, "asChild")
 
-      finalProps = mergeProps(finalProps, child.props)
-      finalProps.ref = mergeRefs(ref, getElementRef(child))
+      const merged = mergeProps(finalProps, child.props)
+      merged.ref = mergeRefs(ref, getElementRef(child))
+
+      if (merged.className && finalClassName) {
+        merged.className = cn(finalClassName, merged.className)
+      }
+
+      return <FinalTag {...merged} />
     }
 
-    if (finalProps.as && forwardAsChild) {
-      finalProps.as = undefined
-      return (
-        <React.Fragment>
-          <Insertion
-            cache={cache}
-            serialized={serialized}
-            isStringTag={typeof FinalTag === "string"}
-          />
-          <FinalTag asChild {...finalProps}>
-            <props.as>{finalProps.children}</props.as>
-          </FinalTag>
-        </React.Fragment>
-      )
-    }
+    finalProps.children = children
 
-    return (
-      <React.Fragment>
-        <Insertion
-          cache={cache}
-          serialized={serialized}
-          isStringTag={typeof FinalTag === "string"}
-        />
-        <FinalTag {...finalProps} />
-      </React.Fragment>
-    )
+    return <FinalTag {...finalProps} />
   })
 
   Styled.displayName =
@@ -284,22 +242,19 @@ const createStyled = (tag: any, configOrCva: any = {}, options: any = {}) => {
             : baseTag.displayName || baseTag.name || "Component"
         })`
 
-  Styled.__emotion_real = Styled
-  Styled.__emotion_base = baseTag
-  Styled.__emotion_forwardProp = options.shouldForwardProp
-  Styled.__emotion_cva = configOrCva
+  // Metadata for composition
+  ;(Styled as any).__chakra_base = baseTag
+  ;(Styled as any).__chakra_className = cn(
+    baseClassName,
+    configOrCva?.base || "",
+  )
+  ;(Styled as any).__chakra_cva = configOrCva
 
-  Object.defineProperty(Styled, "toString", {
-    value() {
-      if (
-        targetClassName === undefined &&
-        process.env.NODE_ENV !== "production"
-      ) {
-        return "NO_COMPONENT_SELECTOR"
-      }
-      return `.${targetClassName}`
-    },
-  })
+  if (targetClassName) {
+    Object.defineProperty(Styled, "toString", {
+      value: () => `.${targetClassName}`,
+    })
+  }
 
   return Styled
 }
@@ -323,9 +278,3 @@ const chakraImpl = new Proxy(styledFn, {
 })
 
 export const chakra = chakraImpl as unknown as StyledFactoryFn
-
-const mergeCva = (cvaA: any, cvaB: any) => {
-  if (cvaA && !cvaB) return cvaA
-  if (!cvaA && cvaB) return cvaB
-  return cvaA.merge(cvaB)
-}

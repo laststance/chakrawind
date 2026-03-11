@@ -1,4 +1,3 @@
-import { keyframes } from "@emotion/react"
 import type { Meta } from "@storybook/react-vite"
 import { useState } from "react"
 import { Badge, Box, Button, Center, For, Link, Stack, Text } from "../src"
@@ -95,14 +94,14 @@ export const SortOrder = () => {
   )
 }
 
-const opacityKeyframes = keyframes`
-  0% { opacity: 0.1; }
-  100% { opacity: 1; }
-`
-
 export const CustomAnimation = () => {
   return (
     <Box h="400px" w="400px" position="relative">
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `@keyframes opacityPulse { 0% { opacity: 0.1; } 100% { opacity: 1; } }`,
+        }}
+      />
       <Box
         position="absolute"
         top="0"
@@ -111,7 +110,7 @@ export const CustomAnimation = () => {
         bottom="0"
         backgroundSize="20px 20px"
         backgroundImage="radial-gradient(black 0%, transparent 20%)"
-        animation={`4s ease-in-out infinite alternate ${opacityKeyframes}`}
+        className="animate-[opacityPulse_4s_ease-in-out_infinite_alternate]"
       />
     </Box>
   )

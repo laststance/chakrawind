@@ -1,6 +1,5 @@
 "use client"
 
-import { Global } from "@emotion/react"
 import { createContext } from "../create-context"
 import type { SystemContext } from "./types"
 
@@ -19,8 +18,9 @@ function ChakraProvider(props: ChakraProviderProps) {
   const { value: sys, children } = props
   return (
     <ChakraContextProvider value={sys}>
-      {!sys._config.disableLayers && <Global styles={sys.layers.atRule} />}
-      <Global styles={sys._global} />
+      {!sys._config.disableLayers && (
+        <style dangerouslySetInnerHTML={{ __html: sys.layers.atRule }} />
+      )}
       {children}
     </ChakraContextProvider>
   )
