@@ -1,6 +1,6 @@
 "use client"
 
-import { Box, HStack, Image, Marquee } from "@chakra-ui/react"
+import { Box, HStack, Image, Marquee } from "@laststance/chakrawind-ui"
 
 export const MarqueeImageGallery = () => (
   <Box height="500px" overflow="hidden" perspective="500px">

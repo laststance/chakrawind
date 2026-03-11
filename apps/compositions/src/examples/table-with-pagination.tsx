@@ -7,7 +7,7 @@ import {
   Pagination,
   Stack,
   Table,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import { LuChevronLeft, LuChevronRight } from "react-icons/lu"
 
 export const TableWithPagination = () => {

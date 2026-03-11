@@ -6,7 +6,7 @@ import {
   Pagination,
   Stack,
   Text,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import { useState } from "react"
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi"
 

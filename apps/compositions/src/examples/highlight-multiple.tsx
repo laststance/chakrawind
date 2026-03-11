@@ -1,4 +1,4 @@
-import { Heading, Highlight } from "@chakra-ui/react"
+import { Heading, Highlight } from "@laststance/chakrawind-ui"
 
 export const HighlightMultiple = () => {
   return (

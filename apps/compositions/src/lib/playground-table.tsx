@@ -1,6 +1,6 @@
 "use client"
 
-import { chakra } from "@chakra-ui/react"
+import { chakra } from "@laststance/chakrawind-ui"
 
 export const PlaygroundTable = chakra("table", {
   base: {

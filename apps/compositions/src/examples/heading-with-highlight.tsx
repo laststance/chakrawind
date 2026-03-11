@@ -1,4 +1,4 @@
-import { Heading, Highlight, Stack, Text } from "@chakra-ui/react"
+import { Heading, Highlight, Stack, Text } from "@laststance/chakrawind-ui"
 
 export const HeadingWithHighlight = () => {
   return (

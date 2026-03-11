@@ -6,7 +6,7 @@ import {
   Stack,
   Strong,
   Text,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import { LuCheck, LuX } from "react-icons/lu"
 
 export const CardWithAvatar = () => {

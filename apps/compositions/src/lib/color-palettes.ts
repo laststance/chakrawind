@@ -1,4 +1,4 @@
-import type { ColorPalette } from "@chakra-ui/react"
+import type { ColorPalette } from "@laststance/chakrawind-ui"
 
 export const colorPalettes: ColorPalette[] = [
   "gray",

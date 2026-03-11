@@ -1,6 +1,11 @@
 "use client"
 
-import { Button, ScrollArea, Stack, useScrollArea } from "@chakra-ui/react"
+import {
+  Button,
+  ScrollArea,
+  Stack,
+  useScrollArea,
+} from "@laststance/chakrawind-ui"
 import LoremIpsum from "react-lorem-ipsum"
 
 export const ScrollAreaScrollToPosition = () => {

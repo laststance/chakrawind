@@ -244,9 +244,6 @@ importers:
 
   apps/compositions:
     dependencies:
-      '@chakra-ui/react':
-        specifier: workspace:*
-        version: link:../../packages/react
       '@floating-ui/react':
         specifier: ^0.27.16
         version: 0.27.19(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
@@ -256,6 +253,9 @@ importers:
       '@internationalized/date':
         specifier: 3.11.0
         version: 3.11.0
+      '@laststance/chakrawind-ui':
+        specifier: workspace:*
+        version: link:../../packages/react
       '@tanstack/react-table':
         specifier: 8.21.3
         version: 8.21.3(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
@@ -441,7 +441,7 @@ importers:
 
   sandbox/next-app:
     dependencies:
-      '@chakra-ui/react':
+      '@laststance/chakrawind-ui':
         specifier: workspace:*
         version: link:../../packages/react
       '@types/node':
@@ -474,7 +474,7 @@ importers:
 
   sandbox/react-router:
     dependencies:
-      '@chakra-ui/react':
+      '@laststance/chakrawind-ui':
         specifier: workspace:*
         version: link:../../packages/react
       '@react-router/node':
@@ -529,7 +529,7 @@ importers:
 
   sandbox/remix-ts:
     dependencies:
-      '@chakra-ui/react':
+      '@laststance/chakrawind-ui':
         specifier: workspace:*
         version: link:../../packages/react
       '@remix-run/node':
@@ -608,7 +608,7 @@ importers:
 
   sandbox/vite-jsx:
     dependencies:
-      '@chakra-ui/react':
+      '@laststance/chakrawind-ui':
         specifier: workspace:*
         version: link:../../packages/react
       next-themes:
@@ -660,7 +660,7 @@ importers:
 
   sandbox/vite-ts:
     dependencies:
-      '@chakra-ui/react':
+      '@laststance/chakrawind-ui':
         specifier: workspace:*
         version: link:../../packages/react
       next-themes:

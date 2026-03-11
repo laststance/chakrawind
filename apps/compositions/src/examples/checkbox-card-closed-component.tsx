@@ -1,4 +1,4 @@
-import { CheckboxCard as ChakraCheckboxCard } from "@chakra-ui/react"
+import { CheckboxCard as ChakraCheckboxCard } from "@laststance/chakrawind-ui"
 import * as React from "react"
 
 export interface CheckboxCardProps extends ChakraCheckboxCard.RootProps {

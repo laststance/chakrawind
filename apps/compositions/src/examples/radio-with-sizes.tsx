@@ -1,4 +1,4 @@
-import { For, HStack, RadioGroup } from "@chakra-ui/react"
+import { For, HStack, RadioGroup } from "@laststance/chakrawind-ui"
 
 export const RadioWithSizes = () => {
   return (

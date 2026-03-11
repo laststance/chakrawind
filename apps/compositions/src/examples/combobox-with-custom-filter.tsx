@@ -6,7 +6,7 @@ import {
   Span,
   Stack,
   useListCollection,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 
 export const ComboboxWithCustomFilter = () => {
   const { collection, set } = useListCollection({

@@ -1,4 +1,4 @@
-import { Badge, ColorSwatch } from "@chakra-ui/react"
+import { Badge, ColorSwatch } from "@laststance/chakrawind-ui"
 
 export const ColorSwatchWithBadge = () => {
   return (

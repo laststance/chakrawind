@@ -1,4 +1,4 @@
-import { Button, Stack, Theme } from "@chakra-ui/react"
+import { Button, Stack, Theme } from "@laststance/chakrawind-ui"
 
 export const ThemeBasic = () => {
   return (

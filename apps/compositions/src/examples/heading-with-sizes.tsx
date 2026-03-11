@@ -1,4 +1,4 @@
-import { Heading, Stack } from "@chakra-ui/react"
+import { Heading, Stack } from "@laststance/chakrawind-ui"
 
 export const HeadingWithSizes = () => {
   return (

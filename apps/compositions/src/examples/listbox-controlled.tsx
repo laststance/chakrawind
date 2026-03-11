@@ -1,6 +1,11 @@
 "use client"
 
-import { Code, Listbox, Stack, createListCollection } from "@chakra-ui/react"
+import {
+  Code,
+  Listbox,
+  Stack,
+  createListCollection,
+} from "@laststance/chakrawind-ui"
 import { useState } from "react"
 
 export const ListboxControlled = () => {

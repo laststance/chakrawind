@@ -1,4 +1,4 @@
-import { Input, InputGroup, NativeSelect } from "@chakra-ui/react"
+import { Input, InputGroup, NativeSelect } from "@laststance/chakrawind-ui"
 
 const DomainSelect = () => (
   <NativeSelect.Root size="xs" variant="plain" width="auto" me="-1">

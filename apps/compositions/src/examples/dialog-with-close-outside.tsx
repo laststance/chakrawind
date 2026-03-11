@@ -4,7 +4,7 @@ import {
   CloseButton,
   Dialog,
   Portal,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 
 export const DialogWithCloseOutside = () => {
   return (

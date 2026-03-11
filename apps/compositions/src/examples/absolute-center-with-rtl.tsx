@@ -6,7 +6,7 @@ import {
   Span,
   Text,
   VStack,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 
 export const AbsoluteCenterWithRtl = () => {
   return (

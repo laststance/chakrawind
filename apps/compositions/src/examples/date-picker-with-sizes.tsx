@@ -1,6 +1,6 @@
 "use client"
 
-import { DatePicker, For, Portal, Stack } from "@chakra-ui/react"
+import { DatePicker, For, Portal, Stack } from "@laststance/chakrawind-ui"
 import { LuCalendar } from "react-icons/lu"
 
 export const DatePickerWithSizes = () => {

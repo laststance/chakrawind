@@ -1,7 +1,7 @@
 "use client"
 
-import type { CollectionItem } from "@chakra-ui/react"
-import { Select as ChakraSelect, Portal } from "@chakra-ui/react"
+import type { CollectionItem } from "@laststance/chakrawind-ui"
+import { Select as ChakraSelect, Portal } from "@laststance/chakrawind-ui"
 import { CloseButton } from "compositions/ui/close-button"
 import * as React from "react"
 
@@ -74,8 +74,10 @@ export const SelectItem = React.forwardRef<
   )
 })
 
-interface SelectValueTextProps
-  extends Omit<ChakraSelect.ValueTextProps, "children"> {
+interface SelectValueTextProps extends Omit<
+  ChakraSelect.ValueTextProps,
+  "children"
+> {
   children?(items: CollectionItem[]): React.ReactNode
 }
 

@@ -1,4 +1,4 @@
-import { FileUpload, Input } from "@chakra-ui/react"
+import { FileUpload, Input } from "@laststance/chakrawind-ui"
 
 export const FileUploadWithInput = () => {
   return (

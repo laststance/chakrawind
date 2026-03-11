@@ -1,4 +1,4 @@
-import { CloseButton } from "@chakra-ui/react"
+import { CloseButton } from "@laststance/chakrawind-ui"
 
 export const CloseButtonBasic = () => {
   return <CloseButton />

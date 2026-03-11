@@ -1,6 +1,6 @@
 "use client"
 
-import { Button, Collapsible, Stack } from "@chakra-ui/react"
+import { Button, Collapsible, Stack } from "@laststance/chakrawind-ui"
 import { LuChevronDown } from "react-icons/lu"
 import { LoremIpsum } from "react-lorem-ipsum"
 

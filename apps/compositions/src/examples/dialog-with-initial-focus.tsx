@@ -1,6 +1,13 @@
 "use client"
 
-import { Button, Dialog, Field, Input, Portal, Stack } from "@chakra-ui/react"
+import {
+  Button,
+  Dialog,
+  Field,
+  Input,
+  Portal,
+  Stack,
+} from "@laststance/chakrawind-ui"
 import { useRef } from "react"
 
 export const DialogWithInitialFocus = () => {

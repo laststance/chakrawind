@@ -7,7 +7,7 @@ import {
   useFilter,
   useListCollection,
   useTagsInput,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import { useId, useRef } from "react"
 
 export const TagsInputWithCombobox = () => {

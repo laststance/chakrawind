@@ -11,7 +11,7 @@ import {
   Text,
   useFilter,
   useListCollection,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import { useState } from "react"
 
 export const ListboxWithDialog = () => {

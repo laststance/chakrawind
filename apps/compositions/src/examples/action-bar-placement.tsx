@@ -7,7 +7,7 @@ import {
   SegmentGroup,
   Text,
   VStack,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import { useState } from "react"
 import { LuShare, LuTrash2 } from "react-icons/lu"
 

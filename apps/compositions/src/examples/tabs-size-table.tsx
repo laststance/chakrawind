@@ -1,6 +1,6 @@
 "use client"
 
-import { For, Span, Tabs, Text, useSlotRecipe } from "@chakra-ui/react"
+import { For, Span, Tabs, Text, useSlotRecipe } from "@laststance/chakrawind-ui"
 import { PlaygroundTable } from "compositions/lib/playground-table"
 
 export const TabsSizeTable = () => {

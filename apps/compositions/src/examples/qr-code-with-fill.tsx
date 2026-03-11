@@ -1,4 +1,4 @@
-import { Flex, For, QrCode } from "@chakra-ui/react"
+import { Flex, For, QrCode } from "@laststance/chakrawind-ui"
 
 export const QrCodeWithFill = () => {
   return (

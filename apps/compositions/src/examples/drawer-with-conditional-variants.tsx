@@ -5,7 +5,7 @@ import {
   Kbd,
   Portal,
   Text,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 
 export const DrawerWithConditionalVariants = () => {
   return (

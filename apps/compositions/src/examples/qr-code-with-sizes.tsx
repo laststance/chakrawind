@@ -1,4 +1,4 @@
-import { For, QrCode, Stack } from "@chakra-ui/react"
+import { For, QrCode, Stack } from "@laststance/chakrawind-ui"
 
 export const QrCodeWithSizes = () => {
   return (

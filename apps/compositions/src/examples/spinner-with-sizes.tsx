@@ -1,4 +1,4 @@
-import { HStack, Spinner } from "@chakra-ui/react"
+import { HStack, Spinner } from "@laststance/chakrawind-ui"
 
 export const SpinnerWithSizes = () => {
   return (

@@ -1,4 +1,4 @@
-import { FormatByte, Text } from "@chakra-ui/react"
+import { FormatByte, Text } from "@laststance/chakrawind-ui"
 
 export const FormatByteBasic = () => {
   return (

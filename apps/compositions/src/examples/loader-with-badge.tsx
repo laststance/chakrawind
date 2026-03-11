@@ -1,4 +1,4 @@
-import { Badge, Loader } from "@chakra-ui/react"
+import { Badge, Loader } from "@laststance/chakrawind-ui"
 
 export const LoaderWithBadge = () => {
   return (

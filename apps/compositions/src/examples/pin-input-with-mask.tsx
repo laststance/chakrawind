@@ -1,4 +1,4 @@
-import { PinInput } from "@chakra-ui/react"
+import { PinInput } from "@laststance/chakrawind-ui"
 
 export const PinInputWithMask = () => {
   return (

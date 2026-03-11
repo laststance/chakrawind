@@ -1,4 +1,4 @@
-import { Center, For, HStack, Stack, Text } from "@chakra-ui/react"
+import { Center, For, HStack, Stack, Text } from "@laststance/chakrawind-ui"
 
 const items = [
   ["Fill", ["fill.muted", "fill.subtle", "fill.surface", "fill.solid"]],

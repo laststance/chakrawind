@@ -1,6 +1,6 @@
 "use client"
 
-import { DatePicker, Portal } from "@chakra-ui/react"
+import { DatePicker, Portal } from "@laststance/chakrawind-ui"
 import { LuCalendar } from "react-icons/lu"
 
 export const DatePickerDisabled = () => {

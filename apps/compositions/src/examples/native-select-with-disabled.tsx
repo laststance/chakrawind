@@ -1,4 +1,4 @@
-import { NativeSelect } from "@chakra-ui/react"
+import { NativeSelect } from "@laststance/chakrawind-ui"
 
 export const NativeSelectWithDisabled = () => (
   <NativeSelect.Root disabled>

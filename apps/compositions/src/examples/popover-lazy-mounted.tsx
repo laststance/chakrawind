@@ -1,4 +1,4 @@
-import { Button, Popover, Portal, Text } from "@chakra-ui/react"
+import { Button, Popover, Portal, Text } from "@laststance/chakrawind-ui"
 
 export const PopoverLazyMounted = () => {
   return (

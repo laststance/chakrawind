@@ -1,4 +1,4 @@
-import { Button, Heading, Stack, Text } from "@chakra-ui/react"
+import { Button, Heading, Stack, Text } from "@laststance/chakrawind-ui"
 import { LuArrowRight } from "react-icons/lu"
 
 export const HeadingWithComposition = () => {

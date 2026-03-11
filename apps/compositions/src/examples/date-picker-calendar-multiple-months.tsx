@@ -1,6 +1,6 @@
 "use client"
 
-import { DatePicker, Flex } from "@chakra-ui/react"
+import { DatePicker, Flex } from "@laststance/chakrawind-ui"
 
 export const DatePickerCalendarMultipleMonths = () => {
   return (

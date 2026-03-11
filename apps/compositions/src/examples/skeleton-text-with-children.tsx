@@ -1,4 +1,4 @@
-import { SkeletonText, Stack, Text } from "@chakra-ui/react"
+import { SkeletonText, Stack, Text } from "@laststance/chakrawind-ui"
 
 export const SkeletonTextWithChildren = () => {
   return (

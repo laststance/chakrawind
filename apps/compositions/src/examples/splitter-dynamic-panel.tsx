@@ -8,7 +8,7 @@ import {
   Splitter,
   Stack,
   useSplitter,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import { Fragment, useState } from "react"
 import { LuMinus, LuPlus } from "react-icons/lu"
 

@@ -7,7 +7,7 @@ import {
   HStack,
   Text,
   VStack,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import { LuUpload, LuX } from "react-icons/lu"
 
 const createFile = (name: string, color: string) => {

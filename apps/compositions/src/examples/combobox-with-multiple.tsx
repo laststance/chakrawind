@@ -6,7 +6,7 @@ import {
   Portal,
   Wrap,
   createListCollection,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import { useMemo, useState } from "react"
 
 const skills = [

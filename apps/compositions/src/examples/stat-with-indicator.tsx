@@ -1,4 +1,4 @@
-import { Badge, Stat } from "@chakra-ui/react"
+import { Badge, Stat } from "@laststance/chakrawind-ui"
 
 export const StatWithIndicator = () => {
   return (

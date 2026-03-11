@@ -1,6 +1,6 @@
 "use client"
 
-import { Box, Slider } from "@chakra-ui/react"
+import { Box, Slider } from "@laststance/chakrawind-ui"
 import { MdGraphicEq } from "react-icons/md"
 
 export const SliderCustomization = () => {

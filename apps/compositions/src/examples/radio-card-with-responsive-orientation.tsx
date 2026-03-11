@@ -1,6 +1,11 @@
 "use client"
 
-import { HStack, Icon, RadioCard, useBreakpointValue } from "@chakra-ui/react"
+import {
+  HStack,
+  Icon,
+  RadioCard,
+  useBreakpointValue,
+} from "@laststance/chakrawind-ui"
 import { RiAppleFill, RiBankCardFill, RiPaypalFill } from "react-icons/ri"
 
 export const RadioCardWithResponsiveOrientation = () => {

@@ -1,6 +1,6 @@
 "use client"
 
-import { DatePicker, Portal } from "@chakra-ui/react"
+import { DatePicker, Portal } from "@laststance/chakrawind-ui"
 
 export const DatePickerOpenOnClick = () => {
   return (

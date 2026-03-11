@@ -1,4 +1,4 @@
-import { Avatar, Menu, Portal } from "@chakra-ui/react"
+import { Avatar, Menu, Portal } from "@laststance/chakrawind-ui"
 
 export const MenuWithAvatar = () => {
   return (

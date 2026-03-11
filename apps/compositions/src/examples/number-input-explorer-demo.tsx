@@ -1,6 +1,11 @@
 "use client"
 
-import { InputGroup, NumberInput, Text, VStack } from "@chakra-ui/react"
+import {
+  InputGroup,
+  NumberInput,
+  Text,
+  VStack,
+} from "@laststance/chakrawind-ui"
 import { LuArrowRightLeft } from "react-icons/lu"
 
 export const NumberInputExplorerDemo = () => {

@@ -1,6 +1,11 @@
 "use client"
 
-import { ColorPicker, HStack, Portal, parseColor } from "@chakra-ui/react"
+import {
+  ColorPicker,
+  HStack,
+  Portal,
+  parseColor,
+} from "@laststance/chakrawind-ui"
 
 export const ColorPickerWithDisabled = () => {
   return (

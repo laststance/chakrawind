@@ -1,4 +1,9 @@
-import { Checkbox, CheckboxGroup, Fieldset, For } from "@chakra-ui/react"
+import {
+  Checkbox,
+  CheckboxGroup,
+  Fieldset,
+  For,
+} from "@laststance/chakrawind-ui"
 
 export const CheckboxWithGroup = () => {
   return (

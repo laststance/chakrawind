@@ -1,4 +1,4 @@
-import { Avatar, Stack, Text } from "@chakra-ui/react"
+import { Avatar, Stack, Text } from "@laststance/chakrawind-ui"
 import { colorPalettes } from "compositions/lib/color-palettes"
 
 export const AvatarWithColors = () => {

@@ -1,6 +1,6 @@
 "use client"
 
-import { Center, Splitter, useBreakpointValue } from "@chakra-ui/react"
+import { Center, Splitter, useBreakpointValue } from "@laststance/chakrawind-ui"
 
 export const SplitterResponsiveOrientation = () => {
   const orientation = useBreakpointValue<"horizontal" | "vertical">({

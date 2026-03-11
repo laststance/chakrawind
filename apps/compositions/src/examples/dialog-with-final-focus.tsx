@@ -7,7 +7,7 @@ import {
   Dialog,
   Portal,
   Stack,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import { useRef } from "react"
 import Lorem from "react-lorem-ipsum"
 

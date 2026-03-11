@@ -1,6 +1,6 @@
 "use client"
 
-import { HStack } from "@chakra-ui/react"
+import { HStack } from "@laststance/chakrawind-ui"
 import CodeBlockLowlight from "@tiptap/extension-code-block-lowlight"
 import { useEditor } from "@tiptap/react"
 import StarterKit from "@tiptap/starter-kit"

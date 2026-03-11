@@ -1,4 +1,4 @@
-import { Checkbox, Link } from "@chakra-ui/react"
+import { Checkbox, Link } from "@laststance/chakrawind-ui"
 
 export const CheckboxWithLink = () => {
   return (

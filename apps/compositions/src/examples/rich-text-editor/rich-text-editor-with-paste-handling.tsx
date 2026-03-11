@@ -1,6 +1,6 @@
 "use client"
 
-import { Box, Text } from "@chakra-ui/react"
+import { Box, Text } from "@laststance/chakrawind-ui"
 import { useEditor } from "@tiptap/react"
 import StarterKit from "@tiptap/starter-kit"
 import { Control, RichTextEditor } from "compositions/ui/rich-text-editor"

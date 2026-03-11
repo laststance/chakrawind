@@ -1,6 +1,6 @@
 "use client"
 
-import { Tabs } from "@chakra-ui/react"
+import { Tabs } from "@laststance/chakrawind-ui"
 import { useState } from "react"
 
 export const TabsControlled = () => {

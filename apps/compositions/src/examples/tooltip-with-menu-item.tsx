@@ -1,4 +1,4 @@
-import { Button, Menu, Portal, Show } from "@chakra-ui/react"
+import { Button, Menu, Portal, Show } from "@laststance/chakrawind-ui"
 import { Tooltip } from "compositions/ui/tooltip"
 
 export const TooltipWithMenuItem = () => {

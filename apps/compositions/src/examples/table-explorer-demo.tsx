@@ -1,4 +1,4 @@
-import { Table } from "@chakra-ui/react"
+import { Table } from "@laststance/chakrawind-ui"
 
 export const TableExplorerDemo = () => {
   const total = items.reduce((sum, item) => sum + item.price, 0)

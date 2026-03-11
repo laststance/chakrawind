@@ -1,6 +1,6 @@
 "use client"
 
-import { Editable, Input, Stack } from "@chakra-ui/react"
+import { Editable, Input, Stack } from "@laststance/chakrawind-ui"
 import { useRef } from "react"
 
 export const EditableWithFinalFocus = () => {

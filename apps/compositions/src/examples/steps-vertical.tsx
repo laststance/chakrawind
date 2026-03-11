@@ -1,4 +1,4 @@
-import { Button, ButtonGroup, Stack, Steps } from "@chakra-ui/react"
+import { Button, ButtonGroup, Stack, Steps } from "@laststance/chakrawind-ui"
 
 export const StepsVertical = () => {
   return (

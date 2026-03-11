@@ -1,6 +1,6 @@
 "use client"
 
-import { PinInput } from "@chakra-ui/react"
+import { PinInput } from "@laststance/chakrawind-ui"
 import { useState } from "react"
 
 export const PinInputControlled = () => {

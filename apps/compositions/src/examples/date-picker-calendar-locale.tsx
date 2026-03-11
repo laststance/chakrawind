@@ -1,6 +1,6 @@
 "use client"
 
-import { DatePicker } from "@chakra-ui/react"
+import { DatePicker } from "@laststance/chakrawind-ui"
 
 export const DatePickerCalendarLocale = () => {
   return (

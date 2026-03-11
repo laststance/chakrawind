@@ -1,6 +1,6 @@
 "use client"
 
-import { Button, Field, Stack, Textarea } from "@chakra-ui/react"
+import { Button, Field, Stack, Textarea } from "@laststance/chakrawind-ui"
 
 export const TextareaWithForm = () => {
   return (

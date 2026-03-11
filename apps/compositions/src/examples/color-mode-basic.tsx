@@ -1,6 +1,6 @@
 "use client"
 
-import { Button } from "@chakra-ui/react"
+import { Button } from "@laststance/chakrawind-ui"
 import { useColorMode } from "compositions/ui/color-mode"
 
 export const ColorModeBasic = () => {

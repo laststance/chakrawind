@@ -1,4 +1,4 @@
-import { HStack, RadioGroup } from "@chakra-ui/react"
+import { HStack, RadioGroup } from "@laststance/chakrawind-ui"
 
 export const RadioBasic = () => {
   return (

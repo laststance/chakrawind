@@ -1,6 +1,6 @@
 "use client"
 
-import { Button, Stack, Tooltip } from "@chakra-ui/react"
+import { Button, Stack, Tooltip } from "@laststance/chakrawind-ui"
 
 export const TooltipExplorerDemo = () => {
   return (

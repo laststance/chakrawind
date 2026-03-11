@@ -1,6 +1,6 @@
 "use client"
 
-import { Input, InputGroup, Span } from "@chakra-ui/react"
+import { Input, InputGroup, Span } from "@laststance/chakrawind-ui"
 import { useState } from "react"
 
 const MAX_CHARACTERS = 20

@@ -9,7 +9,7 @@ import {
   Input,
   Portal,
   Tabs,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import Image from "@tiptap/extension-image"
 import { useEditor } from "@tiptap/react"
 import StarterKit from "@tiptap/starter-kit"

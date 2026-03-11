@@ -1,12 +1,13 @@
 "use client"
 
-import { NativeSelect as Select } from "@chakra-ui/react"
+import { NativeSelect as Select } from "@laststance/chakrawind-ui"
 import * as React from "react"
 
 type FieldProp = "name" | "value" | "onChange" | "defaultValue"
 
 interface NativeSelectProps
-  extends Omit<Select.RootProps, FieldProp>,
+  extends
+    Omit<Select.RootProps, FieldProp>,
     Pick<Select.FieldProps, FieldProp> {
   icon?: React.ReactNode
   items: Array<{ label: string; value: string; disabled?: boolean }>

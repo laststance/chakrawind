@@ -1,6 +1,6 @@
 "use client"
 
-import { Portal, Select, createListCollection } from "@chakra-ui/react"
+import { Portal, Select, createListCollection } from "@laststance/chakrawind-ui"
 import { groupBy } from "es-toolkit"
 
 export const SelectWithCountry = () => {

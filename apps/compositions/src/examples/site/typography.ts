@@ -1,4 +1,4 @@
-import { defineTextStyles } from "@chakra-ui/react"
+import { defineTextStyles } from "@laststance/chakrawind-ui"
 
 export const textStyles = defineTextStyles({
   headline: {

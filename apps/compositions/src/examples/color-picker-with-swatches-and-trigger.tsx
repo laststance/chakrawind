@@ -6,7 +6,7 @@ import {
   Portal,
   Square,
   parseColor,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import { LuCheck, LuPlus } from "react-icons/lu"
 
 export const ColorPickerWithSwatchesAndTrigger = () => {

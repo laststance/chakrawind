@@ -1,4 +1,4 @@
-import { Stat } from "@chakra-ui/react"
+import { Stat } from "@laststance/chakrawind-ui"
 
 export const StatWithValueUnit = () => {
   return (

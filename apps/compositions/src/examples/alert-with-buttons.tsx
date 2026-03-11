@@ -1,4 +1,4 @@
-import { Alert, Button } from "@chakra-ui/react"
+import { Alert, Button } from "@laststance/chakrawind-ui"
 
 export const AlertWithButtons = () => {
   return (

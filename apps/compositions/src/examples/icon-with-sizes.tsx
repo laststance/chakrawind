@@ -1,4 +1,4 @@
-import { For, HStack, Icon, Text, VStack } from "@chakra-ui/react"
+import { For, HStack, Icon, Text, VStack } from "@laststance/chakrawind-ui"
 import { LuPackage } from "react-icons/lu"
 
 export const IconWithSizes = () => {

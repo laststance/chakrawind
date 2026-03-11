@@ -1,6 +1,6 @@
 "use client"
 
-import { CloseButton, Input, InputGroup } from "@chakra-ui/react"
+import { CloseButton, Input, InputGroup } from "@laststance/chakrawind-ui"
 import { useRef, useState } from "react"
 
 export const InputWithClearButton = () => {

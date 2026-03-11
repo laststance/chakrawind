@@ -1,6 +1,13 @@
 "use client"
 
-import { Avatar, Box, Card, HStack, Marquee, Stack } from "@chakra-ui/react"
+import {
+  Avatar,
+  Box,
+  Card,
+  HStack,
+  Marquee,
+  Stack,
+} from "@laststance/chakrawind-ui"
 import { IoStar } from "react-icons/io5"
 
 export const MarqueeWithTestimonials = () => (

@@ -1,4 +1,4 @@
-import { Alert } from "@chakra-ui/react"
+import { Alert } from "@laststance/chakrawind-ui"
 
 export const AlertWithColorPaletteOverride = () => {
   return (

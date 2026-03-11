@@ -1,4 +1,10 @@
-import { AbsoluteCenter, Accordion, Box, Button, Span } from "@chakra-ui/react"
+import {
+  AbsoluteCenter,
+  Accordion,
+  Box,
+  Button,
+  Span,
+} from "@laststance/chakrawind-ui"
 import LoremIpsum from "react-lorem-ipsum"
 
 export const AccordionWithActions = () => {

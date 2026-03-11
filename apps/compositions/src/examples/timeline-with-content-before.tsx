@@ -1,4 +1,4 @@
-import { For, Stack, Timeline } from "@chakra-ui/react"
+import { For, Stack, Timeline } from "@laststance/chakrawind-ui"
 
 export const TimelineWithContentBefore = () => {
   return (

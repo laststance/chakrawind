@@ -1,6 +1,6 @@
-import { HStack } from "@chakra-ui/react"
-import { ColorSwatch } from "@chakra-ui/react"
-import { For } from "@chakra-ui/react"
+import { HStack } from "@laststance/chakrawind-ui"
+import { ColorSwatch } from "@laststance/chakrawind-ui"
+import { For } from "@laststance/chakrawind-ui"
 
 export const ColorSwatchWithSizes = () => {
   return (

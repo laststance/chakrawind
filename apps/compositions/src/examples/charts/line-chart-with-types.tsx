@@ -1,7 +1,7 @@
 "use client"
 
 import { Chart, useChart } from "@chakra-ui/charts"
-import { For, SimpleGrid, Stack, Text } from "@chakra-ui/react"
+import { For, SimpleGrid, Stack, Text } from "@laststance/chakrawind-ui"
 import { CartesianGrid, Line, LineChart, XAxis, YAxis } from "recharts"
 
 const curveTypes = [

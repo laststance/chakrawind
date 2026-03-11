@@ -1,7 +1,7 @@
 "use client"
 
-import { Carousel } from "@chakra-ui/react"
-import { Box, IconButton, Image } from "@chakra-ui/react"
+import { Carousel } from "@laststance/chakrawind-ui"
+import { Box, IconButton, Image } from "@laststance/chakrawind-ui"
 import * as React from "react"
 import { LuPause, LuPlay } from "react-icons/lu"
 

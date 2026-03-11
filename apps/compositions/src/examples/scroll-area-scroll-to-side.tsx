@@ -6,7 +6,7 @@ import {
   ScrollArea,
   Stack,
   useScrollArea,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import LoremIpsum from "react-lorem-ipsum"
 
 export const ScrollAreaScrollToSide = () => {

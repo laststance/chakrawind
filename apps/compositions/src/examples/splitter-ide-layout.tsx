@@ -7,7 +7,7 @@ import {
   Splitter,
   Stack,
   createShikiAdapter,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import React, { useState } from "react"
 import { LuFile, LuFolder } from "react-icons/lu"
 import type { HighlighterGeneric } from "shiki"

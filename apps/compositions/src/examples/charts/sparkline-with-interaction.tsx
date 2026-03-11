@@ -1,7 +1,13 @@
 "use client"
 
 import { Chart, useChart } from "@chakra-ui/charts"
-import { Box, Flex, FormatNumber, HStack, Text } from "@chakra-ui/react"
+import {
+  Box,
+  Flex,
+  FormatNumber,
+  HStack,
+  Text,
+} from "@laststance/chakrawind-ui"
 import { useState } from "react"
 import { LuDownload } from "react-icons/lu"
 import { Area, AreaChart, Tooltip } from "recharts"

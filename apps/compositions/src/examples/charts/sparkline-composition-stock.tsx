@@ -9,7 +9,7 @@ import {
   Span,
   Stack,
   Stat,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import { Area, AreaChart } from "recharts"
 
 export const SparklineCompositionStock = () => {

@@ -1,6 +1,6 @@
 "use client"
 
-import { Badge, DataList, For, useSlotRecipe } from "@chakra-ui/react"
+import { Badge, DataList, For, useSlotRecipe } from "@laststance/chakrawind-ui"
 import { PlaygroundTable } from "compositions/lib/playground-table"
 
 export const DataListSizeTable = () => {

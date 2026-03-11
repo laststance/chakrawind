@@ -1,6 +1,6 @@
 "use client"
 
-import { HStack, RadioGroup } from "@chakra-ui/react"
+import { HStack, RadioGroup } from "@laststance/chakrawind-ui"
 import { useState } from "react"
 
 export const RadioControlled = () => {

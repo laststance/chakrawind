@@ -11,7 +11,7 @@ import {
   createListCollection,
   createShikiAdapter,
   useSelect,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import { IoLogoJavascript, IoLogoPython } from "react-icons/io5"
 import type { HighlighterGeneric } from "shiki"
 

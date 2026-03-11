@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react"
+import { Box } from "@laststance/chakrawind-ui"
 
 export const BoxWithShorthand = () => {
   return (

@@ -1,4 +1,4 @@
-import { Slider } from "@chakra-ui/react"
+import { Slider } from "@laststance/chakrawind-ui"
 
 export const SliderWithMultipleThumbs = () => {
   return (

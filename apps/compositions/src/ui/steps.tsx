@@ -1,4 +1,4 @@
-import { Box, Steps as ChakraSteps } from "@chakra-ui/react"
+import { Box, Steps as ChakraSteps } from "@laststance/chakrawind-ui"
 import * as React from "react"
 import { LuCheck } from "react-icons/lu"
 
@@ -8,8 +8,7 @@ interface StepInfoProps {
 }
 
 export interface StepsItemProps
-  extends Omit<ChakraSteps.ItemProps, "title">,
-    StepInfoProps {
+  extends Omit<ChakraSteps.ItemProps, "title">, StepInfoProps {
   completedIcon?: React.ReactNode
   icon?: React.ReactNode
 }

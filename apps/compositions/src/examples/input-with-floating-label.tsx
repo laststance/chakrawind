@@ -1,13 +1,13 @@
 "use client"
 
-import type { InputProps } from "@chakra-ui/react"
+import type { InputProps } from "@laststance/chakrawind-ui"
 import {
   Box,
   Field,
   Input,
   defineStyle,
   useControllableState,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import { useState } from "react"
 
 export const InputWithFloatingLabel = () => {

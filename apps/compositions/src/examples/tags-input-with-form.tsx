@@ -1,6 +1,12 @@
 "use client"
 
-import { Button, Field, Input, Stack, TagsInput } from "@chakra-ui/react"
+import {
+  Button,
+  Field,
+  Input,
+  Stack,
+  TagsInput,
+} from "@laststance/chakrawind-ui"
 
 export const TagsInputWithForm = () => {
   return (

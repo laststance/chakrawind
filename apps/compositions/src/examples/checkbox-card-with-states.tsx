@@ -1,4 +1,4 @@
-import { CheckboxCard, Stack } from "@chakra-ui/react"
+import { CheckboxCard, Stack } from "@laststance/chakrawind-ui"
 
 export const CheckboxCardWithStates = () => {
   return (

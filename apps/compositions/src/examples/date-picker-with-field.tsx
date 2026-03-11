@@ -1,6 +1,12 @@
 "use client"
 
-import { Button, DatePicker, Field, Portal, Stack } from "@chakra-ui/react"
+import {
+  Button,
+  DatePicker,
+  Field,
+  Portal,
+  Stack,
+} from "@laststance/chakrawind-ui"
 import { useState } from "react"
 import { LuCalendar } from "react-icons/lu"
 

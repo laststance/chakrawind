@@ -1,6 +1,6 @@
 "use client"
 
-import { Button, DownloadTrigger } from "@chakra-ui/react"
+import { Button, DownloadTrigger } from "@laststance/chakrawind-ui"
 import { LuImageDown } from "react-icons/lu"
 
 const data = async () => {

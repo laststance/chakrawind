@@ -1,4 +1,4 @@
-import { Code, Stack, Text } from "@chakra-ui/react"
+import { Code, Stack, Text } from "@laststance/chakrawind-ui"
 
 export const TextWithAsProp = () => {
   return (

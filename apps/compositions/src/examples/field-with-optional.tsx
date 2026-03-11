@@ -1,4 +1,4 @@
-import { Badge, Field, Input } from "@chakra-ui/react"
+import { Badge, Field, Input } from "@laststance/chakrawind-ui"
 
 export const FieldWithOptional = () => {
   return (

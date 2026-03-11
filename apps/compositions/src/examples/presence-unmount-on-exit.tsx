@@ -7,7 +7,7 @@ import {
   Presence,
   Stack,
   useDisclosure,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 
 export const PresenceUnmountOnExit = () => {
   const { open, onToggle } = useDisclosure()

@@ -1,6 +1,6 @@
 "use client"
 
-import { Box } from "@chakra-ui/react"
+import { Box } from "@laststance/chakrawind-ui"
 import Image from "@tiptap/extension-image"
 import { CharacterCount } from "@tiptap/extensions/character-count"
 import { useEditor } from "@tiptap/react"

@@ -1,4 +1,4 @@
-import { IconButton as ChakraIconButton } from "@chakra-ui/react"
+import { IconButton as ChakraIconButton } from "@laststance/chakrawind-ui"
 import * as React from "react"
 import { LuX } from "react-icons/lu"
 

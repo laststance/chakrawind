@@ -1,5 +1,5 @@
 import reactLogo from "@/assets/react.svg"
-import { Button, Center, HStack } from "@chakra-ui/react"
+import { Button, Center, HStack } from "@laststance/chakrawind-ui"
 import viteLogo from "/vite.svg"
 
 function App() {

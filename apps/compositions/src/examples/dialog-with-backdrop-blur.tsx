@@ -1,4 +1,4 @@
-import { Button, Dialog, Portal } from "@chakra-ui/react"
+import { Button, Dialog, Portal } from "@laststance/chakrawind-ui"
 
 export const DialogWithBackdropBlur = () => {
   return (

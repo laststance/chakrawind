@@ -1,4 +1,10 @@
-import { Button, ButtonGroup, For, Stack, Steps } from "@chakra-ui/react"
+import {
+  Button,
+  ButtonGroup,
+  For,
+  Stack,
+  Steps,
+} from "@laststance/chakrawind-ui"
 import { colorPalettes } from "compositions/lib/color-palettes"
 
 export const StepsWithColors = () => {

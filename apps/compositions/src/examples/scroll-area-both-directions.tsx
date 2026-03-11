@@ -1,4 +1,4 @@
-import { ScrollArea } from "@chakra-ui/react"
+import { ScrollArea } from "@laststance/chakrawind-ui"
 import LoremIpsum from "react-lorem-ipsum"
 
 export const ScrollAreaBothDirections = () => (

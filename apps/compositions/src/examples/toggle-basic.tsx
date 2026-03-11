@@ -1,4 +1,4 @@
-import { Button, Toggle } from "@chakra-ui/react"
+import { Button, Toggle } from "@laststance/chakrawind-ui"
 import { LuBold } from "react-icons/lu"
 
 export const ToggleBasic = () => {

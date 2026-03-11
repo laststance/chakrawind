@@ -1,4 +1,10 @@
-import { Heading, Link, LinkOverlay, Stack, Text } from "@chakra-ui/react"
+import {
+  Heading,
+  Link,
+  LinkOverlay,
+  Stack,
+  Text,
+} from "@laststance/chakrawind-ui"
 
 export const LinkOverlayBasic = () => {
   return (

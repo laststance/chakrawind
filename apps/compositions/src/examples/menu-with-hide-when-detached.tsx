@@ -1,4 +1,11 @@
-import { Box, Center, Flex, Menu, Portal, Text } from "@chakra-ui/react"
+import {
+  Box,
+  Center,
+  Flex,
+  Menu,
+  Portal,
+  Text,
+} from "@laststance/chakrawind-ui"
 
 export const MenuWithHideWhenDetached = () => {
   return (

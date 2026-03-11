@@ -1,4 +1,4 @@
-import { FormatByte, Stack, Text } from "@chakra-ui/react"
+import { FormatByte, Stack, Text } from "@laststance/chakrawind-ui"
 
 export const FormatByteWithUnitDisplay = () => {
   return (

@@ -1,4 +1,4 @@
-import { Checkbox, For, HStack, Stack, Text } from "@chakra-ui/react"
+import { Checkbox, For, HStack, Stack, Text } from "@laststance/chakrawind-ui"
 
 export const CheckboxWithVariants = () => {
   return (

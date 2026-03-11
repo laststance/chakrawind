@@ -1,7 +1,7 @@
 {
-  "name": "@chakra-ui/react",
-  "version": "3.34.0",
-  "description": "Responsive and accessible React UI components built with React and Tailwind CSS",
+  "name": "@laststance/chakrawind-ui",
+  "version": "0.1.0",
+  "description": "Chakra UI components rebuilt with Tailwind CSS — drop-in replacement with full API parity",
   "type": "module",
   "main": "dist/cjs/index.cjs",
   "module": "dist/esm/index.js",
@@ -15,10 +15,10 @@
   },
   "author": "Segun Adebayo <sage@adebayosegun.com>",
   "license": "MIT",
-  "homepage": "https://chakra-ui.com/",
+  "homepage": "https://github.com/laststance/chakrawind",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chakra-ui/chakra-ui",
+    "url": "https://github.com/laststance/chakrawind",
     "directory": "packages/react"
   },
   "keywords": [

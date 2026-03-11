@@ -1,4 +1,4 @@
-import { Center } from "@chakra-ui/react"
+import { Center } from "@laststance/chakrawind-ui"
 
 export const SystemColorPalette = () => {
   return (

@@ -1,4 +1,4 @@
-import { Field, Input, Stack } from "@chakra-ui/react"
+import { Field, Input, Stack } from "@laststance/chakrawind-ui"
 
 export const InputWithFocusErrorColor = () => {
   return (

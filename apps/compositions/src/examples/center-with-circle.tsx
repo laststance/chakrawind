@@ -1,4 +1,4 @@
-import { Circle } from "@chakra-ui/react"
+import { Circle } from "@laststance/chakrawind-ui"
 import { LuPhoneForwarded } from "react-icons/lu"
 
 export const CenterWithCircle = () => {

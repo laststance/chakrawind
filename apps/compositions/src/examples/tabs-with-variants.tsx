@@ -1,4 +1,4 @@
-import { For, SimpleGrid, Tabs } from "@chakra-ui/react"
+import { For, SimpleGrid, Tabs } from "@laststance/chakrawind-ui"
 import { LuFolder, LuSquareCheck, LuUser } from "react-icons/lu"
 
 export const TabsWithVariants = () => {

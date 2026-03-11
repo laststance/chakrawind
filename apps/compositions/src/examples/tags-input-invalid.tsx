@@ -1,6 +1,6 @@
 "use client"
 
-import { Field, TagsInput } from "@chakra-ui/react"
+import { Field, TagsInput } from "@laststance/chakrawind-ui"
 
 export const TagsInputInvalid = () => (
   <Field.Root invalid>

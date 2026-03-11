@@ -5,7 +5,7 @@ import {
   Portal,
   useFilter,
   useListCollection,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import { useRef } from "react"
 
 export const ComboboxWithLimit = () => {

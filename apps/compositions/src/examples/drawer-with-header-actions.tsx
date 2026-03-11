@@ -4,7 +4,7 @@ import {
   CloseButton,
   Drawer,
   Portal,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 
 export const DrawerWithHeaderActions = () => {
   return (

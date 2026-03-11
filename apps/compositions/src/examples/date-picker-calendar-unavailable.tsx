@@ -1,7 +1,7 @@
 "use client"
 
-import { DatePicker } from "@chakra-ui/react"
 import { isWeekend } from "@internationalized/date"
+import { DatePicker } from "@laststance/chakrawind-ui"
 
 export const DatePickerCalendarUnavailable = () => {
   return (

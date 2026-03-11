@@ -1,4 +1,4 @@
-import { Radiomark, Stack } from "@chakra-ui/react"
+import { Radiomark, Stack } from "@laststance/chakrawind-ui"
 
 export const RadiomarkBasic = () => {
   return (

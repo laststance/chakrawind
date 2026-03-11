@@ -6,7 +6,7 @@ import {
   Input,
   NativeSelect,
   Stack,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 
 export const FieldsetBasic = () => {
   return (

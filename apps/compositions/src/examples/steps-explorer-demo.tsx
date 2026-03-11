@@ -8,7 +8,7 @@ import {
   Stack,
   Steps,
   Text,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 
 export const StepsExplorerDemo = () => {
   return (

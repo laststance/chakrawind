@@ -1,6 +1,6 @@
 "use client"
 
-import { Input } from "@chakra-ui/react"
+import { Input } from "@laststance/chakrawind-ui"
 import { withMask } from "use-mask-input"
 
 export const InputWithMask = () => {

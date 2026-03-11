@@ -1,6 +1,6 @@
 "use client"
 
-import { Button, Checkbox, VStack } from "@chakra-ui/react"
+import { Button, Checkbox, VStack } from "@laststance/chakrawind-ui"
 import { useState } from "react"
 import { MdAdsClick } from "react-icons/md"
 

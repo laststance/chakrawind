@@ -1,4 +1,4 @@
-import { HoverCard, Portal } from "@chakra-ui/react"
+import { HoverCard, Portal } from "@laststance/chakrawind-ui"
 import * as React from "react"
 
 interface HoverCardContentProps extends HoverCard.ContentProps {

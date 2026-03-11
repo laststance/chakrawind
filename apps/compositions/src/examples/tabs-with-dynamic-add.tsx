@@ -1,6 +1,12 @@
 "use client"
 
-import { Button, CloseButton, Heading, Tabs, Text } from "@chakra-ui/react"
+import {
+  Button,
+  CloseButton,
+  Heading,
+  Tabs,
+  Text,
+} from "@laststance/chakrawind-ui"
 import { useState } from "react"
 import { LuPlus } from "react-icons/lu"
 

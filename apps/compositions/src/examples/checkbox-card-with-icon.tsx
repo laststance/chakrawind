@@ -4,7 +4,7 @@ import {
   Float,
   Icon,
   SimpleGrid,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import { HiGlobeAlt, HiLockClosed, HiShieldCheck, HiUser } from "react-icons/hi"
 
 export const CheckboxCardWithIcon = () => {

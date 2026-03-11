@@ -1,4 +1,4 @@
-import { Stack, Textarea } from "@chakra-ui/react"
+import { Stack, Textarea } from "@laststance/chakrawind-ui"
 
 export const TextareaWithResize = () => {
   return (

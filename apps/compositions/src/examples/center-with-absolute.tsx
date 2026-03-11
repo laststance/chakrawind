@@ -1,4 +1,4 @@
-import { AbsoluteCenter, Box } from "@chakra-ui/react"
+import { AbsoluteCenter, Box } from "@laststance/chakrawind-ui"
 import { LuPhone } from "react-icons/lu"
 
 export const CenterWithAbsolute = () => {

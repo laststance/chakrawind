@@ -1,4 +1,4 @@
-import { SegmentGroup } from "@chakra-ui/react"
+import { SegmentGroup } from "@laststance/chakrawind-ui"
 
 export const SegmentedControlWithDisabled = () => {
   return (

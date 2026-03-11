@@ -6,7 +6,7 @@ import {
   Portal,
   useFilter,
   useListCollection,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import { LuCode } from "react-icons/lu"
 
 export const ComboboxWithInputGroup = () => {

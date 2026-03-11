@@ -1,6 +1,6 @@
 "use client"
 
-import type { ButtonProps, RecipeProps } from "@chakra-ui/react"
+import type { ButtonProps, RecipeProps } from "@laststance/chakrawind-ui"
 import {
   Button,
   FileUpload as ChakraFileUpload,
@@ -10,7 +10,7 @@ import {
   Text,
   useFileUploadContext,
   useRecipe,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import * as React from "react"
 import { LuFile, LuUpload, LuX } from "react-icons/lu"
 
@@ -98,8 +98,7 @@ const FileUploadItem = React.forwardRef<HTMLLIElement, FileUploadItemProps>(
 )
 
 interface FileUploadListProps
-  extends VisibilityProps,
-    ChakraFileUpload.ItemGroupProps {
+  extends VisibilityProps, ChakraFileUpload.ItemGroupProps {
   files?: File[]
 }
 

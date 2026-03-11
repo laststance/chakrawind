@@ -1,4 +1,4 @@
-import { NumberInput } from "@chakra-ui/react"
+import { NumberInput } from "@laststance/chakrawind-ui"
 
 export const NumberInputWithMouseWheel = () => {
   return (

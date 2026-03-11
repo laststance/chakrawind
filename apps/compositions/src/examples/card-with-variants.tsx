@@ -1,4 +1,4 @@
-import { Avatar, Button, Card, For, Stack } from "@chakra-ui/react"
+import { Avatar, Button, Card, For, Stack } from "@laststance/chakrawind-ui"
 
 export const CardWithVariants = () => {
   return (

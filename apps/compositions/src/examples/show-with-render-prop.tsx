@@ -1,4 +1,4 @@
-import { Show } from "@chakra-ui/react"
+import { Show } from "@laststance/chakrawind-ui"
 
 export const ShowWithRenderProp = () => {
   const value: number | undefined = 10

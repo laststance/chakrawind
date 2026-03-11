@@ -1,4 +1,4 @@
-import { Button, Menu, Portal } from "@chakra-ui/react"
+import { Button, Menu, Portal } from "@laststance/chakrawind-ui"
 import { LuChevronRight } from "react-icons/lu"
 
 export const MenuWithSubmenu = () => {

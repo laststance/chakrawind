@@ -1,4 +1,4 @@
-import { Link, Tabs } from "@chakra-ui/react"
+import { Link, Tabs } from "@laststance/chakrawind-ui"
 
 export const TabsWithLinks = () => {
   return (

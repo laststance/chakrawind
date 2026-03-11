@@ -1,4 +1,9 @@
-import { Box, SkipNavContent, SkipNavLink, Text } from "@chakra-ui/react"
+import {
+  Box,
+  SkipNavContent,
+  SkipNavLink,
+  Text,
+} from "@laststance/chakrawind-ui"
 
 export const SkipNavBasic = () => {
   return (

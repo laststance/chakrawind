@@ -1,6 +1,6 @@
 "use client"
 
-import { For, Spinner, useRecipe } from "@chakra-ui/react"
+import { For, Spinner, useRecipe } from "@laststance/chakrawind-ui"
 
 export const SpinnerSizeTable = () => {
   const recipe = useRecipe({ key: "spinner" })

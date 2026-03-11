@@ -1,4 +1,4 @@
-import { chakra } from "@chakra-ui/react"
+import { chakra } from "@laststance/chakrawind-ui"
 
 export const SystemWithAsChild = () => {
   return (

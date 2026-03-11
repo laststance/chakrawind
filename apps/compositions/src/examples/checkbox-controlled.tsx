@@ -1,6 +1,6 @@
 "use client"
 
-import { Checkbox } from "@chakra-ui/react"
+import { Checkbox } from "@laststance/chakrawind-ui"
 import { useState } from "react"
 
 export const CheckboxControlled = () => {

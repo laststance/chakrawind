@@ -15,7 +15,7 @@ import {
   Tabs,
   Text,
   VStack,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import Color from "@tiptap/extension-color"
 import Heading from "@tiptap/extension-heading"
 import Highlight from "@tiptap/extension-highlight"

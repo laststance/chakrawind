@@ -1,6 +1,6 @@
 "use client"
 
-import { Switch } from "@chakra-ui/react"
+import { Switch } from "@laststance/chakrawind-ui"
 import { useState } from "react"
 
 export const SwitchControlled = () => {

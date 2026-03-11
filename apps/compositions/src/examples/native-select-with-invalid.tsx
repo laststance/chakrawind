@@ -1,4 +1,4 @@
-import { Field, NativeSelect } from "@chakra-ui/react"
+import { Field, NativeSelect } from "@laststance/chakrawind-ui"
 
 export const NativeSelectWithInvalid = () => (
   <Field.Root invalid width="240px">

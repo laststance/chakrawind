@@ -9,7 +9,7 @@
     "type-check": "tsc"
   },
   "dependencies": {
-    "@chakra-ui/react": "workspace:*",
+    "@laststance/chakrawind-ui": "workspace:*",
     "@types/node": "^24.10.1",
     "@types/react": "19.2.13",
     "@types/react-dom": "19.2.3",

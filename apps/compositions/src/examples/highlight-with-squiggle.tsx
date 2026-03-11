@@ -1,6 +1,6 @@
 "use client"
 
-import { Heading, Mark, useHighlight } from "@chakra-ui/react"
+import { Heading, Mark, useHighlight } from "@laststance/chakrawind-ui"
 import { Fragment } from "react"
 
 export const HighlightWithSquiggle = () => {

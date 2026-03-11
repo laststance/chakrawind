@@ -1,4 +1,4 @@
-import { For, Mark, Stack, Text } from "@chakra-ui/react"
+import { For, Mark, Stack, Text } from "@laststance/chakrawind-ui"
 
 export const MarkWithVariants = () => {
   return (

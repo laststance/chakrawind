@@ -8,7 +8,7 @@ import {
   Span,
   useFilter,
   useListCollection,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 
 export const ComboboxWithDisabledItem = () => {
   const { contains } = useFilter({ sensitivity: "base" })

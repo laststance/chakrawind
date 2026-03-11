@@ -1,6 +1,12 @@
 "use client"
 
-import { Box, Circle, HStack, LocaleProvider, Marquee } from "@chakra-ui/react"
+import {
+  Box,
+  Circle,
+  HStack,
+  LocaleProvider,
+  Marquee,
+} from "@laststance/chakrawind-ui"
 
 export const MarqueeRtl = () => (
   <LocaleProvider locale="ar-AE">

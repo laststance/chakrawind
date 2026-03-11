@@ -1,7 +1,7 @@
 "use client"
 
-import { Blockquote } from "@chakra-ui/react"
-import { Box, Flex } from "@chakra-ui/react"
+import { Blockquote } from "@laststance/chakrawind-ui"
+import { Box, Flex } from "@laststance/chakrawind-ui"
 import { RiQuoteText } from "react-icons/ri"
 
 export const BlockquoteExplorerDemo = () => {

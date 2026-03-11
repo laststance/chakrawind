@@ -1,6 +1,6 @@
 "use client"
 
-import { Box, Button, Group, Popover, Portal } from "@chakra-ui/react"
+import { Box, Button, Group, Popover, Portal } from "@laststance/chakrawind-ui"
 import { useRef } from "react"
 
 export const PopoverWithInitialFocus = () => {

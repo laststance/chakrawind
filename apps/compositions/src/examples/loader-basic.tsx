@@ -1,4 +1,4 @@
-import { HStack, Loader } from "@chakra-ui/react"
+import { HStack, Loader } from "@laststance/chakrawind-ui"
 
 export const LoaderBasic = () => {
   return (

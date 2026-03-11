@@ -1,4 +1,4 @@
-import { Progress } from "@chakra-ui/react"
+import { Progress } from "@laststance/chakrawind-ui"
 
 export const ProgressWithStripes = () => {
   return (

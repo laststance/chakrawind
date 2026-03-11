@@ -1,6 +1,6 @@
 "use client"
 
-import { TagsInput as ChakraTagsInput } from "@chakra-ui/react"
+import { TagsInput as ChakraTagsInput } from "@laststance/chakrawind-ui"
 import { CloseButton } from "compositions/ui/close-button"
 import * as React from "react"
 

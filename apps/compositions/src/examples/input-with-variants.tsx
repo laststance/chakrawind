@@ -1,4 +1,4 @@
-import { Input, Stack } from "@chakra-ui/react"
+import { Input, Stack } from "@laststance/chakrawind-ui"
 
 export const InputWithVariants = () => {
   return (

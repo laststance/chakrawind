@@ -10,7 +10,7 @@ import {
   useComboboxContext,
   useFilter,
   useListCollection,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 
 function ComboboxValue() {
   const combobox = useComboboxContext()

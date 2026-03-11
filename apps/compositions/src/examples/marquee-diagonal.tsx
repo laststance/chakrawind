@@ -1,4 +1,4 @@
-import { Circle, HStack, Marquee } from "@chakra-ui/react"
+import { Circle, HStack, Marquee } from "@laststance/chakrawind-ui"
 
 export const MarqueeDiagonal = () => {
   return (

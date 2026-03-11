@@ -1,4 +1,4 @@
-import { Highlight, Stack, Text } from "@chakra-ui/react"
+import { Highlight, Stack, Text } from "@laststance/chakrawind-ui"
 
 const query = "spot"
 const results = ["Spotlight bulb", "Spot cleaner", "Spot ceiling"]

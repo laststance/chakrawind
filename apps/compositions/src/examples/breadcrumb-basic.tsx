@@ -1,4 +1,4 @@
-import { Breadcrumb } from "@chakra-ui/react"
+import { Breadcrumb } from "@laststance/chakrawind-ui"
 
 export const BreadcrumbBasic = () => {
   return (

@@ -7,21 +7,25 @@ import {
   Tabs,
   createShikiAdapter,
   useTabs,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import { useEffect } from "react"
 import type { HighlighterGeneric } from "shiki"
 
 const files = [
-  { title: "npm", language: "bash", code: "npm install @chakra-ui/react" },
+  {
+    title: "npm",
+    language: "bash",
+    code: "npm install @laststance/chakrawind-ui",
+  },
   {
     title: "yarn",
     language: "bash",
-    code: "yarn add @chakra-ui/react",
+    code: "yarn add @laststance/chakrawind-ui",
   },
   {
     title: "bun",
     language: "bash",
-    code: "bun install @chakra-ui/react",
+    code: "bun install @laststance/chakrawind-ui",
   },
 ]
 

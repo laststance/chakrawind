@@ -1,6 +1,6 @@
 "use client"
 
-import { Table } from "@chakra-ui/react"
+import { Table } from "@laststance/chakrawind-ui"
 import {
   createColumnHelper,
   flexRender,

@@ -17,7 +17,7 @@
   "author": "Segun Adebayo <sage@adebayosegun.com>",
   "license": "ISC",
   "dependencies": {
-    "@chakra-ui/react": "workspace:*",
+    "@laststance/chakrawind-ui": "workspace:*",
     "@floating-ui/react": "^0.27.16",
     "@hookform/resolvers": "5.2.2",
     "@internationalized/date": "3.11.0",

@@ -1,4 +1,4 @@
-import { Accordion, For, Span, Stack, Text } from "@chakra-ui/react"
+import { Accordion, For, Span, Stack, Text } from "@laststance/chakrawind-ui"
 
 export const AccordionVariants = () => {
   return (

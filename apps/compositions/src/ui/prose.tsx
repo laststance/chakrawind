@@ -1,6 +1,6 @@
 "use client"
 
-import { chakra } from "@chakra-ui/react"
+import { chakra } from "@laststance/chakrawind-ui"
 
 const TRAILING_PSEUDO_REGEX = /(::?[\w-]+(?:\([^)]*\))?)+$/
 const EXCLUDE_CLASSNAME = ".not-prose"

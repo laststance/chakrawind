@@ -1,4 +1,4 @@
-import { Button, CloseButton, Dialog, Portal } from "@chakra-ui/react"
+import { Button, CloseButton, Dialog, Portal } from "@laststance/chakrawind-ui"
 import { Tooltip } from "compositions/ui/tooltip"
 
 export const TooltipWithDialog = () => {

@@ -1,4 +1,4 @@
-import { List } from "@chakra-ui/react"
+import { List } from "@laststance/chakrawind-ui"
 
 export const ListBasic = () => (
   <List.Root>

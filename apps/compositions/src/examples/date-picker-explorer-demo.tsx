@@ -1,6 +1,6 @@
 "use client"
 
-import { DatePicker, parseDate } from "@chakra-ui/react"
+import { DatePicker, parseDate } from "@laststance/chakrawind-ui"
 import { LuCalendar } from "react-icons/lu"
 
 export const DatePickerExplorerDemo = () => {

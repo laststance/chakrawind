@@ -1,6 +1,6 @@
 "use client"
 
-import { Button } from "@chakra-ui/react"
+import { Button } from "@laststance/chakrawind-ui"
 import { toaster } from "compositions/ui/toaster"
 
 export const ToasterBasic = () => {

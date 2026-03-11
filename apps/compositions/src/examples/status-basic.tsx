@@ -1,4 +1,4 @@
-import { HStack, Status } from "@chakra-ui/react"
+import { HStack, Status } from "@laststance/chakrawind-ui"
 
 export const StatusBasic = () => {
   return (

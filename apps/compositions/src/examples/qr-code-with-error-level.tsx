@@ -1,6 +1,6 @@
 "use client"
 
-import { QrCode, SegmentGroup, Stack } from "@chakra-ui/react"
+import { QrCode, SegmentGroup, Stack } from "@laststance/chakrawind-ui"
 import { useState } from "react"
 
 type ErrorLevel = "L" | "M" | "Q" | "H"

@@ -1,4 +1,4 @@
-import { EmptyState, VStack } from "@chakra-ui/react"
+import { EmptyState, VStack } from "@laststance/chakrawind-ui"
 import { LuShoppingCart } from "react-icons/lu"
 
 export const EmptyStateBasic = () => {

@@ -1,4 +1,4 @@
-import { Carousel, IconButton } from "@chakra-ui/react"
+import { Carousel, IconButton } from "@laststance/chakrawind-ui"
 import { DecorativeBox } from "compositions/lib/decorative-box"
 import { LuChevronDown, LuChevronUp } from "react-icons/lu"
 

@@ -71,7 +71,7 @@ Test files:
 ### 1. Install both libraries
 
 ```sh
-npm install @chakra-ui/react
+npm install @laststance/chakrawind-ui
 npx shadcn@latest init
 npx shadcn@latest add button
 ```
@@ -81,8 +81,8 @@ npx shadcn@latest add button
 In your root layout or entry point, import Chakra Wind's CSS alongside Tailwind:
 
 ```tsx
-import "@chakra-ui/react/tailwind/chakra.css"
-import "@chakra-ui/react/tailwind/color-palette.css"
+import "@laststance/chakrawind-ui/tailwind/chakra.css"
+import "@laststance/chakrawind-ui/tailwind/color-palette.css"
 ```
 
 shadcn/ui uses the same Tailwind CSS build, so no additional CSS imports are
@@ -92,7 +92,7 @@ needed.
 
 ```tsx
 import { Button as ShadcnButton } from "@/components/ui/button"
-import { Button as ChakraButton } from "@chakra-ui/react"
+import { Button as ChakraButton } from "@laststance/chakrawind-ui"
 
 function App() {
   return (

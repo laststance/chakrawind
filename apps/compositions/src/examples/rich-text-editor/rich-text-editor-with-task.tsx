@@ -1,6 +1,6 @@
 "use client"
 
-import { HStack } from "@chakra-ui/react"
+import { HStack } from "@laststance/chakrawind-ui"
 import TaskItem from "@tiptap/extension-task-item"
 import TaskList from "@tiptap/extension-task-list"
 import { useEditor } from "@tiptap/react"

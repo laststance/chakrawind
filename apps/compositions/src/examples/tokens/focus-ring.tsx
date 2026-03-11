@@ -1,4 +1,4 @@
-import { Center, For, Stack } from "@chakra-ui/react"
+import { Center, For, Stack } from "@laststance/chakrawind-ui"
 
 export const TokensFocusRing = () => {
   return (

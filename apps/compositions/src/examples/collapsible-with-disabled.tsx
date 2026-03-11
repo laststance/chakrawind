@@ -1,4 +1,4 @@
-import { Box, Collapsible } from "@chakra-ui/react"
+import { Box, Collapsible } from "@laststance/chakrawind-ui"
 
 export const CollapsibleWithDisabled = () => (
   <Collapsible.Root disabled>

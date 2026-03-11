@@ -1,6 +1,6 @@
 "use client"
 
-import { Button, useClipboard } from "@chakra-ui/react"
+import { Button, useClipboard } from "@laststance/chakrawind-ui"
 
 export const ClipboardWithStore = () => {
   const clipboard = useClipboard({ value: "https://chakra-ui.com" })

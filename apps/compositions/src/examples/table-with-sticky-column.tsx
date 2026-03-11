@@ -1,4 +1,4 @@
-import { Table } from "@chakra-ui/react"
+import { Table } from "@laststance/chakrawind-ui"
 
 export const TableWithStickyColumn = () => {
   return (

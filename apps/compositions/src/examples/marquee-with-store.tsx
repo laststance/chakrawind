@@ -6,7 +6,7 @@ import {
   Marquee,
   Stack,
   useMarquee,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import {
   IoLogoFigma,
   IoLogoGitlab,

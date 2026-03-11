@@ -1,6 +1,6 @@
 "use client"
 
-import { AbsoluteCenter, Span, TagsInput } from "@chakra-ui/react"
+import { AbsoluteCenter, Span, TagsInput } from "@laststance/chakrawind-ui"
 
 export const TagsInputWithClear = () => {
   return (

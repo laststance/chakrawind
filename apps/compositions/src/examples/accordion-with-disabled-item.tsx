@@ -1,4 +1,4 @@
-import { Accordion, Span } from "@chakra-ui/react"
+import { Accordion, Span } from "@laststance/chakrawind-ui"
 
 export const AccordionWithDisabledItem = () => {
   return (

@@ -1,4 +1,4 @@
-import { For, Slider, Stack, Text, VStack } from "@chakra-ui/react"
+import { For, Slider, Stack, Text, VStack } from "@laststance/chakrawind-ui"
 
 export const SliderWithMarks = () => {
   return (

@@ -1,4 +1,4 @@
-import { Carousel, Center, IconButton } from "@chakra-ui/react"
+import { Carousel, Center, IconButton } from "@laststance/chakrawind-ui"
 import { LuChevronLeft, LuChevronRight } from "react-icons/lu"
 
 const items = [

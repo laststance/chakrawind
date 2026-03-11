@@ -1,6 +1,13 @@
 "use client"
 
-import { Avatar, For, Span, Stack, Tag, useSlotRecipe } from "@chakra-ui/react"
+import {
+  Avatar,
+  For,
+  Span,
+  Stack,
+  Tag,
+  useSlotRecipe,
+} from "@laststance/chakrawind-ui"
 import { colorPalettes } from "compositions/lib/color-palettes"
 import { PlaygroundTable } from "compositions/lib/playground-table"
 import { HiCheck, HiOutlineBriefcase } from "react-icons/hi"

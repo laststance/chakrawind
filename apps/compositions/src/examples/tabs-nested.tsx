@@ -1,4 +1,4 @@
-import { Field, Heading, Input, Tabs, Text } from "@chakra-ui/react"
+import { Field, Heading, Input, Tabs, Text } from "@laststance/chakrawind-ui"
 
 export const TabsNested = () => {
   return (

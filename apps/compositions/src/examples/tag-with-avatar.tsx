@@ -1,4 +1,4 @@
-import { Avatar, For, HStack, Tag } from "@chakra-ui/react"
+import { Avatar, For, HStack, Tag } from "@laststance/chakrawind-ui"
 
 export const TagWithAvatar = () => {
   return (

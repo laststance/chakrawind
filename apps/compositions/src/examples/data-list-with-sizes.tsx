@@ -1,4 +1,4 @@
-import { DataList, Stack } from "@chakra-ui/react"
+import { DataList, Stack } from "@laststance/chakrawind-ui"
 
 export const DataListWithSizes = () => {
   return (

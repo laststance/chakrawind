@@ -5,7 +5,7 @@ import {
   Input,
   NativeSelect,
   Textarea,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 
 export const FieldsetWithDisabled = () => {
   return (

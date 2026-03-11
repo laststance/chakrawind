@@ -1,4 +1,4 @@
-import { For, ScrollArea, Stack, Text } from "@chakra-ui/react"
+import { For, ScrollArea, Stack, Text } from "@laststance/chakrawind-ui"
 import LoremIpsum from "react-lorem-ipsum"
 
 export const ScrollAreaWithSizes = () => (

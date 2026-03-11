@@ -1,4 +1,4 @@
-import { Button, HStack } from "@chakra-ui/react"
+import { Button, HStack } from "@laststance/chakrawind-ui"
 import { Tooltip } from "compositions/ui/tooltip"
 
 export const TooltipMultiple = () => {

@@ -1,4 +1,4 @@
-import { Button, Group } from "@chakra-ui/react"
+import { Button, Group } from "@laststance/chakrawind-ui"
 
 export const GroupWithGrow = () => {
   return (

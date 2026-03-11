@@ -7,7 +7,7 @@ import {
   useComboboxContext,
   useFilter,
   useListCollection,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 
 export const ComboboxWithHighlight = () => {
   const { contains } = useFilter({ sensitivity: "base" })

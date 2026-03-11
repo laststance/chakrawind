@@ -7,7 +7,7 @@ import {
   Span,
   Spinner,
   useListCollection,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import { useState } from "react"
 import { useAsync } from "react-use"
 

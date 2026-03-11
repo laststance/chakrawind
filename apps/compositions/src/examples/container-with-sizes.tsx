@@ -1,4 +1,4 @@
-import { Container, For, Stack } from "@chakra-ui/react"
+import { Container, For, Stack } from "@laststance/chakrawind-ui"
 import { DecorativeBox } from "compositions/lib/decorative-box"
 
 export const ContainerWithSizes = () => {

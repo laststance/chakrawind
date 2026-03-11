@@ -1,4 +1,4 @@
-import { Blockquote } from "@chakra-ui/react"
+import { Blockquote } from "@laststance/chakrawind-ui"
 
 export const BlockquoteWithCite = () => {
   return (

@@ -1,4 +1,10 @@
-import { AbsoluteCenter, Box, HStack, Spinner, Text } from "@chakra-ui/react"
+import {
+  AbsoluteCenter,
+  Box,
+  HStack,
+  Spinner,
+  Text,
+} from "@laststance/chakrawind-ui"
 
 const Overlay = () => (
   <AbsoluteCenter bg="bg/80" backdropFilter="blur(2px)" rounded="md" p="4">

@@ -1,4 +1,4 @@
-import { FormatNumber, Text } from "@chakra-ui/react"
+import { FormatNumber, Text } from "@laststance/chakrawind-ui"
 
 export const FormatNumberWithPercentage = () => {
   return (

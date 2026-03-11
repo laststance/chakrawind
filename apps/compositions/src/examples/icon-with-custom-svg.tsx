@@ -1,4 +1,4 @@
-import { Icon } from "@chakra-ui/react"
+import { Icon } from "@laststance/chakrawind-ui"
 
 export const IconWithCustomSvg = () => {
   return (

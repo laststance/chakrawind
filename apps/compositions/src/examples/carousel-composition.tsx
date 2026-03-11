@@ -8,7 +8,7 @@ import {
   Image,
   Span,
   Stack,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import { FaStar } from "react-icons/fa"
 import { LuChevronLeft, LuChevronRight } from "react-icons/lu"
 

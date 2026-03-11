@@ -1,4 +1,4 @@
-import { Stack } from "@chakra-ui/react"
+import { Stack } from "@laststance/chakrawind-ui"
 import { PasswordInput } from "compositions/ui/password-input"
 
 export const PasswordInputWithSizes = () => {

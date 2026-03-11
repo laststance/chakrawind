@@ -1,4 +1,4 @@
-import { Center, For, SegmentGroup } from "@chakra-ui/react"
+import { Center, For, SegmentGroup } from "@laststance/chakrawind-ui"
 
 export const SegmentedControlWithColorPalette = () => {
   return (

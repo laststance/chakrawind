@@ -1,4 +1,4 @@
-import { ColorSwatch, Group } from "@chakra-ui/react"
+import { ColorSwatch, Group } from "@laststance/chakrawind-ui"
 
 export const ColorSwatchPalette = () => {
   return (

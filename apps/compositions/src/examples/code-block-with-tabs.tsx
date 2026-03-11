@@ -6,7 +6,7 @@ import {
   Tabs,
   createShikiAdapter,
   useTabs,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import type { HighlighterGeneric } from "shiki"
 
 export const CodeBlockWithTabs = () => {

@@ -1,4 +1,4 @@
-import { Avatar, Button, Card, Heading } from "@chakra-ui/react"
+import { Avatar, Button, Card, Heading } from "@laststance/chakrawind-ui"
 
 export const CardExplorerDemo = () => {
   return (

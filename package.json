@@ -1,12 +1,12 @@
 {
-  "name": "chakra-ui",
+  "name": "chakrawind-ui",
   "private": true,
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chakra-ui/chakra-ui.git"
+    "url": "git+https://github.com/laststance/chakrawind.git"
   },
-  "author": "Segun Adebayo <sage@adebayosegun.com>",
+  "author": "Laststance.io <https://github.com/laststance>",
   "license": "MIT",
   "scripts": {
     "prepare": "husky",
@@ -16,7 +16,7 @@
     "typedocs": "pnpm react typedocs",
     "typecheck": "tsc --noEmit",
     "test": "vitest --project=unit",
-    "react": "pnpm --filter=@chakra-ui/react",
+    "react": "pnpm --filter=@laststance/chakrawind-ui",
     "lint": "eslint packages --ext .ts,.tsx --cache",
     "format:check": "prettier --check packages --cache",
     "format:write": "prettier --write packages --cache",
@@ -45,7 +45,7 @@
     "gate:realworld": "tsx scripts/gates/check-realworld.ts",
     "gate:all": "tsx scripts/gates/run-all.ts"
   },
-  "version": "2.0.0",
+  "version": "0.1.0",
   "dependencies": {
     "@changesets/changelog-github": "0.5.2",
     "@changesets/cli": "2.29.8",

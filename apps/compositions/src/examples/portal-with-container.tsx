@@ -1,6 +1,6 @@
 "use client"
 
-import { Portal } from "@chakra-ui/react"
+import { Portal } from "@laststance/chakrawind-ui"
 import { useRef } from "react"
 
 export const PortalWithContainer = () => {

@@ -1,4 +1,4 @@
-import { Clipboard, Link } from "@chakra-ui/react"
+import { Clipboard, Link } from "@laststance/chakrawind-ui"
 
 export const ClipboardWithLink = () => {
   return (

@@ -1,4 +1,10 @@
-import { Avatar, Blockquote, Float, HStack, Span } from "@chakra-ui/react"
+import {
+  Avatar,
+  Blockquote,
+  Float,
+  HStack,
+  Span,
+} from "@laststance/chakrawind-ui"
 
 export const BlockquoteWithAvatar = () => {
   return (

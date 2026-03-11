@@ -1,4 +1,4 @@
-import { Breadcrumb, Menu, Portal } from "@chakra-ui/react"
+import { Breadcrumb, Menu, Portal } from "@laststance/chakrawind-ui"
 import { LuChevronDown } from "react-icons/lu"
 
 interface BreadcrumbMenuItemProps {

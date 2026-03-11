@@ -1,6 +1,12 @@
 "use client"
 
-import { For, Span, Stack, Textarea, useRecipe } from "@chakra-ui/react"
+import {
+  For,
+  Span,
+  Stack,
+  Textarea,
+  useRecipe,
+} from "@laststance/chakrawind-ui"
 import { PlaygroundTable } from "compositions/lib/playground-table"
 
 export const TextareaSizeTable = () => {

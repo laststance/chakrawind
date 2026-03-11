@@ -8,7 +8,7 @@ import {
   Input,
   NativeSelect,
   Stack,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 
 export const FieldsetExplorerDemo = () => {
   return (

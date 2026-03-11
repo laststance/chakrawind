@@ -1,6 +1,11 @@
 "use client"
 
-import { Input, Listbox, useFilter, useListCollection } from "@chakra-ui/react"
+import {
+  Input,
+  Listbox,
+  useFilter,
+  useListCollection,
+} from "@laststance/chakrawind-ui"
 
 export const ListboxWithInput = () => {
   const { contains } = useFilter({ sensitivity: "base" })

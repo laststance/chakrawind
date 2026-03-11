@@ -1,7 +1,7 @@
 /**
  * Realworld Parity Gate
  * Builds the package first, then runs builds against sandbox applications
- * that use @chakra-ui/react.
+ * that use @laststance/chakrawind-ui.
  *
  * Sandboxes using deprecated v2 APIs or requiring special setup are skipped.
  *

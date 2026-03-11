@@ -1,4 +1,4 @@
-import { Group, RadioCard } from "@chakra-ui/react"
+import { Group, RadioCard } from "@laststance/chakrawind-ui"
 
 export const RadioCardComposition = () => {
   return (

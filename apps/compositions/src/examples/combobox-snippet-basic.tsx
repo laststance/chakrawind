@@ -1,6 +1,6 @@
 "use client"
 
-import { useFilter, useListCollection } from "@chakra-ui/react"
+import { useFilter, useListCollection } from "@laststance/chakrawind-ui"
 import {
   ComboboxContent,
   ComboboxControl,

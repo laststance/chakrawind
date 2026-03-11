@@ -1,6 +1,6 @@
 "use client"
 
-import { Box, Button, Menu, Portal } from "@chakra-ui/react"
+import { Box, Button, Menu, Portal } from "@laststance/chakrawind-ui"
 import { useRef } from "react"
 
 export const MenuWithAnchorRect = () => {

@@ -1,4 +1,4 @@
-import { Accordion, HStack } from "@chakra-ui/react"
+import { Accordion, HStack } from "@laststance/chakrawind-ui"
 import * as React from "react"
 import { LuChevronDown } from "react-icons/lu"
 

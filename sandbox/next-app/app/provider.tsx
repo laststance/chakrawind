@@ -1,6 +1,6 @@
 "use client"
 
-import { ChakraProvider, defaultSystem } from "@chakra-ui/react"
+import { ChakraProvider, defaultSystem } from "@laststance/chakrawind-ui"
 import { ThemeProvider } from "next-themes"
 
 export default function RootLayout(props: { children: React.ReactNode }) {

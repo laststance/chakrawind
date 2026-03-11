@@ -1,6 +1,6 @@
 "use client"
 
-import { CodeBlock, createShikiAdapter } from "@chakra-ui/react"
+import { CodeBlock, createShikiAdapter } from "@laststance/chakrawind-ui"
 import type { HighlighterGeneric } from "shiki"
 
 const file = {

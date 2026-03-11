@@ -1,6 +1,6 @@
 "use client"
 
-import { TreeView, createTreeCollection } from "@chakra-ui/react"
+import { TreeView, createTreeCollection } from "@laststance/chakrawind-ui"
 import { LuFile, LuFolder } from "react-icons/lu"
 
 export const TreeViewDisabledNode = () => {

@@ -1,6 +1,6 @@
 "use client"
 
-import { Box, Stack } from "@chakra-ui/react"
+import { Box, Stack } from "@laststance/chakrawind-ui"
 import Subscript from "@tiptap/extension-subscript"
 import Superscript from "@tiptap/extension-superscript"
 import TextAlign from "@tiptap/extension-text-align"

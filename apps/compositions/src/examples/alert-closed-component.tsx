@@ -1,4 +1,4 @@
-import { Alert as ChakraAlert } from "@chakra-ui/react"
+import { Alert as ChakraAlert } from "@laststance/chakrawind-ui"
 import * as React from "react"
 
 export interface AlertProps extends Omit<ChakraAlert.RootProps, "title"> {

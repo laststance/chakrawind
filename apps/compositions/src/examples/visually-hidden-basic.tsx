@@ -1,4 +1,4 @@
-import { Button, VisuallyHidden } from "@chakra-ui/react"
+import { Button, VisuallyHidden } from "@laststance/chakrawind-ui"
 import { LuBell } from "react-icons/lu"
 
 export const VisuallyHiddenBasic = () => {

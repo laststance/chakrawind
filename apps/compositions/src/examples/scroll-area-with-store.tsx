@@ -1,6 +1,6 @@
 "use client"
 
-import { ScrollArea, useScrollArea } from "@chakra-ui/react"
+import { ScrollArea, useScrollArea } from "@laststance/chakrawind-ui"
 import LoremIpsum from "react-lorem-ipsum"
 
 export const ScrollAreaWithStore = () => {

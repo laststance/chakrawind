@@ -1,4 +1,9 @@
-import { Button, ButtonGroup, EmptyState, VStack } from "@chakra-ui/react"
+import {
+  Button,
+  ButtonGroup,
+  EmptyState,
+  VStack,
+} from "@laststance/chakrawind-ui"
 import { HiColorSwatch } from "react-icons/hi"
 
 export const EmptyStateWithAction = () => {

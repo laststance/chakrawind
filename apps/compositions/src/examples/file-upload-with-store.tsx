@@ -6,7 +6,7 @@ import {
   FileUpload,
   Stack,
   useFileUpload,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import { HiUpload } from "react-icons/hi"
 
 export const FileUploadWithStore = () => {

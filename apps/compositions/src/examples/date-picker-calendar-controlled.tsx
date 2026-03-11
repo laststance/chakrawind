@@ -1,6 +1,6 @@
 "use client"
 
-import { DatePicker, Stack, Text, parseDate } from "@chakra-ui/react"
+import { DatePicker, Stack, Text, parseDate } from "@laststance/chakrawind-ui"
 import { useState } from "react"
 
 export const DatePickerCalendarControlled = () => {

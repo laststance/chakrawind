@@ -25,6 +25,6 @@
     "react-router-ts",
     "@chakra-ui/www",
     "@chakra-ui/compositions",
-    "@chakra-ui/react-mcp"
+    "@laststance/chakrawind-ui-mcp"
   ]
 }

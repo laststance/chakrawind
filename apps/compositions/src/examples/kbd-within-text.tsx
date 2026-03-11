@@ -1,4 +1,4 @@
-import { Kbd, Text } from "@chakra-ui/react"
+import { Kbd, Text } from "@laststance/chakrawind-ui"
 
 export const KbdWithinText = () => {
   return (

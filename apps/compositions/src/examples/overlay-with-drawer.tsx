@@ -1,6 +1,11 @@
 "use client"
 
-import { Button, Drawer, Portal, createOverlay } from "@chakra-ui/react"
+import {
+  Button,
+  Drawer,
+  Portal,
+  createOverlay,
+} from "@laststance/chakrawind-ui"
 
 interface DialogProps {
   title: string

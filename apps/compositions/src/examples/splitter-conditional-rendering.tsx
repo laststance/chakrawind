@@ -7,7 +7,7 @@ import {
   Splitter,
   Stack,
   useSplitter,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import { Fragment, useRef, useState } from "react"
 
 const initialPanels: Splitter.PanelData[] = [

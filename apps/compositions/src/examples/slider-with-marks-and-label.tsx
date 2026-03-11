@@ -1,4 +1,4 @@
-import { Slider } from "@chakra-ui/react"
+import { Slider } from "@laststance/chakrawind-ui"
 
 const marks = [
   { value: 0, label: "0%" },

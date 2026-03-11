@@ -1,6 +1,6 @@
 "use client"
 
-import { Badge, DatePicker, For, Stack } from "@chakra-ui/react"
+import { Badge, DatePicker, For, Stack } from "@laststance/chakrawind-ui"
 
 export const DatePickerCalendarWithSizes = () => {
   return (

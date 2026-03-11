@@ -9,7 +9,7 @@ import {
   Show,
   VStack,
   parseColor,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import { useState } from "react"
 import { LuCheck, LuPlus, LuType } from "react-icons/lu"
 

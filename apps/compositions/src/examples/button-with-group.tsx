@@ -1,4 +1,4 @@
-import { Button, ButtonGroup } from "@chakra-ui/react"
+import { Button, ButtonGroup } from "@laststance/chakrawind-ui"
 
 export const ButtonWithGroup = () => {
   return (
