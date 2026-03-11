@@ -1,0 +1,282 @@
+/*
+ * Chakra Wind — Color Palette CSS Custom Properties
+ *
+ * The colorPalette system works by setting CSS custom properties on elements.
+ * When a component has `colorPalette="blue"`, these vars are set:
+ *   --cp-solid, --cp-contrast, --cp-fg, --cp-subtle, --cp-muted, --cp-border
+ *
+ * Recipes reference these vars via Tailwind arbitrary values:
+ *   bg-[var(--cp-solid)], text-[var(--cp-contrast)], etc.
+ */
+
+/* Default colorPalette (gray) */
+:root {
+  --cp-solid: var(--color-gray-600);
+  --cp-solid-hover: var(--color-gray-700);
+  --cp-contrast: var(--color-white);
+  --cp-fg: var(--color-gray-700);
+  --cp-subtle: var(--color-gray-100);
+  --cp-muted: var(--color-gray-200);
+  --cp-border: var(--color-gray-300);
+  --cp-focusRing: var(--color-gray-500);
+}
+
+/* Color palette attribute-based tokens */
+[data-palette="gray"] {
+  --cp-solid: var(--color-gray-600);
+  --cp-solid-hover: var(--color-gray-700);
+  --cp-contrast: var(--color-white);
+  --cp-fg: var(--color-gray-700);
+  --cp-subtle: var(--color-gray-100);
+  --cp-muted: var(--color-gray-200);
+  --cp-border: var(--color-gray-300);
+  --cp-focusRing: var(--color-gray-500);
+}
+
+[data-palette="red"] {
+  --cp-solid: var(--color-red-600);
+  --cp-solid-hover: var(--color-red-700);
+  --cp-contrast: var(--color-white);
+  --cp-fg: var(--color-red-700);
+  --cp-subtle: var(--color-red-50);
+  --cp-muted: var(--color-red-100);
+  --cp-border: var(--color-red-200);
+  --cp-focusRing: var(--color-red-500);
+}
+
+[data-palette="orange"] {
+  --cp-solid: var(--color-orange-600);
+  --cp-solid-hover: var(--color-orange-700);
+  --cp-contrast: var(--color-white);
+  --cp-fg: var(--color-orange-700);
+  --cp-subtle: var(--color-orange-50);
+  --cp-muted: var(--color-orange-100);
+  --cp-border: var(--color-orange-200);
+  --cp-focusRing: var(--color-orange-500);
+}
+
+[data-palette="yellow"] {
+  --cp-solid: var(--color-yellow-500);
+  --cp-solid-hover: var(--color-yellow-600);
+  --cp-contrast: var(--color-black);
+  --cp-fg: var(--color-yellow-700);
+  --cp-subtle: var(--color-yellow-50);
+  --cp-muted: var(--color-yellow-100);
+  --cp-border: var(--color-yellow-200);
+  --cp-focusRing: var(--color-yellow-500);
+}
+
+[data-palette="green"] {
+  --cp-solid: var(--color-green-600);
+  --cp-solid-hover: var(--color-green-700);
+  --cp-contrast: var(--color-white);
+  --cp-fg: var(--color-green-700);
+  --cp-subtle: var(--color-green-50);
+  --cp-muted: var(--color-green-100);
+  --cp-border: var(--color-green-200);
+  --cp-focusRing: var(--color-green-500);
+}
+
+[data-palette="teal"] {
+  --cp-solid: var(--color-teal-600);
+  --cp-solid-hover: var(--color-teal-700);
+  --cp-contrast: var(--color-white);
+  --cp-fg: var(--color-teal-700);
+  --cp-subtle: var(--color-teal-50);
+  --cp-muted: var(--color-teal-100);
+  --cp-border: var(--color-teal-200);
+  --cp-focusRing: var(--color-teal-500);
+}
+
+[data-palette="blue"] {
+  --cp-solid: var(--color-blue-600);
+  --cp-solid-hover: var(--color-blue-700);
+  --cp-contrast: var(--color-white);
+  --cp-fg: var(--color-blue-700);
+  --cp-subtle: var(--color-blue-50);
+  --cp-muted: var(--color-blue-100);
+  --cp-border: var(--color-blue-200);
+  --cp-focusRing: var(--color-blue-500);
+}
+
+[data-palette="cyan"] {
+  --cp-solid: var(--color-cyan-600);
+  --cp-solid-hover: var(--color-cyan-700);
+  --cp-contrast: var(--color-white);
+  --cp-fg: var(--color-cyan-700);
+  --cp-subtle: var(--color-cyan-50);
+  --cp-muted: var(--color-cyan-100);
+  --cp-border: var(--color-cyan-200);
+  --cp-focusRing: var(--color-cyan-500);
+}
+
+[data-palette="purple"] {
+  --cp-solid: var(--color-purple-600);
+  --cp-solid-hover: var(--color-purple-700);
+  --cp-contrast: var(--color-white);
+  --cp-fg: var(--color-purple-700);
+  --cp-subtle: var(--color-purple-50);
+  --cp-muted: var(--color-purple-100);
+  --cp-border: var(--color-purple-200);
+  --cp-focusRing: var(--color-purple-500);
+}
+
+[data-palette="pink"] {
+  --cp-solid: var(--color-pink-600);
+  --cp-solid-hover: var(--color-pink-700);
+  --cp-contrast: var(--color-white);
+  --cp-fg: var(--color-pink-700);
+  --cp-subtle: var(--color-pink-50);
+  --cp-muted: var(--color-pink-100);
+  --cp-border: var(--color-pink-200);
+  --cp-focusRing: var(--color-pink-500);
+}
+
+/* Dark mode overrides */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cp-solid: var(--color-gray-500);
+    --cp-solid-hover: var(--color-gray-400);
+    --cp-contrast: var(--color-white);
+    --cp-fg: var(--color-gray-300);
+    --cp-subtle: var(--color-gray-900);
+    --cp-muted: var(--color-gray-800);
+    --cp-border: var(--color-gray-700);
+    --cp-focusRing: var(--color-gray-400);
+  }
+
+  [data-palette="red"] {
+    --cp-solid: var(--color-red-500);
+    --cp-solid-hover: var(--color-red-400);
+    --cp-fg: var(--color-red-300);
+    --cp-subtle: var(--color-red-950);
+    --cp-muted: var(--color-red-900);
+    --cp-border: var(--color-red-800);
+  }
+
+  [data-palette="blue"] {
+    --cp-solid: var(--color-blue-500);
+    --cp-solid-hover: var(--color-blue-400);
+    --cp-fg: var(--color-blue-300);
+    --cp-subtle: var(--color-blue-950);
+    --cp-muted: var(--color-blue-900);
+    --cp-border: var(--color-blue-800);
+  }
+
+  [data-palette="green"] {
+    --cp-solid: var(--color-green-500);
+    --cp-solid-hover: var(--color-green-400);
+    --cp-fg: var(--color-green-300);
+    --cp-subtle: var(--color-green-950);
+    --cp-muted: var(--color-green-900);
+    --cp-border: var(--color-green-800);
+  }
+
+  [data-palette="teal"] {
+    --cp-solid: var(--color-teal-500);
+    --cp-solid-hover: var(--color-teal-400);
+    --cp-fg: var(--color-teal-300);
+    --cp-subtle: var(--color-teal-950);
+    --cp-muted: var(--color-teal-900);
+    --cp-border: var(--color-teal-800);
+  }
+
+  [data-palette="orange"] {
+    --cp-solid: var(--color-orange-500);
+    --cp-solid-hover: var(--color-orange-400);
+    --cp-fg: var(--color-orange-300);
+    --cp-subtle: var(--color-orange-950);
+    --cp-muted: var(--color-orange-900);
+    --cp-border: var(--color-orange-800);
+  }
+
+  [data-palette="yellow"] {
+    --cp-solid: var(--color-yellow-500);
+    --cp-solid-hover: var(--color-yellow-400);
+    --cp-fg: var(--color-yellow-300);
+    --cp-subtle: var(--color-yellow-950);
+    --cp-muted: var(--color-yellow-900);
+    --cp-border: var(--color-yellow-800);
+  }
+
+  [data-palette="cyan"] {
+    --cp-solid: var(--color-cyan-500);
+    --cp-solid-hover: var(--color-cyan-400);
+    --cp-fg: var(--color-cyan-300);
+    --cp-subtle: var(--color-cyan-950);
+    --cp-muted: var(--color-cyan-900);
+    --cp-border: var(--color-cyan-800);
+  }
+
+  [data-palette="purple"] {
+    --cp-solid: var(--color-purple-500);
+    --cp-solid-hover: var(--color-purple-400);
+    --cp-fg: var(--color-purple-300);
+    --cp-subtle: var(--color-purple-950);
+    --cp-muted: var(--color-purple-900);
+    --cp-border: var(--color-purple-800);
+  }
+
+  [data-palette="pink"] {
+    --cp-solid: var(--color-pink-500);
+    --cp-solid-hover: var(--color-pink-400);
+    --cp-fg: var(--color-pink-300);
+    --cp-subtle: var(--color-pink-950);
+    --cp-muted: var(--color-pink-900);
+    --cp-border: var(--color-pink-800);
+  }
+
+  [data-palette="gray"] {
+    --cp-solid: var(--color-gray-500);
+    --cp-solid-hover: var(--color-gray-400);
+    --cp-fg: var(--color-gray-300);
+    --cp-subtle: var(--color-gray-900);
+    --cp-muted: var(--color-gray-800);
+    --cp-border: var(--color-gray-700);
+  }
+}
+
+/* Semantic tokens */
+:root {
+  --bg: var(--color-white);
+  --bg-subtle: var(--color-gray-50);
+  --bg-muted: var(--color-gray-100);
+  --bg-emphasized: var(--color-gray-200);
+  --bg-inverted: var(--color-black);
+  --bg-panel: var(--color-white);
+
+  --fg: var(--color-black);
+  --fg-muted: var(--color-gray-600);
+  --fg-subtle: var(--color-gray-400);
+  --fg-inverted: var(--color-gray-50);
+
+  --border-color: var(--color-gray-200);
+  --border-muted: var(--color-gray-100);
+  --border-subtle: var(--color-gray-50);
+  --border-emphasized: var(--color-gray-300);
+
+  --focus-ring-color: var(--color-blue-500);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: var(--color-black);
+    --bg-subtle: var(--color-gray-950);
+    --bg-muted: var(--color-gray-900);
+    --bg-emphasized: var(--color-gray-800);
+    --bg-inverted: var(--color-white);
+    --bg-panel: var(--color-gray-950);
+
+    --fg: var(--color-gray-50);
+    --fg-muted: var(--color-gray-400);
+    --fg-subtle: var(--color-gray-500);
+    --fg-inverted: var(--color-black);
+
+    --border-color: var(--color-gray-800);
+    --border-muted: var(--color-gray-900);
+    --border-subtle: var(--color-gray-950);
+    --border-emphasized: var(--color-gray-700);
+
+    --focus-ring-color: var(--color-blue-400);
+  }
+}

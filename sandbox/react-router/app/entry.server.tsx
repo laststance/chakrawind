@@ -1,4 +1,3 @@
-import { CacheProvider } from "@emotion/react"
 import { createReadableStreamFromReadable } from "@react-router/node"
 import { isbot } from "isbot"
 import { PassThrough } from "node:stream"
@@ -6,7 +5,6 @@ import type { RenderToPipeableStreamOptions } from "react-dom/server"
 import { renderToPipeableStream } from "react-dom/server"
 import type { AppLoadContext, EntryContext } from "react-router"
 import { ServerRouter } from "react-router"
-import { createEmotionCache } from "./emotion/emotion-cache"
 
 export const streamTimeout = 5_000
 
@@ -16,8 +14,6 @@ export default function handleRequest(
   responseHeaders: Headers,
   routerContext: EntryContext,
   loadContext: AppLoadContext,
-  // If you have middleware enabled:
-  // loadContext: unstable_RouterContextProvider
 ) {
   return new Promise((resolve, reject) => {
     let shellRendered = false
@@ -30,13 +26,8 @@ export default function handleRequest(
         ? "onAllReady"
         : "onShellReady"
 
-    // Create a new emotion cache for this request
-    const cache = createEmotionCache()
-
     const { pipe, abort } = renderToPipeableStream(
-      <CacheProvider value={cache}>
-        <ServerRouter context={routerContext} url={request.url} />
-      </CacheProvider>,
+      <ServerRouter context={routerContext} url={request.url} />,
       {
         [readyOption]() {
           shellRendered = true

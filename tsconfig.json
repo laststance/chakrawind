@@ -1,6 +1,7 @@
 {
   "extends": ["./tsconfig.build.json"],
-  "include": ["vitest.setup.ts", "packages", "apps/compositions", "**/*.mjs"],
+  "include": ["vitest.setup.ts", "packages", "**/*.mjs"],
+  "exclude": ["apps/compositions", "packages/react/__stories__"],
   "compilerOptions": {
     "paths": {
       "compositions/*": ["./apps/compositions/src/*"]

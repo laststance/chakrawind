@@ -1,10 +1,8 @@
-import path from "node:path"
-import { fileURLToPath } from "node:url"
-
 import { storybookTest } from "@storybook/addon-vitest/vitest-plugin"
 import { playwright } from "@vitest/browser-playwright"
+import path from "node:path"
+import { fileURLToPath } from "node:url"
 import { defineConfig, mergeConfig } from "vitest/config"
-
 import viteConfig from "./vite.config"
 
 const dirname = path.dirname(fileURLToPath(import.meta.url))
@@ -17,8 +15,7 @@ export default mergeConfig(
       watch: false,
       coverage: {
         provider:
-          (process.env.VITEST_COVERAGE_PROVIDER as "v8" | "istanbul") ??
-          "v8",
+          (process.env.VITEST_COVERAGE_PROVIDER as "v8" | "istanbul") ?? "v8",
         reporter: ["text", "json", "lcov", "html"],
         include: [
           "packages/charts/src/**/*.{ts,tsx}",
@@ -57,6 +54,15 @@ export default mergeConfig(
               instances: [{ browser: "chromium" }],
             },
             setupFiles: [".storybook/vitest.setup.ts"],
+          },
+        },
+        {
+          extends: true,
+          test: {
+            name: "coexist",
+            environment: "jsdom",
+            include: ["tests/coexist/**/*.test.{ts,tsx}"],
+            setupFiles: ["tests/coexist/setup.ts"],
           },
         },
       ],

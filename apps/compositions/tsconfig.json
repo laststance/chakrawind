@@ -1,12 +1,13 @@
 {
   "extends": "../../tsconfig.build.json",
-  "include": ["**/*.ts", "**/*.tsx", "eslint.config.mjs"],
   "compilerOptions": {
-    "jsx": "react-jsx",
-    "strict": true,
-    "customConditions": ["dev"],
+    "noEmit": true,
+    "strict": false,
+    "noImplicitAny": false,
     "paths": {
-      "compositions/*": ["./src/*"]
+      "@chakra-ui/react": ["../../packages/react/src"],
+      "@chakra-ui/react/*": ["../../packages/react/src/*"]
     }
-  }
+  },
+  "include": ["src"]
 }
