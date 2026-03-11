@@ -7,7 +7,6 @@ export default defineConfig({
   resolve: {
     alias: {
       "@chakra-ui/react": resolve("packages/react/src"),
-      "@chakra-ui/charts": resolve("packages/charts/src"),
       compositions: resolve("apps/compositions/src"),
     },
   },

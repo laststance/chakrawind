@@ -228,6 +228,18 @@ const createStyled = (tag: any, configOrCva: any = {}, options: any = {}) => {
       return <FinalTag {...merged} />
     }
 
+    // When forwardAsChild is true, pass asChild through to the component
+    if (forwardAsChild && asChild) {
+      finalProps.asChild = true
+    }
+
+    // Handle as + forwardAsChild (e.g., ClipboardInput)
+    if (asProp && forwardAsChild) {
+      const AsComponent = asProp
+      finalProps.children = <AsComponent>{children}</AsComponent>
+      return <FinalTag asChild {...finalProps} />
+    }
+
     finalProps.children = children
 
     return <FinalTag {...finalProps} />

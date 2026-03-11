@@ -17,10 +17,7 @@ export default mergeConfig(
         provider:
           (process.env.VITEST_COVERAGE_PROVIDER as "v8" | "istanbul") ?? "v8",
         reporter: ["text", "json", "lcov", "html"],
-        include: [
-          "packages/charts/src/**/*.{ts,tsx}",
-          "packages/react/src/**/*.{ts,tsx}",
-        ],
+        include: ["packages/react/src/**/*.{ts,tsx}"],
         exclude: ["**/*.stories.{ts,tsx}", "**/*.d.ts", "**/generated/**"],
       },
       benchmark: {
