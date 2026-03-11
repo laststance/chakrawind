@@ -1,183 +1,106 @@
-<p align="center">
-  <a href="https://github.com/chakra-ui/chakra-ui">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/chakra-ui/chakra-ui/main/media/logo-colored-white@2x.png?raw=true">
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/chakra-ui/chakra-ui/main/media/logo-colored@2x.png?raw=true">
-      <img src="https://raw.githubusercontent.com/chakra-ui/chakra-ui/main/media/logo-colored@2x.png?raw=true" alt="Chakra logo" width="300" />
-    </picture>
-  </a>
-</p>
+# Chakra Wind
 
-<h1 align="center">Build Accessible React Apps with Speed ⚡️</h1>
-<br />
+Chakra UI component library powered by Tailwind CSS.
 
-<p align="center">
-  <a href="cursor://anysphere.cursor-deeplink/mcp/install?name=chakra-ui&amp;config=eyJjb21tYW5kIjoibnB4IC15IEBjaGFrcmEtdWkvcmVhY3QtbWNwIn0%3D" target="_blank" rel="noreferrer">
-    <img alt="Add MCP server to Cursor" height="20" src="https://cursor.com/deeplink/mcp-install-light.svg" />
-  </a>
-  <img alt="Github Checks" src="https://img.shields.io/github/checks-status/chakra-ui/chakra-ui/main"/>
-  <a href="https://github.com/chakra-ui/chakra-ui/blob/main/LICENSE">
-    <img alt="MIT License" src="https://img.shields.io/github/license/chakra-ui/chakra-ui"/>
-  </a>
-  <a href="https://www.npmjs.com/package/@chakra-ui/react">
-    <img alt="NPM Downloads" src="https://img.shields.io/npm/dm/@chakra-ui/react.svg?style=flat"/>
-  </a>
-  <a href="https://github.com/chakra-ui/chakra-ui">
-    <img alt="Github Stars" src="https://img.shields.io/github/stars/chakra-ui/chakra-ui?style=social" />
-  </a>
-  <a href="https://discord.gg/chakra-ui">
-    <img alt="Discord" src="https://img.shields.io/discord/660863154703695893.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2" />
-  </a>
-</p>
+## Features
 
-<br />
-
-Chakra UI is a component system for building products with speed. Accessible
-React components for building high-quality web apps and design systems. Works
-with Next.js RSC
-
-## Documentation
-
-It's the https://chakra-ui.com website for the latest version of Chakra UI.
-
-- Latest: https://chakra-ui.com
-- v2: https://v2.chakra-ui.com
-- v1: https://v1.chakra-ui.com
-- v0: https://v0.chakra-ui.com
+- **Full API compatibility** with `@chakra-ui/react@3.34.0` (1933 exports)
+- **Tailwind CSS engine** -- no Emotion runtime, no CSS-in-JS overhead
+- **74 component recipes** (19 CVA single + 55 SVA slot) converted to Tailwind
+  utility classes
+- **shadcn/ui coexistence** -- use both libraries in the same application
+  without conflicts
+- **colorPalette system** via CSS custom properties (`--cp-solid`, `--cp-fg`,
+  etc.)
+- **Two installation paths** -- npm package or shadcn registry
 
 ## Installation
 
-To use Chakra UI components, all you need to do is install the
-`@chakra-ui/react` package and its peer dependencies:
+### npm package
 
 ```sh
-# with Yarn
-$ yarn add @chakra-ui/react @emotion/react
-
-# with npm
-$ npm i @chakra-ui/react @emotion/react
-
-# with pnpm
-$ pnpm add @chakra-ui/react @emotion/react
-
-# with Bun
-$ bun add @chakra-ui/react @emotion/react
+npm install @chakra-ui/react
 ```
 
-## Usage
+No `@emotion/react` peer dependency required.
 
-Read the docs here: https://www.chakra-ui.com/docs/get-started/installation
+### shadcn registry
+
+```sh
+npx shadcn@latest add https://github.com/laststance/chakrawind/registry/ui/button.tsx
+```
+
+Browse available components in `registry/registry.json`.
+
+## Quick Start
+
+```tsx
+import { Button, ChakraProvider } from "@chakra-ui/react"
+import "@chakra-ui/react/tailwind/chakra.css"
+import "@chakra-ui/react/tailwind/color-palette.css"
+
+function App() {
+  return (
+    <ChakraProvider>
+      <Button colorPalette="blue" variant="solid" size="md">
+        Click me
+      </Button>
+    </ChakraProvider>
+  )
+}
+```
+
+## Architecture
+
+Chakra Wind replaces Emotion's runtime CSS-in-JS with static Tailwind utility
+classes. The core modules live in `packages/react/src/tailwind/`:
+
+| Module              | Purpose                                                                                                                                                                                  |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `tw-factory.tsx`    | Drop-in replacement for Emotion's `createStyled`. Uses `forwardRef` + static class concatenation instead of `withEmotionCache` + `serializeStyles`.                                      |
+| `style-props.ts`    | Maps ~100 Chakra style props (`bg`, `p`, `color`, etc.) to Tailwind classes via `extractStyleProps()`.                                                                                   |
+| `cn.ts`             | `clsx` + `tailwind-merge` for class merging with conflict resolution.                                                                                                                    |
+| `chakra.css`        | Tailwind v4 `@theme` directive defining all Chakra design tokens (breakpoints, spacing, colors, fonts, radii).                                                                           |
+| `color-palette.css` | CSS custom properties for the `colorPalette` system. Each `[data-palette="<color>"]` selector sets `--cp-solid`, `--cp-contrast`, `--cp-fg`, `--cp-subtle`, `--cp-muted`, `--cp-border`. |
+| `recipes/`          | 74 recipe files. Recipes use Tailwind class strings instead of Emotion CSS objects.                                                                                                      |
+
+See [docs/architecture.md](docs/architecture.md) for the full technical design.
+
+## Quality Gates
+
+All 8 parity gates must be GREEN for a valid release:
+
+| Gate      | What it checks                               | Command               |
+| --------- | -------------------------------------------- | --------------------- |
+| API       | 1933 exports match baseline                  | `pnpm gate:api`       |
+| Types     | `tsc --noEmit` zero errors                   | `pnpm gate:types`     |
+| Runtime   | Unit test suite passes                       | `pnpm gate:runtime`   |
+| A11y      | Storybook accessibility tests                | `pnpm gate:a11y`      |
+| Visual    | Chromatic visual regression (optional)       | `pnpm gate:visual`    |
+| Coexist   | 32 coexistence tests (8-cell matrix)         | `pnpm gate:coexist`   |
+| Install   | `npm pack` + install verification            | `pnpm gate:install`   |
+| Realworld | Sandbox app builds (vite-ts, next-app, etc.) | `pnpm gate:realworld` |
+
+Run all gates at once:
+
+```sh
+pnpm gate:all
+```
+
+## Development
+
+```sh
+pnpm install
+pnpm build
+pnpm test
+pnpm storybook
+```
 
 ## Contributing
 
-Read the contribution guide here:
-https://www.chakra-ui.com/docs/get-started/contributing
-
-## Storybook Testing (v10)
-
-This repository uses Storybook `v10` with the Vitest integration and Chromatic.
-
-### Browser Tests (Vitest + Storybook)
-
-Run Storybook browser tests generated from all stories:
-
-```sh
-pnpm test-storybook
-```
-
-### Coverage
-
-Run Storybook browser tests with coverage:
-
-```sh
-pnpm test-storybook:coverage
-```
-
-### Visual Tests (Chromatic)
-
-Chromatic requires a project token from a Chromatic account.
-
-1. Create or link a project in [Chromatic](https://www.chromatic.com/docs/quickstart/).
-2. Set `CHROMATIC_PROJECT_TOKEN` in your environment or repository secrets.
-3. Run visual tests:
-
-```sh
-pnpm test-visual
-```
-
-## Support Chakra UI
-
-### Organizations
-
-Support this project with your organization. Your logo will show up here with a
-link to your website.
-[[Contribute](https://opencollective.com/chakra-ui/contribute)]
-
-<a href="https://opencollective.com/chakra-ui/organization/0/website"><img src="https://opencollective.com/chakra-ui/organization/0/avatar.svg?avatarHeight=130" /></a>
-<a href="https://opencollective.com/chakra-ui/organization/1/website"><img src="https://opencollective.com/chakra-ui/organization/1/avatar.svg?avatarHeight=130" /></a>
-<a href="https://opencollective.com/chakra-ui/organization/2/website"><img src="https://opencollective.com/chakra-ui/organization/2/avatar.svg?avatarHeight=130" /></a>
-<a href="https://opencollective.com/chakra-ui/organization/3/website"><img src="https://opencollective.com/chakra-ui/organization/3/avatar.svg?avatarHeight=130" /></a>
-<a href="https://opencollective.com/chakra-ui/organization/4/website"><img src="https://opencollective.com/chakra-ui/organization/4/avatar.svg?avatarHeight=130" /></a>
-<a href="https://opencollective.com/chakra-ui/organization/5/website"><img src="https://opencollective.com/chakra-ui/organization/5/avatar.svg?avatarHeight=130" /></a>
-<a href="https://opencollective.com/chakra-ui/organization/6/website"><img src="https://opencollective.com/chakra-ui/organization/6/avatar.svg?avatarHeight=130" /></a>
-<a href="https://opencollective.com/chakra-ui/organization/7/website"><img src="https://opencollective.com/chakra-ui/organization/7/avatar.svg?avatarHeight=130" /></a>
-<a href="https://opencollective.com/chakra-ui/organization/8/website"><img src="https://opencollective.com/chakra-ui/organization/8/avatar.svg?avatarHeight=130" /></a>
-<a href="https://opencollective.com/chakra-ui/organization/9/website"><img src="https://opencollective.com/chakra-ui/organization/9/avatar.svg?avatarHeight=130" /></a>
-
-### Individuals
-
-By donating \$5 or more you can support the ongoing development of this project.
-We'll appreciate some support. Thank you to all our supporters! 🙏
-[[Contribute](https://opencollective.com/chakra-ui/contribute)]
-
-<a href="https://opencollective.com/chakra-ui"><img src="https://opencollective.com/chakra-ui/individuals.svg?width=890" /></a>
-
-## Testimonials
-
-> People throw React component libraries and design systems at me regularly.
-> This might be the best one I've seen. The APIs are simple but composable and
-> the accessibility on the couple components I looked is complete.
->
-> Great work @thesegunadebayo, really inspiring work. –
-> [Ryan Florence](https://twitter.com/ryanflorence)
-
-> Awesome new open-source component library from @thesegunadebayo. Really
-> impressive stuff! –
-> [Colm Tuite](https://twitter.com/colmtuite/status/1169622886052782081)
-
-> This is incredible work. Amazing job Segun! –
-> [Lee Robinson](https://twitter.com/leeerob/status/1169330130361159682)
-
-> Chakra UI is glorious! I love the consistent use of focus styling and the
-> subtle animation –
-> [Guillermo ▲](https://twitter.com/rauchg/status/1169632334389248000)
-
-## Awards and Mentions
-
-We've been extremely humbled to receive awards and mentions from the community
-for all the innovation and reach Chakra UI brings to the JavaScript ecosystem.
-
-<table>
-  <tr valign="middle">
-    <td width="124">
-      <img src="https://raw.githubusercontent.com/chakra-ui/chakra-ui/main/media/tech-radar.png" width="124" alt="Technology Radar" />
-    </td>
-    <td>
-      <h4>Solution Worth Pursuing</h4>
-      <p><em><a href="https://www.thoughtworks.com/radar/languages-and-frameworks/chakra-ui">Technology Radar</a> (2020–2021)</em></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="124">
-      <img src="https://raw.githubusercontent.com/chakra-ui/chakra-ui/main/media/os-awards.png" width="124" alt="Open Source Awards 2020" />
-    </td>
-    <td>
-      <h4>The Most Impactful Contribution to the community</h4>
-      <p><em><a href="https://osawards.com/react/2020">Open Source Awards</a> (2020)</em></p>
-    </td>
-  </tr>
-</table>
+See [docs/contributing.md](docs/contributing.md) for how to add and maintain
+recipes.
 
 ## License
 
-MIT © [Segun Adebayo](https://github.com/segunadebayo)
+MIT
