@@ -7,7 +7,7 @@ import {
   Portal,
   Stack,
   parseColor,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import { LuCheck } from "react-icons/lu"
 
 export const ColorPickerWithSizes = () => {

@@ -1,6 +1,6 @@
 "use client"
 
-import { Code, Stack, Tabs, useTabs } from "@chakra-ui/react"
+import { Code, Stack, Tabs, useTabs } from "@laststance/chakrawind-ui"
 import { LuFolder, LuSquareCheck, LuUser } from "react-icons/lu"
 
 export const TabsWithStore = () => {

@@ -1,4 +1,4 @@
-import { Checkbox } from "@chakra-ui/react"
+import { Checkbox } from "@laststance/chakrawind-ui"
 import { Tooltip } from "compositions/ui/tooltip"
 import { useId } from "react"
 

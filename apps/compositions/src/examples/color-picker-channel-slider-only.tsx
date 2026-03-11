@@ -7,7 +7,7 @@ import {
   Stack,
   getColorChannels,
   parseColor,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 
 const ChannelSliders = (props: { format: ColorPicker.ColorFormat }) => {
   const channels = getColorChannels(props.format)

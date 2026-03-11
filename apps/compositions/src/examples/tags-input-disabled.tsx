@@ -1,6 +1,6 @@
 "use client"
 
-import { TagsInput } from "@chakra-ui/react"
+import { TagsInput } from "@laststance/chakrawind-ui"
 
 export const TagsInputDisabled = () => (
   <TagsInput.Root disabled defaultValue={["React", "Chakra"]}>

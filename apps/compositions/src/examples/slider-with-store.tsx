@@ -1,6 +1,6 @@
 "use client"
 
-import { Code, Slider, Stack, useSlider } from "@chakra-ui/react"
+import { Code, Slider, Stack, useSlider } from "@laststance/chakrawind-ui"
 
 export const SliderWithStore = () => {
   const slider = useSlider({

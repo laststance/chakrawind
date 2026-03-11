@@ -1,4 +1,4 @@
-import { For, NumberInput, Stack } from "@chakra-ui/react"
+import { For, NumberInput, Stack } from "@laststance/chakrawind-ui"
 
 export const NumberInputWithSizes = () => {
   return (

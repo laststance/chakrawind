@@ -1,5 +1,6 @@
 "use client"
 
+import { standardSchemaResolver } from "@hookform/resolvers/standard-schema"
 import {
   Button,
   DatePicker,
@@ -8,8 +9,7 @@ import {
   Portal,
   Stack,
   parseDate,
-} from "@chakra-ui/react"
-import { standardSchemaResolver } from "@hookform/resolvers/standard-schema"
+} from "@laststance/chakrawind-ui"
 import { Controller, useForm } from "react-hook-form"
 import { LuCalendar } from "react-icons/lu"
 import { z } from "zod"

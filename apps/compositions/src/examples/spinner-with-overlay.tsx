@@ -1,4 +1,4 @@
-import { Box, Center, Heading, Spinner, Text } from "@chakra-ui/react"
+import { Box, Center, Heading, Spinner, Text } from "@laststance/chakrawind-ui"
 
 export const SpinnerWithOverlay = () => {
   return (

@@ -1,4 +1,4 @@
-import { PinInput, VStack } from "@chakra-ui/react"
+import { PinInput, VStack } from "@laststance/chakrawind-ui"
 
 export const PinInputExplorerDemo = () => {
   return (

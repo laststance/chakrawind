@@ -1,4 +1,4 @@
-import { QrCode } from "@chakra-ui/react"
+import { QrCode } from "@laststance/chakrawind-ui"
 
 export const QrCodeBasic = () => {
   return (

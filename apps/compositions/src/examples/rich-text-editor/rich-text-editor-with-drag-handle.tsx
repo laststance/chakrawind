@@ -1,6 +1,6 @@
 "use client"
 
-import { Box, Icon, useChakraContext } from "@chakra-ui/react"
+import { Box, Icon, useChakraContext } from "@laststance/chakrawind-ui"
 import { DragHandle } from "@tiptap/extension-drag-handle-react"
 import { useEditor } from "@tiptap/react"
 import StarterKit from "@tiptap/starter-kit"

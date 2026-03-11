@@ -1,6 +1,6 @@
 "use client"
 
-import { Box, Listbox, createListCollection } from "@chakra-ui/react"
+import { Box, Listbox, createListCollection } from "@laststance/chakrawind-ui"
 import { LuAtom, LuGlobe, LuPalette, LuZap } from "react-icons/lu"
 
 export const ListboxWithIcon = () => {

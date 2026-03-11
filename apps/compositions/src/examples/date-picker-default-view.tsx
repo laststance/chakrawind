@@ -1,6 +1,6 @@
 "use client"
 
-import { Badge, DatePicker, Portal, Stack } from "@chakra-ui/react"
+import { Badge, DatePicker, Portal, Stack } from "@laststance/chakrawind-ui"
 import { LuCalendar } from "react-icons/lu"
 
 export const DatePickerDefaultView = () => {

@@ -7,7 +7,7 @@ import {
   IconButton,
   ScrollArea,
   VStack,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import { DecorativeBox } from "compositions/lib/decorative-box"
 import { useState } from "react"
 import { LuArrowDown } from "react-icons/lu"

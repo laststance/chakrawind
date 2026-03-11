@@ -1,4 +1,4 @@
-import { Spinner } from "@chakra-ui/react"
+import { Spinner } from "@laststance/chakrawind-ui"
 
 export const SpinnerWithTrackColor = () => (
   <Spinner

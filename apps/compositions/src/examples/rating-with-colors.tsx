@@ -1,4 +1,4 @@
-import { RatingGroup, Stack, Text } from "@chakra-ui/react"
+import { RatingGroup, Stack, Text } from "@laststance/chakrawind-ui"
 import { colorPalettes } from "compositions/lib/color-palettes"
 
 export const RatingWithColors = () => {

@@ -1,6 +1,6 @@
 "use client"
 
-import { SegmentGroup } from "@chakra-ui/react"
+import { SegmentGroup } from "@laststance/chakrawind-ui"
 import { useState } from "react"
 
 export const SegmentedControlControlled = () => {

@@ -10,7 +10,7 @@ import {
   VStack,
   getColorChannels,
   parseColor,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import { LuCheck, LuPlus } from "react-icons/lu"
 
 const swatches = [

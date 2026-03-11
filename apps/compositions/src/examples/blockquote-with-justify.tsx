@@ -1,4 +1,4 @@
-import { Blockquote, For, HStack, Stack, Text } from "@chakra-ui/react"
+import { Blockquote, For, HStack, Stack, Text } from "@laststance/chakrawind-ui"
 
 export const BlockquoteWithJustify = () => {
   return (

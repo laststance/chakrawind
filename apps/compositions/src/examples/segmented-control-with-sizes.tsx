@@ -1,4 +1,10 @@
-import { For, SegmentGroup, Stack, Text, VStack } from "@chakra-ui/react"
+import {
+  For,
+  SegmentGroup,
+  Stack,
+  Text,
+  VStack,
+} from "@laststance/chakrawind-ui"
 
 export const SegmentedControlWithSizes = () => {
   return (

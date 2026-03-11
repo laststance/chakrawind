@@ -5,7 +5,7 @@ import {
   For,
   HStack,
   Portal,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 
 export const DrawerWithPlacement = () => {
   return (

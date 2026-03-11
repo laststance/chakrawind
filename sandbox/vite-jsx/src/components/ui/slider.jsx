@@ -1,4 +1,4 @@
-import { Slider as ChakraSlider, For, HStack } from "@chakra-ui/react"
+import { Slider as ChakraSlider, For, HStack } from "@laststance/chakrawind-ui"
 import * as React from "react"
 
 function _nullishCoalesce(lhs, rhsFn) {

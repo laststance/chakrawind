@@ -6,7 +6,7 @@ import {
   Stack,
   Text,
   useDatePicker,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import { LuCalendar } from "react-icons/lu"
 
 export const DatePickerRootProvider = () => {

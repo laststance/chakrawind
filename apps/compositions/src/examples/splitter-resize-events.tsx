@@ -1,6 +1,12 @@
 "use client"
 
-import { Center, HStack, Span, Splitter, Stack } from "@chakra-ui/react"
+import {
+  Center,
+  HStack,
+  Span,
+  Splitter,
+  Stack,
+} from "@laststance/chakrawind-ui"
 import { useCallback, useEffect, useRef } from "react"
 import { useState } from "react"
 import { LuMouse, LuMoveHorizontal } from "react-icons/lu"

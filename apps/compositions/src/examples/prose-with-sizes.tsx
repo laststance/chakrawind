@@ -1,4 +1,4 @@
-import { For, Stack, Text } from "@chakra-ui/react"
+import { For, Stack, Text } from "@laststance/chakrawind-ui"
 import { Prose } from "compositions/ui/prose"
 
 export const ProseWithSizes = () => {

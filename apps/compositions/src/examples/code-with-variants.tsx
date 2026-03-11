@@ -1,4 +1,4 @@
-import { Code, Stack } from "@chakra-ui/react"
+import { Code, Stack } from "@laststance/chakrawind-ui"
 
 export const CodeWithVariants = () => {
   return (

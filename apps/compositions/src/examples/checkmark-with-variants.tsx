@@ -1,4 +1,4 @@
-import { Checkmark, For, HStack } from "@chakra-ui/react"
+import { Checkmark, For, HStack } from "@laststance/chakrawind-ui"
 
 export const CheckmarkWithVariants = () => {
   return (

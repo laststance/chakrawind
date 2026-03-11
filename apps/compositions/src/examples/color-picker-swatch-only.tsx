@@ -1,4 +1,4 @@
-import { ColorPicker } from "@chakra-ui/react"
+import { ColorPicker } from "@laststance/chakrawind-ui"
 
 export const ColorPickerSwatchOnly = () => {
   return (

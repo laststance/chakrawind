@@ -1,7 +1,5 @@
 "use client"
 
-import { DatePicker, Flex, HStack, Spacer, Span, Stack } from "@chakra-ui/react"
-import type { DateValue } from "@chakra-ui/react"
 import {
   DateFormatter,
   getLocalTimeZone,
@@ -9,6 +7,15 @@ import {
   isToday,
   today,
 } from "@internationalized/date"
+import {
+  DatePicker,
+  Flex,
+  HStack,
+  Spacer,
+  Span,
+  Stack,
+} from "@laststance/chakrawind-ui"
+import type { DateValue } from "@laststance/chakrawind-ui"
 
 export const DatePickerWithPresetsSidebar = () => {
   return (

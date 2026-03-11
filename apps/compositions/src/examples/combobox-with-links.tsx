@@ -5,7 +5,7 @@ import {
   Portal,
   useFilter,
   useListCollection,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import { LuExternalLink } from "react-icons/lu"
 
 export const ComboboxWithLinks = () => {

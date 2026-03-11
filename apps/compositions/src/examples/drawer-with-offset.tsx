@@ -1,4 +1,4 @@
-import { Button, CloseButton, Drawer, Portal } from "@chakra-ui/react"
+import { Button, CloseButton, Drawer, Portal } from "@laststance/chakrawind-ui"
 
 export const DrawerWithOffset = () => {
   return (

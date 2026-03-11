@@ -1,4 +1,4 @@
-import { Drawer as ChakraDrawer, Portal } from "@chakra-ui/react"
+import { Drawer as ChakraDrawer, Portal } from "@laststance/chakrawind-ui"
 import { CloseButton } from "compositions/ui/close-button"
 import * as React from "react"
 

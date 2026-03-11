@@ -1,6 +1,6 @@
 "use client"
 
-import { Stack } from "@chakra-ui/react"
+import { Stack } from "@laststance/chakrawind-ui"
 import { type Options, passwordStrength } from "check-password-strength"
 import {
   PasswordInput,

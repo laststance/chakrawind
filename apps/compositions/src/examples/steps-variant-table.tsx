@@ -8,7 +8,7 @@ import {
   Steps,
   type StepsRootProps,
   useSlotRecipe,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import { colorPalettes } from "compositions/lib/color-palettes"
 import { PlaygroundTable } from "compositions/lib/playground-table"
 

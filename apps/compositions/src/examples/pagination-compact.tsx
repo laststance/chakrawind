@@ -1,4 +1,4 @@
-import { ButtonGroup, IconButton, Pagination } from "@chakra-ui/react"
+import { ButtonGroup, IconButton, Pagination } from "@laststance/chakrawind-ui"
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi"
 
 export const PaginationCompact = () => {

@@ -1,6 +1,6 @@
 "use client"
 
-import { TagsInput } from "@chakra-ui/react"
+import { TagsInput } from "@laststance/chakrawind-ui"
 
 export const TagsInputWithBlurBehavior = () => (
   <TagsInput.Root blurBehavior="add">

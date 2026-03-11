@@ -1,6 +1,6 @@
 "use client"
 
-import { Code, Editable, Stack, useEditable } from "@chakra-ui/react"
+import { Code, Editable, Stack, useEditable } from "@laststance/chakrawind-ui"
 
 export const EditableWithStore = () => {
   const editable = useEditable({

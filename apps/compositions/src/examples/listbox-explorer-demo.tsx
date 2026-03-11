@@ -6,7 +6,7 @@ import {
   Listbox,
   useFilter,
   useListCollection,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import { LuAtom, LuGlobe, LuPalette, LuZap } from "react-icons/lu"
 
 export const ListboxExplorerDemo = () => {

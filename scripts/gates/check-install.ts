@@ -53,7 +53,7 @@ function main() {
       // Verify import works
       fs.writeFileSync(
         path.join(pkgDir, "test.mjs"),
-        `import { Button } from "@chakra-ui/react";\nconsole.log("ok", typeof Button);\n`,
+        `import { Button } from "@laststance/chakrawind-ui";\nconsole.log("ok", typeof Button);\n`,
       )
       const result = execSync("node test.mjs", {
         cwd: pkgDir,

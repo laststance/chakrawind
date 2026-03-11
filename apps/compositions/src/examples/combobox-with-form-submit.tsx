@@ -9,7 +9,7 @@ import {
   useComboboxContext,
   useFilter,
   useListCollection,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 
 // This is a hidden input that is used to store the value of the combobox
 const ComboboxHiddenInput = (props: React.ComponentProps<"input">) => {

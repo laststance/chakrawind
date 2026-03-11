@@ -1,4 +1,4 @@
-import { Button, DownloadTrigger, FormatByte } from "@chakra-ui/react"
+import { Button, DownloadTrigger, FormatByte } from "@laststance/chakrawind-ui"
 import { LuDownload } from "react-icons/lu"
 
 const data = "The quick brown fox jumps over the lazy dog"

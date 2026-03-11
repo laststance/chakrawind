@@ -1,4 +1,4 @@
-import { For, NativeSelect, Stack } from "@chakra-ui/react"
+import { For, NativeSelect, Stack } from "@laststance/chakrawind-ui"
 
 export const NativeSelectWithSizes = () => {
   return (

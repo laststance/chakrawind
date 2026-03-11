@@ -5,7 +5,7 @@ import {
   TreeView,
   createTreeCollection,
   useTreeViewNodeContext,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import { LuFile, LuFolder } from "react-icons/lu"
 
 const TreeNodeCheckbox = (props: TreeView.NodeCheckboxProps) => {

@@ -1,4 +1,4 @@
-import { Switch } from "@chakra-ui/react"
+import { Switch } from "@laststance/chakrawind-ui"
 
 export const SwitchWithInvalid = () => {
   return (

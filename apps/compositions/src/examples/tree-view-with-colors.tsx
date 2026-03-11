@@ -1,6 +1,11 @@
 "use client"
 
-import { For, TreeView, Wrap, createTreeCollection } from "@chakra-ui/react"
+import {
+  For,
+  TreeView,
+  Wrap,
+  createTreeCollection,
+} from "@laststance/chakrawind-ui"
 import { colorPalettes } from "compositions/lib/color-palettes"
 import { LuFile, LuFolder } from "react-icons/lu"
 

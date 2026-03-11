@@ -1,4 +1,9 @@
-import { Clipboard, IconButton, Input, InputGroup } from "@chakra-ui/react"
+import {
+  Clipboard,
+  IconButton,
+  Input,
+  InputGroup,
+} from "@laststance/chakrawind-ui"
 
 export const ClipboardWithInput = () => {
   return (

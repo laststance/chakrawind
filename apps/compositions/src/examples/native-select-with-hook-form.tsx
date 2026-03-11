@@ -1,7 +1,7 @@
 "use client"
 
-import { Button, Field, NativeSelect } from "@chakra-ui/react"
 import { standardSchemaResolver } from "@hookform/resolvers/standard-schema"
+import { Button, Field, NativeSelect } from "@laststance/chakrawind-ui"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
 

@@ -1,11 +1,11 @@
 "use client"
 
-import { CodeBlock, Float, IconButton, Span } from "@chakra-ui/react"
+import { CodeBlock, Float, IconButton, Span } from "@laststance/chakrawind-ui"
 
 const file = {
-  code: "npm install @chakra-ui/react",
+  code: "npm install @laststance/chakrawind-ui",
   language: "bash",
-  title: "npm install @chakra-ui/react",
+  title: "npm install @laststance/chakrawind-ui",
 }
 
 export const CodeBlockPlainText = () => {

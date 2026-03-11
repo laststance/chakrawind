@@ -3,7 +3,7 @@ import {
   type BadgeProps,
   Stat as ChakraStat,
   FormatNumber,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import { InfoTip } from "compositions/ui/toggle-tip"
 import * as React from "react"
 

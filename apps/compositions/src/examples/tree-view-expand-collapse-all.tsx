@@ -7,7 +7,7 @@ import {
   TreeView,
   createTreeCollection,
   useTreeViewContext,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import { isEqual } from "es-toolkit"
 import { useMemo } from "react"
 import { LuFile, LuFolder } from "react-icons/lu"

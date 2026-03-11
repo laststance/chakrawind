@@ -1,4 +1,10 @@
-import { Heading, LocaleProvider, Slider, Stack, Text } from "@chakra-ui/react"
+import {
+  Heading,
+  LocaleProvider,
+  Slider,
+  Stack,
+  Text,
+} from "@laststance/chakrawind-ui"
 
 export const LocaleProviderBasic = () => {
   return (

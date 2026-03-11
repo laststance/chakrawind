@@ -7,7 +7,7 @@ import {
   Select,
   createListCollection,
   useSelectContext,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import {
   RiAngularjsLine,
   RiForbidLine,

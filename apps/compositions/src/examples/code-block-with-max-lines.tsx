@@ -1,6 +1,10 @@
 "use client"
 
-import { CodeBlock, IconButton, createShikiAdapter } from "@chakra-ui/react"
+import {
+  CodeBlock,
+  IconButton,
+  createShikiAdapter,
+} from "@laststance/chakrawind-ui"
 import type { HighlighterGeneric } from "shiki"
 
 export const CodeBlockWithMaxLines = () => {
@@ -51,7 +55,7 @@ const shikiAdapter = createShikiAdapter<HighlighterGeneric<any, any>>({
 
 const file = {
   code: `import * as React from 'react';
-import { CodeBlock } from '@chakra-ui/react';
+import { CodeBlock } from '@laststance/chakrawind-ui';
 
 const Example = () => {
   const code = \`

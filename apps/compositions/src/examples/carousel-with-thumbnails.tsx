@@ -1,4 +1,4 @@
-import { Carousel, IconButton, Image } from "@chakra-ui/react"
+import { Carousel, IconButton, Image } from "@laststance/chakrawind-ui"
 import { LuChevronLeft, LuChevronRight } from "react-icons/lu"
 
 export const CarouselWithThumbnails = () => {

@@ -1,4 +1,4 @@
-import { Button, Group, Input } from "@chakra-ui/react"
+import { Button, Group, Input } from "@laststance/chakrawind-ui"
 
 export const InputWithEndButton = () => {
   return (

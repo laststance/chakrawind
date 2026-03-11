@@ -1,6 +1,6 @@
 "use client"
 
-import { CodeBlock, Icon, createShikiAdapter } from "@chakra-ui/react"
+import { CodeBlock, Icon, createShikiAdapter } from "@laststance/chakrawind-ui"
 import { FaHtml5 } from "react-icons/fa"
 import type { HighlighterGeneric } from "shiki"
 

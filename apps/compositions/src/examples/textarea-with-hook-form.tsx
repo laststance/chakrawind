@@ -1,6 +1,12 @@
 "use client"
 
-import { Button, Field, Input, Stack, Textarea } from "@chakra-ui/react"
+import {
+  Button,
+  Field,
+  Input,
+  Stack,
+  Textarea,
+} from "@laststance/chakrawind-ui"
 import { useForm } from "react-hook-form"
 
 interface FormValues {

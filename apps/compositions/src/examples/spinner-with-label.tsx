@@ -1,4 +1,4 @@
-import { Spinner, Text, VStack } from "@chakra-ui/react"
+import { Spinner, Text, VStack } from "@laststance/chakrawind-ui"
 
 export const SpinnerWithLabel = () => {
   return (

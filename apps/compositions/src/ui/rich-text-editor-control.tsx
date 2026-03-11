@@ -1,6 +1,6 @@
 "use client"
 
-import type { IconButtonProps } from "@chakra-ui/react"
+import type { IconButtonProps } from "@laststance/chakrawind-ui"
 import {
   Box,
   CloseButton,
@@ -12,7 +12,7 @@ import {
   Select,
   VStack,
   createListCollection,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import { Editor } from "@tiptap/react"
 import { useRichTextEditorContext } from "compositions/ui/rich-text-editor-context"
 import { Tooltip } from "compositions/ui/tooltip"
@@ -52,8 +52,10 @@ export interface BaseControlConfig {
   getProps?: (editor: Editor) => Record<string, any>
 }
 
-export interface ButtonControlProps
-  extends Omit<IconButtonProps, "aria-label"> {
+export interface ButtonControlProps extends Omit<
+  IconButtonProps,
+  "aria-label"
+> {
   icon: React.ReactNode
   label: string
 }

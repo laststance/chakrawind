@@ -8,7 +8,7 @@ import {
   Listbox,
   VStack,
   createListCollection,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import { useRef, useState } from "react"
 import { LuChevronLeft, LuChevronRight } from "react-icons/lu"
 

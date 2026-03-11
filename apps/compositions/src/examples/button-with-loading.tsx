@@ -1,4 +1,4 @@
-import { Button, Stack } from "@chakra-ui/react"
+import { Button, Stack } from "@laststance/chakrawind-ui"
 
 export const ButtonWithLoading = () => {
   return (

@@ -1,4 +1,4 @@
-import { Center, Menu, Portal } from "@chakra-ui/react"
+import { Center, Menu, Portal } from "@laststance/chakrawind-ui"
 
 export const MenuWithContextTrigger = () => {
   return (

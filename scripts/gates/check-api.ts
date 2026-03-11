@@ -1,6 +1,6 @@
 /**
  * API Parity Gate
- * Uses TypeScript compiler API to resolve all exports from @chakra-ui/react,
+ * Uses TypeScript compiler API to resolve all exports from @laststance/chakrawind-ui,
  * including `export *` chains, and compares against the baseline manifest.
  *
  * @example

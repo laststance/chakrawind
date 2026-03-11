@@ -1,4 +1,4 @@
-import { HStack, RadioCard } from "@chakra-ui/react"
+import { HStack, RadioCard } from "@laststance/chakrawind-ui"
 import { LuCheck } from "react-icons/lu"
 
 export const RadioCardWithCustomIndicator = () => {

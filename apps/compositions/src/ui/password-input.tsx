@@ -5,7 +5,7 @@ import type {
   GroupProps,
   InputProps,
   StackProps,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import {
   Box,
   HStack,
@@ -15,7 +15,7 @@ import {
   Stack,
   mergeRefs,
   useControllableState,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import * as React from "react"
 import { LuEye, LuEyeOff } from "react-icons/lu"
 
@@ -39,8 +39,7 @@ export interface PasswordVisibilityProps {
 }
 
 export interface PasswordInputProps
-  extends InputProps,
-    PasswordVisibilityProps {
+  extends InputProps, PasswordVisibilityProps {
   rootProps?: GroupProps
 }
 

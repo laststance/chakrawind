@@ -1,6 +1,6 @@
 "use client"
 
-import { Listbox, createListCollection } from "@chakra-ui/react"
+import { Listbox, createListCollection } from "@laststance/chakrawind-ui"
 
 export const ListboxBasic = () => {
   return (

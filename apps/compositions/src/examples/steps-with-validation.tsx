@@ -1,6 +1,13 @@
 "use client"
 
-import { Box, Button, ButtonGroup, Input, Steps, Text } from "@chakra-ui/react"
+import {
+  Box,
+  Button,
+  ButtonGroup,
+  Input,
+  Steps,
+  Text,
+} from "@laststance/chakrawind-ui"
 import { useState } from "react"
 
 export const StepsWithValidation = () => {

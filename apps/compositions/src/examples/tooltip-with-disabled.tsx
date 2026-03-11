@@ -1,4 +1,4 @@
-import { Button } from "@chakra-ui/react"
+import { Button } from "@laststance/chakrawind-ui"
 import { Tooltip } from "compositions/ui/tooltip"
 
 export const TooltipWithDisabled = () => {

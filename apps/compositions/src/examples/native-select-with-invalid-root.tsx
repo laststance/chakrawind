@@ -1,4 +1,4 @@
-import { NativeSelect } from "@chakra-ui/react"
+import { NativeSelect } from "@laststance/chakrawind-ui"
 
 export const NativeSelectWithInvalidRoot = () => (
   <NativeSelect.Root invalid width="240px">

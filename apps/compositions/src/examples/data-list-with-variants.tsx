@@ -1,4 +1,4 @@
-import { DataList, For, Stack } from "@chakra-ui/react"
+import { DataList, For, Stack } from "@laststance/chakrawind-ui"
 
 export const DataListWithVariants = () => {
   return (

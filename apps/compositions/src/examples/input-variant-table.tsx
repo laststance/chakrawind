@@ -1,6 +1,6 @@
 "use client"
 
-import { For, Input, Span, useRecipe } from "@chakra-ui/react"
+import { For, Input, Span, useRecipe } from "@laststance/chakrawind-ui"
 import { PlaygroundTable } from "compositions/lib/playground-table"
 
 export const InputVariantTable = () => {

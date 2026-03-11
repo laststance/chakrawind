@@ -1,6 +1,6 @@
 "use client"
 
-import { DatePicker, parseDate } from "@chakra-ui/react"
+import { DatePicker, parseDate } from "@laststance/chakrawind-ui"
 
 export const DatePickerCalendarMinMax = () => {
   return (

@@ -1,6 +1,12 @@
 "use client"
 
-import { Box, Clipboard, IconButton, Stack, TagsInput } from "@chakra-ui/react"
+import {
+  Box,
+  Clipboard,
+  IconButton,
+  Stack,
+  TagsInput,
+} from "@laststance/chakrawind-ui"
 
 export const TagsInputWithPaste = () => (
   <Stack gap="8">

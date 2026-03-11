@@ -1,4 +1,4 @@
-import { Box, Button, Menu, Portal } from "@chakra-ui/react"
+import { Box, Button, Menu, Portal } from "@laststance/chakrawind-ui"
 import { LuClipboardPaste, LuCopy, LuScissors } from "react-icons/lu"
 
 export const MenuWithIconAndCommand = () => {

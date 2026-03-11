@@ -1,4 +1,4 @@
-import { Textarea } from "@chakra-ui/react"
+import { Textarea } from "@laststance/chakrawind-ui"
 
 export const TextareaWithAutoresize = () => {
   return <Textarea autoresize />

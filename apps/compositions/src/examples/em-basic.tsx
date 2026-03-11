@@ -1,4 +1,4 @@
-import { Em, Text } from "@chakra-ui/react"
+import { Em, Text } from "@laststance/chakrawind-ui"
 
 export const EmBasic = () => {
   return (

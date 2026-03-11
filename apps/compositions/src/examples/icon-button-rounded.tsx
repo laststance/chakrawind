@@ -1,4 +1,4 @@
-import { IconButton } from "@chakra-ui/react"
+import { IconButton } from "@laststance/chakrawind-ui"
 import { LuVoicemail } from "react-icons/lu"
 
 export const IconButtonRounded = () => {

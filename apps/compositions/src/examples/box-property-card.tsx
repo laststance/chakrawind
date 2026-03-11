@@ -1,4 +1,11 @@
-import { Badge, Box, HStack, Icon, Image, Text } from "@chakra-ui/react"
+import {
+  Badge,
+  Box,
+  HStack,
+  Icon,
+  Image,
+  Text,
+} from "@laststance/chakrawind-ui"
 import { HiStar } from "react-icons/hi"
 
 export const BoxPropertyCard = () => {

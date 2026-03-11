@@ -1,4 +1,4 @@
-import { Switch } from "@chakra-ui/react"
+import { Switch } from "@laststance/chakrawind-ui"
 import { HiCheck, HiX } from "react-icons/hi"
 
 export const SwitchWithThumbIndicator = () => {

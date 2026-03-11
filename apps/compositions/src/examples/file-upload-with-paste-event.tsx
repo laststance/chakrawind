@@ -6,7 +6,7 @@ import {
   Input,
   type InputProps,
   useFileUploadContext,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import { HiX } from "react-icons/hi"
 
 const FilePasteInput = (props: InputProps) => {

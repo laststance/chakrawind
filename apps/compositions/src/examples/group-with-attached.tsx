@@ -1,4 +1,4 @@
-import { Badge, Button, Group, Stack } from "@chakra-ui/react"
+import { Badge, Button, Group, Stack } from "@laststance/chakrawind-ui"
 
 export const GroupWithAttached = () => {
   return (

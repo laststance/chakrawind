@@ -1,4 +1,11 @@
 import {
+  autoUpdate,
+  flip,
+  offset,
+  shift,
+  useFloating,
+} from "@floating-ui/react"
+import {
   Box,
   Circle,
   HStack,
@@ -8,14 +15,7 @@ import {
   Text,
   mergeRefs,
   useSlotRecipe,
-} from "@chakra-ui/react"
-import {
-  autoUpdate,
-  flip,
-  offset,
-  shift,
-  useFloating,
-} from "@floating-ui/react"
+} from "@laststance/chakrawind-ui"
 import { PluginKey } from "@tiptap/pm/state"
 import { ReactRenderer } from "@tiptap/react"
 import * as React from "react"

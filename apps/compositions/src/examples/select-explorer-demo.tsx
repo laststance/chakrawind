@@ -1,6 +1,6 @@
 "use client"
 
-import { Select, createListCollection } from "@chakra-ui/react"
+import { Select, createListCollection } from "@laststance/chakrawind-ui"
 
 export const SelectExplorerDemo = () => {
   return (

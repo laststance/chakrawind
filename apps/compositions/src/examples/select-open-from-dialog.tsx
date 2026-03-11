@@ -7,7 +7,7 @@ import {
   Portal,
   Select,
   createListCollection,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 
 export const SelectOpenFromDialog = () => {
   return (

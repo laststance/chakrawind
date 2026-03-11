@@ -1,4 +1,4 @@
-import { Button } from "@chakra-ui/react"
+import { Button } from "@laststance/chakrawind-ui"
 import { BeatLoader } from "react-spinners"
 
 export const ButtonWithCustomSpinner = () => {

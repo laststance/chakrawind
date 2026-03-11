@@ -1,6 +1,6 @@
 "use client"
 
-import { Slider } from "@chakra-ui/react"
+import { Slider } from "@laststance/chakrawind-ui"
 import { useState } from "react"
 
 export const SliderControlled = () => {

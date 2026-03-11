@@ -1,4 +1,4 @@
-import { defineTokens } from "@chakra-ui/react"
+import { defineTokens } from "@laststance/chakrawind-ui"
 
 export const tokens = defineTokens({
   colors: {

@@ -4,7 +4,8 @@ Chakra UI component library powered by Tailwind CSS.
 
 ## Features
 
-- **Full API compatibility** with `@chakra-ui/react@3.34.0` (1933 exports)
+- **Full API compatibility** with `@laststance/chakrawind-ui@3.34.0` (1933
+  exports)
 - **Tailwind CSS engine** -- no Emotion runtime, no CSS-in-JS overhead
 - **74 component recipes** (19 CVA single + 55 SVA slot) converted to Tailwind
   utility classes
@@ -19,7 +20,7 @@ Chakra UI component library powered by Tailwind CSS.
 ### npm package
 
 ```sh
-npm install @chakra-ui/react
+npm install @laststance/chakrawind-ui
 ```
 
 No `@emotion/react` peer dependency required.
@@ -35,9 +36,9 @@ Browse available components in `registry/registry.json`.
 ## Quick Start
 
 ```tsx
-import { Button, ChakraProvider } from "@chakra-ui/react"
-import "@chakra-ui/react/tailwind/chakra.css"
-import "@chakra-ui/react/tailwind/color-palette.css"
+import { Button, ChakraProvider } from "@laststance/chakrawind-ui"
+import "@laststance/chakrawind-ui/tailwind/chakra.css"
+import "@laststance/chakrawind-ui/tailwind/color-palette.css"
 
 function App() {
   return (

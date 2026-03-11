@@ -5,7 +5,7 @@ import {
   Listbox,
   createListCollection,
   useListboxItemContext,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 
 const ListboxItemCheckmark = () => {
   const itemState = useListboxItemContext()

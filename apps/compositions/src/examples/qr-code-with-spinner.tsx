@@ -1,4 +1,4 @@
-import { AbsoluteCenter, Box, QrCode, Spinner } from "@chakra-ui/react"
+import { AbsoluteCenter, Box, QrCode, Spinner } from "@laststance/chakrawind-ui"
 
 export const QrCodeWithSpinner = () => {
   return (

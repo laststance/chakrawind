@@ -1,4 +1,4 @@
-import { Checkbox, For, Stack, Text } from "@chakra-ui/react"
+import { Checkbox, For, Stack, Text } from "@laststance/chakrawind-ui"
 import { colorPalettes } from "compositions/lib/color-palettes"
 
 export const CheckboxWithColors = () => {

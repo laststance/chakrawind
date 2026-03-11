@@ -1,4 +1,4 @@
-import { Button, Menu } from "@chakra-ui/react"
+import { Button, Menu } from "@laststance/chakrawind-ui"
 
 export const MenuExplorerDemo = () => {
   return (

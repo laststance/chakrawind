@@ -1,4 +1,4 @@
-import { Button, FileUpload } from "@chakra-ui/react"
+import { Button, FileUpload } from "@laststance/chakrawind-ui"
 import { HiUpload } from "react-icons/hi"
 
 export const FileUploadDirectory = () => {

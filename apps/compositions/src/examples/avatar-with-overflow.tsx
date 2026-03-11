@@ -1,4 +1,4 @@
-import { Avatar, Group, Menu, Portal } from "@chakra-ui/react"
+import { Avatar, Group, Menu, Portal } from "@laststance/chakrawind-ui"
 
 const names = [
   "Naruto Uzumaki",

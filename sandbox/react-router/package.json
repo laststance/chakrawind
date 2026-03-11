@@ -10,7 +10,7 @@
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
-    "@chakra-ui/react": "workspace:*",
+    "@laststance/chakrawind-ui": "workspace:*",
     "@react-router/node": "^7.9.6",
     "@react-router/serve": "^7.9.6",
     "isbot": "^5.1.32",

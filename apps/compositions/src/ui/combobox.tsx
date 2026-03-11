@@ -1,6 +1,6 @@
 "use client"
 
-import { Combobox as ChakraCombobox, Portal } from "@chakra-ui/react"
+import { Combobox as ChakraCombobox, Portal } from "@laststance/chakrawind-ui"
 import { CloseButton } from "compositions/ui/close-button"
 import * as React from "react"
 

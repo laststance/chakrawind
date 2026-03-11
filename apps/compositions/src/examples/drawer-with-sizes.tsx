@@ -6,7 +6,7 @@ import {
   HStack,
   Kbd,
   Portal,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 
 export const DrawerWithSizes = () => {
   return (

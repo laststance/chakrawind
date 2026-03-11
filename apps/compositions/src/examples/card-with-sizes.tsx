@@ -1,4 +1,4 @@
-import { Card, Heading, Stack } from "@chakra-ui/react"
+import { Card, Heading, Stack } from "@laststance/chakrawind-ui"
 
 export const CardWithSizes = () => {
   return (

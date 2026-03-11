@@ -1,7 +1,7 @@
 "use client"
 
-import { Button, Field, FileUpload } from "@chakra-ui/react"
 import { standardSchemaResolver } from "@hookform/resolvers/standard-schema"
+import { Button, Field, FileUpload } from "@laststance/chakrawind-ui"
 import { Controller, useForm } from "react-hook-form"
 import { HiUpload } from "react-icons/hi"
 import { z } from "zod"

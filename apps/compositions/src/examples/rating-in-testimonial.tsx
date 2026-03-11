@@ -1,4 +1,10 @@
-import { Avatar, HStack, RatingGroup, Stack, Text } from "@chakra-ui/react"
+import {
+  Avatar,
+  HStack,
+  RatingGroup,
+  Stack,
+  Text,
+} from "@laststance/chakrawind-ui"
 
 export const RatingInTestimonial = () => {
   return (

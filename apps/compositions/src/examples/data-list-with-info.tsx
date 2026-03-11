@@ -1,4 +1,4 @@
-import { DataList } from "@chakra-ui/react"
+import { DataList } from "@laststance/chakrawind-ui"
 import { InfoTip } from "compositions/ui/toggle-tip"
 
 const stats = [

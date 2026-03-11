@@ -1,4 +1,4 @@
-import { Center, Splitter } from "@chakra-ui/react"
+import { Center, Splitter } from "@laststance/chakrawind-ui"
 
 export const SplitterDisabled = () => {
   return (

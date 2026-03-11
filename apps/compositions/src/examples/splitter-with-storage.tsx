@@ -8,7 +8,7 @@ import {
   Span,
   Splitter,
   Stack,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import { LuBox, LuMouse, LuMoveHorizontal, LuTrash2 } from "react-icons/lu"
 import { useLocalStorage } from "react-use"
 

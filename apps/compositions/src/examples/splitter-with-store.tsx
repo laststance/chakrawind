@@ -1,6 +1,12 @@
 "use client"
 
-import { Center, Code, Splitter, Stack, useSplitter } from "@chakra-ui/react"
+import {
+  Center,
+  Code,
+  Splitter,
+  Stack,
+  useSplitter,
+} from "@laststance/chakrawind-ui"
 
 export const SplitterWithStore = () => {
   const splitter = useSplitter({

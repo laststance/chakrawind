@@ -1,4 +1,4 @@
-import { Input, InputGroup, Kbd } from "@chakra-ui/react"
+import { Input, InputGroup, Kbd } from "@laststance/chakrawind-ui"
 import { LuSearch } from "react-icons/lu"
 
 export const InputWithKbd = () => (

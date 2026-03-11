@@ -1,4 +1,4 @@
-import { Tag } from "@chakra-ui/react"
+import { Tag } from "@laststance/chakrawind-ui"
 
 export const TagWithOverflow = () => {
   return (

@@ -1,6 +1,12 @@
 "use client"
 
-import { Editable, HStack, IconButton, Text, VStack } from "@chakra-ui/react"
+import {
+  Editable,
+  HStack,
+  IconButton,
+  Text,
+  VStack,
+} from "@laststance/chakrawind-ui"
 import { LuCheck, LuPencilLine, LuX } from "react-icons/lu"
 
 export const EditableExplorerDemo = () => {

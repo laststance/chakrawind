@@ -9,7 +9,7 @@ import {
   Portal,
   Stack,
   Text,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 
 export const HoverCardOpenFromDialog = () => {
   return (

@@ -6,7 +6,7 @@ import {
   Presence,
   Stack,
   useDisclosure,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 
 export const PresenceSlideFade = () => {
   const { open, onToggle } = useDisclosure()

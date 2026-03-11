@@ -1,6 +1,10 @@
 "use client"
 
-import { CodeBlock, IconButton, createShikiAdapter } from "@chakra-ui/react"
+import {
+  CodeBlock,
+  IconButton,
+  createShikiAdapter,
+} from "@laststance/chakrawind-ui"
 import type { HighlighterGeneric } from "shiki"
 
 export const CodeBlockWithLineNumbersWordWrap = () => {

@@ -1,4 +1,4 @@
-import { Grid } from "@chakra-ui/react"
+import { Grid } from "@laststance/chakrawind-ui"
 import { DecorativeBox } from "compositions/lib/decorative-box"
 
 export const GridBasic = () => {

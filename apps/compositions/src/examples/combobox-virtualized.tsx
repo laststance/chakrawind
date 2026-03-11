@@ -5,7 +5,7 @@ import {
   Portal,
   useFilter,
   useListCollection,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import { useVirtualizer } from "@tanstack/react-virtual"
 import { useRef } from "react"
 import { flushSync } from "react-dom"

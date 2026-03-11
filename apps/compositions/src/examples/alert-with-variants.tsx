@@ -1,4 +1,4 @@
-import { Alert, Stack } from "@chakra-ui/react"
+import { Alert, Stack } from "@laststance/chakrawind-ui"
 
 export const AlertWithVariants = () => {
   return (

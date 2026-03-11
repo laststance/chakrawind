@@ -1,4 +1,4 @@
-import { Separator, Stack, Text } from "@chakra-ui/react"
+import { Separator, Stack, Text } from "@laststance/chakrawind-ui"
 
 export const SeparatorBasic = () => {
   return (

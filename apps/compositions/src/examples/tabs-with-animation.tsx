@@ -1,4 +1,4 @@
-import { Box, Tabs } from "@chakra-ui/react"
+import { Box, Tabs } from "@laststance/chakrawind-ui"
 
 const items = [
   {

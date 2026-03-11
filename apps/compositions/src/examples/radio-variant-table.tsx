@@ -1,6 +1,12 @@
 "use client"
 
-import { For, HStack, RadioGroup, Span, useSlotRecipe } from "@chakra-ui/react"
+import {
+  For,
+  HStack,
+  RadioGroup,
+  Span,
+  useSlotRecipe,
+} from "@laststance/chakrawind-ui"
 import { colorPalettes } from "compositions/lib/color-palettes"
 import { PlaygroundTable } from "compositions/lib/playground-table"
 

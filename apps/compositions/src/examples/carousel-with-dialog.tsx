@@ -10,8 +10,8 @@ import {
   IconButton,
   Image,
   Portal,
-} from "@chakra-ui/react"
-import { useCarouselContext } from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
+import { useCarouselContext } from "@laststance/chakrawind-ui"
 import { LuChevronLeft, LuChevronRight } from "react-icons/lu"
 
 export const CarouselWithDialog = () => {

@@ -1,6 +1,6 @@
 "use client"
 
-import { Box, Circle, Flex, HStack, Marquee } from "@chakra-ui/react"
+import { Box, Circle, Flex, HStack, Marquee } from "@laststance/chakrawind-ui"
 
 const newsItems = [
   "Bitcoin hits all-time high",

@@ -1,4 +1,11 @@
-import { Button, Input, Popover, Portal, Text, Theme } from "@chakra-ui/react"
+import {
+  Button,
+  Input,
+  Popover,
+  Portal,
+  Text,
+  Theme,
+} from "@laststance/chakrawind-ui"
 
 export const ThemeWithPortalled = () => {
   return (

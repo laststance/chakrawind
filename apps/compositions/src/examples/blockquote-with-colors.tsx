@@ -1,4 +1,4 @@
-import { Blockquote, Stack, Text } from "@chakra-ui/react"
+import { Blockquote, Stack, Text } from "@laststance/chakrawind-ui"
 import { colorPalettes } from "compositions/lib/color-palettes"
 
 export const BlockquoteWithColors = () => {

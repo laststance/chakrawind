@@ -1,4 +1,4 @@
-import { HStack, Kbd } from "@chakra-ui/react"
+import { HStack, Kbd } from "@laststance/chakrawind-ui"
 
 export const KbdFunctionKeys = () => {
   return (

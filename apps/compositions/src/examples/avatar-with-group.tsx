@@ -1,4 +1,4 @@
-import { Avatar, AvatarGroup } from "@chakra-ui/react"
+import { Avatar, AvatarGroup } from "@laststance/chakrawind-ui"
 
 export const AvatarWithGroup = () => {
   return (

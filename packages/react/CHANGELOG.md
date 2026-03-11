@@ -1,4 +1,4 @@
-# @chakra-ui/react
+# @laststance/chakrawind-ui
 
 ## 3.34.0
 
@@ -285,7 +285,7 @@
   tag creation, deletion, and keyboard navigation.
 
   ```tsx
-  import { Span, TagsInput } from "@chakra-ui/react"
+  import { Span, TagsInput } from "@laststance/chakrawind-ui"
 
   export const TagsInputBasic = () => {
     return (
@@ -605,7 +605,7 @@
   > component.
 
   ```tsx
-  import { Breadcrumb } from "@chakra-ui/react"
+  import { Breadcrumb } from "@laststance/chakrawind-ui"
   import Link from "next/link"
 
   export default function Page() {
@@ -718,9 +718,9 @@
   Thanks [@segunadebayo](https://github.com/segunadebayo)! - - **Tabs**: Export
   missing types
   - **Hooks**: Export entrypoint for better tree-shaking
-    `@chakra-ui/react/hooks`
+    `@laststance/chakrawind-ui/hooks`
   - **Theme**: Expose smaller bits of the theme in the entrypoint for better
-    tree-shaking `@chakra-ui/react/theme`. We now expose `recipes`,
+    tree-shaking `@laststance/chakrawind-ui/theme`. We now expose `recipes`,
     `slotRecipes`, `breakpoints`, `keyframes`, `textStyles`, `layerStyles`,
     `animationStyles`, `globalCss`, `cssVarsPrefix`, `cssVarsRoot`,
     `semanticTokens`, `tokens` as dedicated modules.
@@ -743,7 +743,8 @@
 - [#10126](https://github.com/chakra-ui/chakra-ui/pull/10126)
   [`ca40993`](https://github.com/chakra-ui/chakra-ui/commit/ca40993f78cd4de092a38c2e00158b8d686a0f27)
   Thanks [@isBatak](https://github.com/isBatak)! - - **Clipboard**: Fix issue
-  where `clipboardAnatomy` was not exported from `@chakra-ui/react/anatomy`
+  where `clipboardAnatomy` was not exported from
+  `@laststance/chakrawind-ui/anatomy`
   - **Combobox**
     - Expose `reason` to `onOpenChange` and `onInputValueChange` callbacks
     - Expose `api.clearHighlightedValue` function to clear highlighted value
@@ -807,8 +808,8 @@
   bundle, you can cherry-pick the recipe you need like this:
 
   ```tsx
-  import { createSystem, defaultBaseConfig } from "@chakra-ui/react"
-  import { buttonRecipe } from "@chakra-ui/react/theme"
+  import { createSystem, defaultBaseConfig } from "@laststance/chakrawind-ui"
+  import { buttonRecipe } from "@laststance/chakrawind-ui/theme"
 
   export const system = createSystem(defaultBaseConfig, {
     theme: {
@@ -1043,7 +1044,7 @@
   - Add `ColorPicker.Slider` and `ColorPicker.Input` shortcut components to
     reduce LOC.
   - **InputGroup**
-    - Export directly from the `@chakra-ui/react` package
+    - Export directly from the `@laststance/chakrawind-ui` package
 
   - **Pagination**
     - Add `Pagination.Items` shortcut component to render the number of pages
@@ -1216,7 +1217,7 @@
   - **ColorPicker, HoverCard, Tooltip:** Fixed intermittent placement shifts
     caused by updates to the `data-placement` attribute
   - **Snippets / Alert:** Deprecate the `Alert` snippet in favor of using the
-    `Alert` component directly from `@chakra-ui/react`.
+    `Alert` component directly from `@laststance/chakrawind-ui`.
 
 ## 3.5.0
 
@@ -1356,7 +1357,7 @@
   component for converting text and links to QR codes.
 
   ```tsx
-  import { QrCode } from "@chakra-ui/react"
+  import { QrCode } from "@laststance/chakrawind-ui"
 
   export const QrCodeWithoutSnippet = () => {
     return (
@@ -1642,7 +1643,7 @@
   animation properties.
 
   ```jsx
-  import { defineMotionStyles } from "@chakra-ui/react"
+  import { defineMotionStyles } from "@laststance/chakrawind-ui"
 
   export const motionStyles = defineMotionStyles({
     "slide-fade-in": {
@@ -2612,7 +2613,7 @@
   animation properties.
 
   ```jsx
-  import { defineMotionStyles } from "@chakra-ui/react"
+  import { defineMotionStyles } from "@laststance/chakrawind-ui"
 
   export const motionStyles = defineMotionStyles({
     "slide-fade-in": {

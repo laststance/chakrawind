@@ -1,4 +1,4 @@
-import { Slider, Stack, Text } from "@chakra-ui/react"
+import { Slider, Stack, Text } from "@laststance/chakrawind-ui"
 
 export const SliderWithCollisionBehavior = () => {
   return (

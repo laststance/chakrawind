@@ -1,4 +1,4 @@
-import { FormatByte, HStack, Text } from "@chakra-ui/react"
+import { FormatByte, HStack, Text } from "@laststance/chakrawind-ui"
 import { InfoTip } from "compositions/ui/toggle-tip"
 
 export const ToggleTipInfoTip = () => {

@@ -1,4 +1,4 @@
-import { Link, Text } from "@chakra-ui/react"
+import { Link, Text } from "@laststance/chakrawind-ui"
 
 export const LinkWithinText = () => {
   return (

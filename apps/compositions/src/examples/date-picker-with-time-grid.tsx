@@ -1,6 +1,13 @@
 "use client"
 
 import {
+  type DateValue,
+  Time,
+  getLocalTimeZone,
+  isToday,
+  isWeekend,
+} from "@internationalized/date"
+import {
   Box,
   Button,
   Center,
@@ -9,14 +16,7 @@ import {
   HStack,
   Stack,
   Text,
-} from "@chakra-ui/react"
-import {
-  type DateValue,
-  Time,
-  getLocalTimeZone,
-  isToday,
-  isWeekend,
-} from "@internationalized/date"
+} from "@laststance/chakrawind-ui"
 import { useState } from "react"
 import { LuGlobe } from "react-icons/lu"
 

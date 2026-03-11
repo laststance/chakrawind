@@ -1,6 +1,11 @@
 "use client"
 
-import { Combobox, Stack, useFilter, useListCollection } from "@chakra-ui/react"
+import {
+  Combobox,
+  Stack,
+  useFilter,
+  useListCollection,
+} from "@laststance/chakrawind-ui"
 
 export const ComboboxExplorerDemo = () => {
   const { contains } = useFilter({ sensitivity: "base" })

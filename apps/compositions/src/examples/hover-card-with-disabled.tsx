@@ -1,6 +1,6 @@
 "use client"
 
-import { HoverCard, Link, Portal, Stack, Text } from "@chakra-ui/react"
+import { HoverCard, Link, Portal, Stack, Text } from "@laststance/chakrawind-ui"
 
 export const HoverCardWithDisabled = () => {
   return (

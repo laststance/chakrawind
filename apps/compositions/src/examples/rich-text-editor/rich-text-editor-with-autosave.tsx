@@ -1,6 +1,6 @@
 "use client"
 
-import { Badge, Box, HStack, Text } from "@chakra-ui/react"
+import { Badge, Box, HStack, Text } from "@laststance/chakrawind-ui"
 import { useEditor } from "@tiptap/react"
 import StarterKit from "@tiptap/starter-kit"
 import { Control, RichTextEditor } from "compositions/ui/rich-text-editor"

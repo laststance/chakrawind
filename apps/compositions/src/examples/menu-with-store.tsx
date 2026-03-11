@@ -1,6 +1,13 @@
 "use client"
 
-import { Button, Code, Menu, Portal, Stack, useMenu } from "@chakra-ui/react"
+import {
+  Button,
+  Code,
+  Menu,
+  Portal,
+  Stack,
+  useMenu,
+} from "@laststance/chakrawind-ui"
 
 export const MenuWithStore = () => {
   const menu = useMenu()

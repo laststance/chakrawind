@@ -1,4 +1,4 @@
-import { HStack, ProgressCircle, Stack, Text } from "@chakra-ui/react"
+import { HStack, ProgressCircle, Stack, Text } from "@laststance/chakrawind-ui"
 import { colorPalettes } from "compositions/lib/color-palettes"
 
 export const ProgressCircleWithColors = () => {

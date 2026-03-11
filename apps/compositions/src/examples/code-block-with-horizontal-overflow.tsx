@@ -1,11 +1,11 @@
 "use client"
 
-import { CodeBlock, createShikiAdapter } from "@chakra-ui/react"
+import { CodeBlock, createShikiAdapter } from "@laststance/chakrawind-ui"
 import type { HighlighterGeneric } from "shiki"
 
 const file = {
   code: `// Example with very long lines that require horizontal scrolling
-import { Button, Stack, Container, Text, Heading, Box, Flex, Grid, GridItem, VStack, HStack, Center, Circle, Square, Spacer, Wrap, WrapItem } from "@chakra-ui/react"
+import { Button, Stack, Container, Text, Heading, Box, Flex, Grid, GridItem, VStack, HStack, Center, Circle, Square, Spacer, Wrap, WrapItem } from "@laststance/chakrawind-ui"
 
 const veryLongConfigurationObject = { primaryColor: "#3182ce", secondaryColor: "#805ad5", tertiaryColor: "#38b2ac", backgroundColor: "#ffffff", textColor: "#1a202c", fontSize: "16px", fontFamily: "Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif" }
 

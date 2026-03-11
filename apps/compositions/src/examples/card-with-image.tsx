@@ -1,4 +1,4 @@
-import { Button, Card, Image, Text } from "@chakra-ui/react"
+import { Button, Card, Image, Text } from "@laststance/chakrawind-ui"
 
 export const CardWithImage = () => {
   return (

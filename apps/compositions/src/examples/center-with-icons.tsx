@@ -1,4 +1,4 @@
-import { Box, Center, HStack } from "@chakra-ui/react"
+import { Box, Center, HStack } from "@laststance/chakrawind-ui"
 import { LuPhone } from "react-icons/lu"
 
 export const CenterWithIcons = () => {

@@ -1,4 +1,4 @@
-import { For, Stack, Table } from "@chakra-ui/react"
+import { For, Stack, Table } from "@laststance/chakrawind-ui"
 
 export const TableWithVariants = () => {
   return (

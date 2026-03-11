@@ -1,6 +1,12 @@
 "use client"
 
-import { ActionBar, Button, Checkbox, Dialog, Portal } from "@chakra-ui/react"
+import {
+  ActionBar,
+  Button,
+  Checkbox,
+  Dialog,
+  Portal,
+} from "@laststance/chakrawind-ui"
 import { useState } from "react"
 import { LuSquarePlus, LuTrash2 } from "react-icons/lu"
 

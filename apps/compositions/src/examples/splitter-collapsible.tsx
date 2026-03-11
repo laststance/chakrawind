@@ -1,4 +1,4 @@
-import { Box, Center, HStack, Splitter } from "@chakra-ui/react"
+import { Box, Center, HStack, Splitter } from "@laststance/chakrawind-ui"
 import { LuMouse, LuMoveHorizontal } from "react-icons/lu"
 
 export const SplitterCollapsible = () => {

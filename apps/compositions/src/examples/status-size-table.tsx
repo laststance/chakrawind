@@ -1,6 +1,6 @@
 "use client"
 
-import { For, Span, Status, useSlotRecipe } from "@chakra-ui/react"
+import { For, Span, Status, useSlotRecipe } from "@laststance/chakrawind-ui"
 import { colorPalettes } from "compositions/lib/color-palettes"
 import { PlaygroundTable } from "compositions/lib/playground-table"
 

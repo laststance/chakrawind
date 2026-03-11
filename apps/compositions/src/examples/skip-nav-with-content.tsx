@@ -5,7 +5,7 @@ import {
   SkipNavLink,
   Text,
   VStack,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 
 export const SkipNavWithContent = () => {
   return (

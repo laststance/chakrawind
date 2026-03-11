@@ -6,7 +6,7 @@ import {
   Stack,
   createListCollection,
   useListbox,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 
 export const ListboxWithStore = () => {
   const listbox = useListbox({ collection: frameworks })

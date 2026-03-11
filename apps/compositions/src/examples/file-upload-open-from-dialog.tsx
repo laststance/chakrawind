@@ -1,4 +1,10 @@
-import { Button, Dialog, FileUpload, Icon, Portal } from "@chakra-ui/react"
+import {
+  Button,
+  Dialog,
+  FileUpload,
+  Icon,
+  Portal,
+} from "@laststance/chakrawind-ui"
 import { LuUpload } from "react-icons/lu"
 
 export const FileUploadOpenFromDialog = () => {

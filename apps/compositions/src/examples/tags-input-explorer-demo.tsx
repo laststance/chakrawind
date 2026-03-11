@@ -1,6 +1,6 @@
 "use client"
 
-import { Stack, TagsInput } from "@chakra-ui/react"
+import { Stack, TagsInput } from "@laststance/chakrawind-ui"
 
 export const TagsInputExplorerDemo = () => {
   return (

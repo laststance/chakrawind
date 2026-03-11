@@ -3,7 +3,7 @@ import {
   IconButton,
   type IconButtonProps,
   Portal,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import * as React from "react"
 import { HiOutlineInformationCircle } from "react-icons/hi"
 

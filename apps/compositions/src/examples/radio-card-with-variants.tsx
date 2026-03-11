@@ -1,4 +1,4 @@
-import { For, HStack, RadioCard, Stack } from "@chakra-ui/react"
+import { For, HStack, RadioCard, Stack } from "@laststance/chakrawind-ui"
 
 export const RadioCardWithVariants = () => {
   return (

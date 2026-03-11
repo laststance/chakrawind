@@ -1,4 +1,4 @@
-import { Image } from "@chakra-ui/react"
+import { Image } from "@laststance/chakrawind-ui"
 
 export const ImageWithHeight = () => {
   return (

@@ -1,4 +1,4 @@
-import { HoverCard, LocaleProvider, Portal } from "@chakra-ui/react"
+import { HoverCard, LocaleProvider, Portal } from "@laststance/chakrawind-ui"
 
 export const HoverCardRTL = () => {
   return (

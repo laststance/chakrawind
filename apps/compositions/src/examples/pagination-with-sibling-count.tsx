@@ -1,6 +1,6 @@
 "use client"
 
-import { ButtonGroup, IconButton, Pagination } from "@chakra-ui/react"
+import { ButtonGroup, IconButton, Pagination } from "@laststance/chakrawind-ui"
 import { LuChevronLeft, LuChevronRight } from "react-icons/lu"
 
 export const PaginationWithSiblingCount = () => {

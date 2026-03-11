@@ -1,6 +1,6 @@
 "use client"
 
-import { Kbd, Listbox, createListCollection } from "@chakra-ui/react"
+import { Kbd, Listbox, createListCollection } from "@laststance/chakrawind-ui"
 
 export const ListboxExtendedSelect = () => {
   return (

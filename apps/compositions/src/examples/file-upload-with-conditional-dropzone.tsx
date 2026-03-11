@@ -1,6 +1,11 @@
 "use client"
 
-import { Box, FileUpload, Icon, useFileUploadContext } from "@chakra-ui/react"
+import {
+  Box,
+  FileUpload,
+  Icon,
+  useFileUploadContext,
+} from "@laststance/chakrawind-ui"
 import { LuUpload } from "react-icons/lu"
 
 const MAX_FILES = 3

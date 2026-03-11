@@ -7,7 +7,7 @@ import {
   Stack,
   Toast,
   createToaster,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 
 export const toaster = createToaster({
   placement: "bottom-end",

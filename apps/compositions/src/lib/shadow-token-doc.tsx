@@ -1,6 +1,6 @@
 "use client"
 
-import { Box, Center, For, SimpleGrid, VStack } from "@chakra-ui/react"
+import { Box, Center, For, SimpleGrid, VStack } from "@laststance/chakrawind-ui"
 import { TokenDoc } from "./token-doc"
 
 export const ShadowTokenDoc = () => {

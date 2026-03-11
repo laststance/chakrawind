@@ -1,31 +1,12 @@
 import * as React from "react"
+import { separatorRecipeTw } from "../../packages/react/src/tailwind/recipes/separator"
 import { cn } from "../lib/utils"
 
-const separatorVariants = {
-  base: "block border-[var(--border-color,theme(colors.gray.200))]",
-  variants: {
-    variant: {
-      solid: "border-solid",
-      dashed: "border-dashed",
-      dotted: "border-dotted",
-    },
-    orientation: {
-      vertical: "border-l-[var(--separator-thickness)]",
-      horizontal: "border-t-[var(--separator-thickness)]",
-    },
-    size: {
-      xs: "[--separator-thickness:0.5px]",
-      sm: "[--separator-thickness:1px]",
-      md: "[--separator-thickness:2px]",
-      lg: "[--separator-thickness:3px]",
-    },
-  },
-  defaultVariants: {
-    size: "sm" as const,
-    variant: "solid" as const,
-    orientation: "horizontal" as const,
-  },
-}
+/**
+ * Variant configuration for Separator.
+ * Re-exported from the Tailwind recipe for direct access.
+ */
+const separatorVariants = separatorRecipeTw
 
 export interface SeparatorProps extends React.HTMLAttributes<HTMLHRElement> {
   variant?: keyof typeof separatorVariants.variants.variant
@@ -34,13 +15,9 @@ export interface SeparatorProps extends React.HTMLAttributes<HTMLHRElement> {
 }
 
 /**
- * Chakra Wind Separator — visual divider with Tailwind utility classes.
- * @param variant - Border style: solid, dashed, dotted
- * @param orientation - Direction: horizontal, vertical
- * @param size - Thickness: xs, sm, md, lg
+ * Chakra Wind Separator — drop-in component with Tailwind utility classes.
  * @example
- * <Separator />
- * <Separator variant="dashed" orientation="vertical" />
+ * <Separator variant="solid">Content</Separator>
  */
 const Separator = React.forwardRef<HTMLHRElement, SeparatorProps>(
   (
@@ -53,10 +30,10 @@ const Separator = React.forwardRef<HTMLHRElement, SeparatorProps>(
     },
     ref,
   ) => {
-    const variantClass = separatorVariants.variants.variant[variant] ?? ""
+    const variantClass = separatorVariants.variants.variant?.[variant] ?? ""
     const orientationClass =
-      separatorVariants.variants.orientation[orientation] ?? ""
-    const sizeClass = separatorVariants.variants.size[size] ?? ""
+      separatorVariants.variants.orientation?.[orientation] ?? ""
+    const sizeClass = separatorVariants.variants.size?.[size] ?? ""
 
     return (
       <hr

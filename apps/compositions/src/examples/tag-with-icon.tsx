@@ -1,4 +1,4 @@
-import { HStack, Tag } from "@chakra-ui/react"
+import { HStack, Tag } from "@laststance/chakrawind-ui"
 import { LuCircleUser, LuFileBadge } from "react-icons/lu"
 
 export const TagWithIcon = () => {

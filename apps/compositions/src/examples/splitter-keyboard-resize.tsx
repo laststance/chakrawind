@@ -1,4 +1,4 @@
-import { Box, Center, HStack, Span, Splitter } from "@chakra-ui/react"
+import { Box, Center, HStack, Span, Splitter } from "@laststance/chakrawind-ui"
 import { LuKeyboard, LuMoveLeft, LuMoveRight } from "react-icons/lu"
 
 export const SplitterKeyboardResize = () => {

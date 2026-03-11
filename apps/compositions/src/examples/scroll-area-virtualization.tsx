@@ -1,6 +1,6 @@
 "use client"
 
-import { ScrollArea } from "@chakra-ui/react"
+import { ScrollArea } from "@laststance/chakrawind-ui"
 import { type VirtualItem, useVirtualizer } from "@tanstack/react-virtual"
 import { DecorativeBox } from "compositions/lib/decorative-box"
 import React, { useCallback, useMemo, useRef } from "react"

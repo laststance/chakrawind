@@ -1,4 +1,4 @@
-import { Box, Circle, Float, HStack, Stack } from "@chakra-ui/react"
+import { Box, Circle, Float, HStack, Stack } from "@laststance/chakrawind-ui"
 
 export const FloatWithPlacements = () => (
   <HStack gap="14" wrap="wrap">

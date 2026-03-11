@@ -1,4 +1,4 @@
-import { Button, QrCode, Stack } from "@chakra-ui/react"
+import { Button, QrCode, Stack } from "@laststance/chakrawind-ui"
 
 export const QrCodeExplorerDemo = () => {
   return (

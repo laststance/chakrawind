@@ -8,7 +8,7 @@ import {
   Loader,
   LoaderOverlay,
   Stack,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import { useState } from "react"
 
 export const LoaderWithOverlay = () => {

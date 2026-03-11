@@ -1,4 +1,4 @@
-import { Input, InputGroup } from "@chakra-ui/react"
+import { Input, InputGroup } from "@laststance/chakrawind-ui"
 
 export const InputWithStartText = () => {
   return (

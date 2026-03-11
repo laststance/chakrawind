@@ -1,4 +1,10 @@
-import { Button, Group, IconButton, Menu, Portal } from "@chakra-ui/react"
+import {
+  Button,
+  Group,
+  IconButton,
+  Menu,
+  Portal,
+} from "@laststance/chakrawind-ui"
 import { LuChevronDown } from "react-icons/lu"
 
 const menuItems = [

@@ -1,4 +1,4 @@
-import { Checkbox } from "@chakra-ui/react"
+import { Checkbox } from "@laststance/chakrawind-ui"
 
 export const CheckboxBasic = () => {
   return (

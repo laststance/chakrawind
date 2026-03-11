@@ -1,4 +1,4 @@
-import { ProgressCircle } from "@chakra-ui/react"
+import { ProgressCircle } from "@laststance/chakrawind-ui"
 
 export const ProgressCircleWithRangeColor = () => {
   return (

@@ -1,4 +1,4 @@
-import { Accordion, Stack, Text } from "@chakra-ui/react"
+import { Accordion, Stack, Text } from "@laststance/chakrawind-ui"
 import { LoremIpsum } from "react-lorem-ipsum"
 
 const items = [

@@ -1,6 +1,6 @@
 "use client"
 
-import type { ButtonProps, TextProps } from "@chakra-ui/react"
+import type { ButtonProps, TextProps } from "@laststance/chakrawind-ui"
 import {
   Button,
   Pagination as ChakraPagination,
@@ -8,7 +8,7 @@ import {
   Text,
   createContext,
   usePaginationContext,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import * as React from "react"
 import {
   HiChevronLeft,
@@ -35,8 +35,10 @@ const [RootPropsProvider, useRootProps] = createContext<ButtonVariantContext>({
   name: "RootPropsProvider",
 })
 
-export interface PaginationRootProps
-  extends Omit<ChakraPagination.RootProps, "type"> {
+export interface PaginationRootProps extends Omit<
+  ChakraPagination.RootProps,
+  "type"
+> {
   size?: ButtonProps["size"]
   variant?: PaginationVariant
   getHref?: (page: number) => string

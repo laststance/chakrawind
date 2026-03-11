@@ -1,4 +1,10 @@
-import { For, HStack, IconButton, Text, VStack } from "@chakra-ui/react"
+import {
+  For,
+  HStack,
+  IconButton,
+  Text,
+  VStack,
+} from "@laststance/chakrawind-ui"
 import { LuVoicemail } from "react-icons/lu"
 
 export const IconButtonWithVariants = () => {

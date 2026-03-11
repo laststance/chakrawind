@@ -1,6 +1,11 @@
 "use client"
 
-import { Button, Menu, Portal, useCheckboxGroup } from "@chakra-ui/react"
+import {
+  Button,
+  Menu,
+  Portal,
+  useCheckboxGroup,
+} from "@laststance/chakrawind-ui"
 import { HiCog } from "react-icons/hi"
 
 export const MenuWithCheckboxItems = () => {

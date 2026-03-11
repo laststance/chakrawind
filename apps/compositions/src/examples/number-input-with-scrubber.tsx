@@ -1,4 +1,4 @@
-import { InputGroup, NumberInput } from "@chakra-ui/react"
+import { InputGroup, NumberInput } from "@laststance/chakrawind-ui"
 import { LuArrowRightLeft } from "react-icons/lu"
 
 export const NumberInputWithScrubber = () => {

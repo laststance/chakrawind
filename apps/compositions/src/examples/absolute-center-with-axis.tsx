@@ -1,4 +1,10 @@
-import { AbsoluteCenter, Box, For, Text, VStack } from "@chakra-ui/react"
+import {
+  AbsoluteCenter,
+  Box,
+  For,
+  Text,
+  VStack,
+} from "@laststance/chakrawind-ui"
 
 export const AbsoluteCenterWithAxis = () => {
   return (

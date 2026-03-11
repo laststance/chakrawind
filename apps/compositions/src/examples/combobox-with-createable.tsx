@@ -8,7 +8,7 @@ import {
   createListCollection,
   useCombobox,
   useFilter,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import { useMemo, useRef, useState } from "react"
 import { flushSync } from "react-dom"
 

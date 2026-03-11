@@ -6,7 +6,7 @@ import {
   Portal,
   useFilter,
   useListCollection,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 
 export const ComboboxWithField = () => {
   const { contains } = useFilter({ sensitivity: "base" })

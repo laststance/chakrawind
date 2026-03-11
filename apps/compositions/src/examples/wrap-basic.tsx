@@ -1,4 +1,4 @@
-import { Badge, Wrap } from "@chakra-ui/react"
+import { Badge, Wrap } from "@laststance/chakrawind-ui"
 
 export const WrapBasic = () => (
   <Wrap>

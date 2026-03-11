@@ -1,4 +1,4 @@
-import { Field, Input, Stack, Switch } from "@chakra-ui/react"
+import { Field, Input, Stack, Switch } from "@laststance/chakrawind-ui"
 
 export const FieldHorizontal = () => {
   return (

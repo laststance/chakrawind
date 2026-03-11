@@ -1,4 +1,4 @@
-import { Field, PinInput } from "@chakra-ui/react"
+import { Field, PinInput } from "@laststance/chakrawind-ui"
 
 export const PinInputWithField = () => {
   return (

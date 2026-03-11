@@ -1,7 +1,7 @@
 "use client"
 
 import { Chart, useChart } from "@chakra-ui/charts"
-import { Card, ColorSwatch, HStack, Stat } from "@chakra-ui/react"
+import { Card, ColorSwatch, HStack, Stat } from "@laststance/chakrawind-ui"
 import { CartesianGrid, Line, LineChart, XAxis } from "recharts"
 
 export const LineChartComposition = () => {

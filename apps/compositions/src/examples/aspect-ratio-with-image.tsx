@@ -1,4 +1,4 @@
-import { AspectRatio, Image } from "@chakra-ui/react"
+import { AspectRatio, Image } from "@laststance/chakrawind-ui"
 
 export const AspectRatioWithImage = () => {
   return (

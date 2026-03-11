@@ -1,4 +1,4 @@
-import { defineRecipe } from "@chakra-ui/react"
+import { defineRecipe } from "@laststance/chakrawind-ui"
 
 export const cardRecipe = defineRecipe({
   base: {

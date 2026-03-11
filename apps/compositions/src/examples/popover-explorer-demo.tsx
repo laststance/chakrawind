@@ -1,4 +1,4 @@
-import { Button, Flex, Input, Popover, Text } from "@chakra-ui/react"
+import { Button, Flex, Input, Popover, Text } from "@laststance/chakrawind-ui"
 
 export const PopoverExplorerDemo = () => {
   return (

@@ -1,4 +1,4 @@
-import { For, HStack, Radiomark } from "@chakra-ui/react"
+import { For, HStack, Radiomark } from "@laststance/chakrawind-ui"
 import { colorPalettes } from "compositions/lib/color-palettes"
 
 export const RadiomarkWithColors = () => {

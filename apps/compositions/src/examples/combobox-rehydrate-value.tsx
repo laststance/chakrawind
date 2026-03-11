@@ -9,7 +9,7 @@ import {
   Spinner,
   useCombobox,
   useListCollection,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import { useRef, useState } from "react"
 import { useAsync } from "react-use"
 

@@ -1,6 +1,6 @@
 "use client"
 
-import { For, SegmentGroup } from "@chakra-ui/react"
+import { For, SegmentGroup } from "@laststance/chakrawind-ui"
 import * as React from "react"
 
 interface Item {

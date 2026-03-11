@@ -1,4 +1,4 @@
-import { Mark, Text } from "@chakra-ui/react"
+import { Mark, Text } from "@laststance/chakrawind-ui"
 
 export const MarkBasic = () => {
   return (

@@ -1,4 +1,4 @@
-import { Portal } from "@chakra-ui/react"
+import { Portal } from "@laststance/chakrawind-ui"
 
 export default {
   title: "Components / Portal",

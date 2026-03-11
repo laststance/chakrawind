@@ -1,4 +1,10 @@
-import { Button, ButtonGroup, For, Stack, Steps } from "@chakra-ui/react"
+import {
+  Button,
+  ButtonGroup,
+  For,
+  Stack,
+  Steps,
+} from "@laststance/chakrawind-ui"
 
 export const StepsWithSizes = () => {
   return (

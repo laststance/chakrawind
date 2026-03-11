@@ -1,4 +1,4 @@
-import { Portal } from "@chakra-ui/react"
+import { Portal } from "@laststance/chakrawind-ui"
 import Frame from "react-frame-component"
 
 export const PortalWithIframe = () => (

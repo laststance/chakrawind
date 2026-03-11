@@ -1,4 +1,4 @@
-import { Blockquote, Float } from "@chakra-ui/react"
+import { Blockquote, Float } from "@laststance/chakrawind-ui"
 
 export const BlockquoteWithIcon = () => {
   return (

@@ -1,13 +1,13 @@
 "use client"
 
+import { standardSchemaResolver } from "@hookform/resolvers/standard-schema"
 import {
   Button,
   Checkbox,
   CheckboxGroup,
   Code,
   Fieldset,
-} from "@chakra-ui/react"
-import { standardSchemaResolver } from "@hookform/resolvers/standard-schema"
+} from "@laststance/chakrawind-ui"
 import { useController, useForm } from "react-hook-form"
 import { z } from "zod"
 

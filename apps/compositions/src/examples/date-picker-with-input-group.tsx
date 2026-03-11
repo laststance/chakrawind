@@ -1,6 +1,6 @@
 "use client"
 
-import { DatePicker, InputGroup, Portal } from "@chakra-ui/react"
+import { DatePicker, InputGroup, Portal } from "@laststance/chakrawind-ui"
 import { LuCalendar, LuChevronsUpDown } from "react-icons/lu"
 
 export const DatePickerWithInputGroup = () => {

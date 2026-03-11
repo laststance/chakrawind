@@ -7,7 +7,7 @@ import {
   Menu,
   Portal,
   Text,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import { useState } from "react"
 import { LuChevronDown } from "react-icons/lu"
 

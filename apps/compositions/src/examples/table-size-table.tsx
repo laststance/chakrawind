@@ -6,7 +6,7 @@ import {
   Table,
   type TableRootProps,
   useSlotRecipe,
-} from "@chakra-ui/react"
+} from "@laststance/chakrawind-ui"
 import { PlaygroundTable } from "compositions/lib/playground-table"
 
 export const TableSizeTable = () => {

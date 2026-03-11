@@ -1,4 +1,4 @@
-import { For, HStack, ProgressCircle } from "@chakra-ui/react"
+import { For, HStack, ProgressCircle } from "@laststance/chakrawind-ui"
 
 export const ProgressCircleWithSizes = () => {
   return (

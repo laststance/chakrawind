@@ -1,4 +1,4 @@
-import { For, Stack, VStack } from "@chakra-ui/react"
+import { For, Stack, VStack } from "@laststance/chakrawind-ui"
 import { DecorativeBox } from "compositions/lib/decorative-box"
 import { LuBox } from "react-icons/lu"
 

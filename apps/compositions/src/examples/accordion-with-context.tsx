@@ -1,4 +1,8 @@
-import { Accordion, Box, useAccordionItemContext } from "@chakra-ui/react"
+import {
+  Accordion,
+  Box,
+  useAccordionItemContext,
+} from "@laststance/chakrawind-ui"
 import { LuMinus, LuPlus } from "react-icons/lu"
 
 export const AccordionWithContext = () => {

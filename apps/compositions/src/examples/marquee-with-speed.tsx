@@ -1,6 +1,6 @@
 "use client"
 
-import { For, Marquee, Span, Stack } from "@chakra-ui/react"
+import { For, Marquee, Span, Stack } from "@laststance/chakrawind-ui"
 import {
   IoLogoFigma,
   IoLogoGitlab,

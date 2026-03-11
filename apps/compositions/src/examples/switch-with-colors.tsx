@@ -1,4 +1,4 @@
-import { Stack, Switch, Text } from "@chakra-ui/react"
+import { Stack, Switch, Text } from "@laststance/chakrawind-ui"
 import { colorPalettes } from "compositions/lib/color-palettes"
 
 export const SwitchWithColors = () => {

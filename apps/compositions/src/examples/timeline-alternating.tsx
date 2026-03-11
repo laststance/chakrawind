@@ -1,4 +1,4 @@
-import { Timeline } from "@chakra-ui/react"
+import { Timeline } from "@laststance/chakrawind-ui"
 
 export const TimelineAlternating = () => {
   return (

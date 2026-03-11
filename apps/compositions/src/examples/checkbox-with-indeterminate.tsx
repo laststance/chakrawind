@@ -1,4 +1,4 @@
-import { Checkbox, For, Stack } from "@chakra-ui/react"
+import { Checkbox, For, Stack } from "@laststance/chakrawind-ui"
 
 export const CheckboxWithIndeterminate = () => {
   return (

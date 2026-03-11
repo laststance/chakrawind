@@ -1,4 +1,11 @@
-import { Avatar, Badge, For, Span, Stack, Timeline } from "@chakra-ui/react"
+import {
+  Avatar,
+  Badge,
+  For,
+  Span,
+  Stack,
+  Timeline,
+} from "@laststance/chakrawind-ui"
 import { LuCheck } from "react-icons/lu"
 
 export const TimelineWithSizes = () => {

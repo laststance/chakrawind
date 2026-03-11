@@ -1,4 +1,4 @@
-import { Center, Wrap, WrapItem } from "@chakra-ui/react"
+import { Center, Wrap, WrapItem } from "@laststance/chakrawind-ui"
 
 export const WrapWithJustify = () => (
   <Wrap gap="30px" justify="center">

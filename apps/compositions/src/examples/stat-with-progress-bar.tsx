@@ -1,4 +1,4 @@
-import { FormatNumber, Progress, Stat } from "@chakra-ui/react"
+import { FormatNumber, Progress, Stat } from "@laststance/chakrawind-ui"
 
 export const StatWithProgressBar = () => {
   return (

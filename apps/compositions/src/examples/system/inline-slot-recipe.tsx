@@ -1,5 +1,11 @@
-import type { HTMLChakraProps, RecipeVariantProps } from "@chakra-ui/react"
-import { createSlotRecipeContext, defineSlotRecipe } from "@chakra-ui/react"
+import type {
+  HTMLChakraProps,
+  RecipeVariantProps,
+} from "@laststance/chakrawind-ui"
+import {
+  createSlotRecipeContext,
+  defineSlotRecipe,
+} from "@laststance/chakrawind-ui"
 
 // 1. Define the recipe
 
@@ -41,8 +47,10 @@ const { withProvider, withContext } = createSlotRecipeContext({
 
 // 2. Create the components
 
-interface CheckboxRootProps
-  extends HTMLChakraProps<"div", RecipeVariantProps<typeof checkbox>> {}
+interface CheckboxRootProps extends HTMLChakraProps<
+  "div",
+  RecipeVariantProps<typeof checkbox>
+> {}
 
 const CheckboxRoot = withProvider<HTMLDivElement, CheckboxRootProps>(
   "div",

@@ -1,4 +1,4 @@
-import { Text, Timeline } from "@chakra-ui/react"
+import { Text, Timeline } from "@laststance/chakrawind-ui"
 import { LuCheck, LuPackage, LuShip } from "react-icons/lu"
 
 export const TimelineBasic = () => {

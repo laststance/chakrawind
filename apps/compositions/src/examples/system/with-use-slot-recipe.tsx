@@ -1,6 +1,6 @@
 "use client"
 
-import { Box, useSlotRecipe } from "@chakra-ui/react"
+import { Box, useSlotRecipe } from "@laststance/chakrawind-ui"
 
 export const SystemWithUseSlotRecipe = () => {
   const alert = useSlotRecipe({ key: "alert" })

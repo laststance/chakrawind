@@ -1,6 +1,6 @@
 "use client"
 
-import { Box, Button, CheckboxCard, Text } from "@chakra-ui/react"
+import { Box, Button, CheckboxCard, Text } from "@laststance/chakrawind-ui"
 
 export const CheckboxCardExplorerDemo = () => {
   return (

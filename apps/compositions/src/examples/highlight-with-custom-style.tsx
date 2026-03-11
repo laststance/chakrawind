@@ -1,4 +1,4 @@
-import { Highlight } from "@chakra-ui/react"
+import { Highlight } from "@laststance/chakrawind-ui"
 
 export const HighlightWithCustomStyle = () => {
   return (

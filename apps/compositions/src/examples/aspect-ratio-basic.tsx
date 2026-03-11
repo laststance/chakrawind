@@ -1,4 +1,4 @@
-import { AspectRatio, Center } from "@chakra-ui/react"
+import { AspectRatio, Center } from "@laststance/chakrawind-ui"
 
 export const AspectRatioBasic = () => {
   return (

@@ -1,4 +1,4 @@
-import { Progress, Stack, Text } from "@chakra-ui/react"
+import { Progress, Stack, Text } from "@laststance/chakrawind-ui"
 import { colorPalettes } from "compositions/lib/color-palettes"
 
 export const ProgressWithColors = () => {

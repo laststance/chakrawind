@@ -1,4 +1,4 @@
-import { Box, Circle, Float } from "@chakra-ui/react"
+import { Box, Circle, Float } from "@laststance/chakrawind-ui"
 
 export const FloatWithOffset = () => (
   <Box position="relative" w="80px" h="80px" bg="bg.emphasized">

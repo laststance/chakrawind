@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [tailwindcss()],
   resolve: {
     alias: {
-      "@chakra-ui/react": resolve("packages/react/src"),
+      "@laststance/chakrawind-ui": resolve("packages/react/src"),
       compositions: resolve("apps/compositions/src"),
     },
   },

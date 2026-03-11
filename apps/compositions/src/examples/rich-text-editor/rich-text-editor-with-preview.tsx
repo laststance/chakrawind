@@ -1,6 +1,6 @@
 "use client"
 
-import { Splitter } from "@chakra-ui/react"
+import { Splitter } from "@laststance/chakrawind-ui"
 import Subscript from "@tiptap/extension-subscript"
 import Superscript from "@tiptap/extension-superscript"
 import TextAlign from "@tiptap/extension-text-align"

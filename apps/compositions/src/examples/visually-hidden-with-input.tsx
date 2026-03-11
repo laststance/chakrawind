@@ -1,4 +1,4 @@
-import { HStack, VisuallyHidden } from "@chakra-ui/react"
+import { HStack, VisuallyHidden } from "@laststance/chakrawind-ui"
 
 export const VisuallyHiddenWithInput = () => {
   return (
